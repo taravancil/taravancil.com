@@ -1,0 +1,7 @@
+.nav {
+  @extend %flex-container;
+
+  &--footer {
+    flex-direction: column;
+  }
+}

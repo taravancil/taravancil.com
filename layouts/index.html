@@ -9,11 +9,21 @@
           Hi. I'm <span class="intro__name">Tara Vancil</span>.
         </h1>
 
-        <p class="intro__blurb">TODO</p>
+        <p class="intro__blurb">I'm a person who writes code.</p>
       </div>
     </div>
 
-    <div class="home__nav">{{ partial "navigation.html" . }}</div>
+    <div class="home__nav">
+      {{ partial "navigation.html" . }}
+    </div>
+
+    <div class="recent">
+      <div class="container">
+        {{ range first 3 .Data.Pages }}
+          {{ .Render "summary" }}
+        {{ end }}
+      </div>
+    </div>
 
     {{ partial "footer.html" .}}
   </body>

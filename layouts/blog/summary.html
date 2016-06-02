@@ -1,0 +1,11 @@
+<div class="post--summary">
+  <h2 class="post__title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+  <div class="post__meta">
+    <span class="post__date">{{ .Date.Format "2006-01-02" }}</span>
+    <div class="post__tags"></div>
+  </div>
+
+  {{ .Summary }}
+
+  <a href="{{ .Permalink }}">&gt&gt Read more</a>
+</div>

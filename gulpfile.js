@@ -7,10 +7,19 @@ var cssmin       = require('gulp-clean-css');
 var minifyHtml   = require('gulp-htmlmin');
 var notification = require('gulp-notify');
 var exec         = require('child_process').exec;
+var plumber      = require('gulp-plumber');
 
 gulp.task('build-scss', function() {
-    // TODO: Add notifications for Sass build failures
+    var onError = function(err) {
+        notification.onError({
+            title:   "gulp: build-scss",
+            message: "<%= error.message %>",
+        })(err);
+        this.emit('end');
+    };
+
     return gulp.src('src/scss/style.scss')
+        .pipe(plumber({errorHandler: onError}))
         .pipe(sass())
         .pipe(autoprefixer())
         .pipe(cssmin())

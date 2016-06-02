@@ -28,7 +28,8 @@ gulp.task('build-scss', function() {
 });
 
 gulp.task('minify-html', function() {
-    return gulp.src('public/about/index.html').pipe(minifyHtml());
+    return gulp.src('public/**/*.html')
+        .pipe(minifyHtml({collapseWhitespace: true}))
 });
 
 gulp.task('hugo-server', function() {

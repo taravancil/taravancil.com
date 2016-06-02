@@ -1,5 +1,5 @@
 ---
-title: Axolotol\:An Attempt at a Summary
+title: Axolotol, an Attempt at a Summary
 date: 2015-04-22
 ---
 

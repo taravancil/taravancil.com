@@ -10,12 +10,12 @@ var exec         = require('child_process').exec;
 
 gulp.task('build-scss', function() {
     // TODO: Add notifications for Sass build failures
-    return gulp.src('src/scss/**/*.scss')
+    return gulp.src('src/scss/main.scss')
         .pipe(sass())
         .pipe(autoprefixer())
         .pipe(cssmin())
         .pipe(rename({ suffix: '.min' }))
-        .pipe(gulp.dest('static/css'));
+        .pipe(gulp.dest('static/css/'));
 });
 
 gulp.task('minify-html', function() {

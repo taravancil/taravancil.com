@@ -10,7 +10,7 @@ var exec         = require('child_process').exec;
 
 gulp.task('build-scss', function() {
     // TODO: Add notifications for Sass build failures
-    return gulp.src('src/scss/main.scss')
+    return gulp.src('src/scss/style.scss')
         .pipe(sass())
         .pipe(autoprefixer())
         .pipe(cssmin())

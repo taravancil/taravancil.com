@@ -8,8 +8,14 @@ body {
   font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, sans-serif;
   font-weight: 300;
   line-height: 1.4;
+  color: $color-text;
 }
 
 h1, h2, h3, h4, h5, h5, h6 {
   @extend %accent-font;
+  color: $color-text--accent;
+}
+
+body a {
+  @extend %link;
 }

@@ -1,3 +1,30 @@
 %accent-font {
-  font-family: 'OpenSans-Semibold';
+  font-family: 'OpenSans-Bold';
 }
+
+%flex-container {
+  display: flex;
+}
+
+%link {
+  color: $color-text--link;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+%transition {
+  transition-duration: .2s;
+  transition-timing-function: ease;
+}
+
+%formatted-list {
+  list-style-type: disc;
+  margin-left: 2em;
+}
+
+%heading {
+  margin-bottom: .5em;
+}
+

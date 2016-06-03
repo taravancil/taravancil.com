@@ -1,3 +1,9 @@
+.grid {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .col {
   width: 100%;
   float: left;

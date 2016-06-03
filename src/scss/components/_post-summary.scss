@@ -1,0 +1,11 @@
+.post--summary {
+  margin: 1.5em 0;
+
+}
+
+.post__more {
+  @extend %link;
+  @extend %accent-font;
+  text-align: right;
+}
+

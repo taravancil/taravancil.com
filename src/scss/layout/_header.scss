@@ -1,12 +1,13 @@
 .header {
   width: 100%;
-  margin-bottom: 4em;
+  margin-bottom: 2em;
   padding: 1em 0;
 
   &--home .container {
     @extend %flex-container;
     flex-direction: column;
     text-align: center;
+    border-bottom: 2px solid $black;
 
     @include respond-to(expand-header-home) {
       flex-direction: row;

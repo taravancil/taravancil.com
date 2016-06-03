@@ -1,4 +1,11 @@
 .footer {
+  background: $color-bg--footer;
+  width: 100%;
+  min-height: 150px;
   margin-top: 4em;
   padding: 1em 0;
+
+  &__heading {
+    color: $color-text--footer;
+  }
 }

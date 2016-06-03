@@ -1,11 +1,25 @@
 .nav {
   @extend %flex-container;
+  @extend %accent-font;
   justify-content: center;
   align-content: center;
 
   &__item {
+    @extend %transition;
+    transition-property: color;
     display: inline-block;
-    border-bottom: 2px solid $color-primary;
+    border-bottom: 2px solid;
+    padding: .2em;
+    margin-right: 1.5em;
+
+    &--last {
+      margin-right: 0;
+    }
+
+    &:hover {
+      color: $color-primary;
+      cursor: pointer;
+    }
   }
 }
 

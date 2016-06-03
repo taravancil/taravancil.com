@@ -2,8 +2,9 @@ $breakpoints: (
   'show-cols-2': (min-width: 700px),
   'show-cols-3': (min-width: 800px),
   'contain-90': (min-width: 600px),
-  'contain-70': (min-width: 800px),
-  'expand-header-home': (min-width: 500px),
+  'contain-70': (min-width: 950px),
+  'expand-header-home': (min-width: 700px),
+  'expand-footer': (min-width: 500px),
 );
 
 $black: #000;

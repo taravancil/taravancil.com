@@ -1,8 +1,14 @@
 .post {
 
-  &__content a {
-    @extend %link;
-    text-decoration: underline;
+  &__content {
+    p {
+      margin: 1em 0;
+    }
+
+    a {
+      @extend %link;
+      text-decoration: underline;
+    }
   }
 
   &__date {

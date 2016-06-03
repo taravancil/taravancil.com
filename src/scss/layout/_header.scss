@@ -1,3 +1,22 @@
 .header {
   width: 100%;
+
+  &--home .container {
+    @extend %flex-container;
+    flex-direction: column;
+    text-align: center;
+
+    @include respond-to(expand-header-home) {
+      flex-direction: row;
+
+      .intro {
+        flex-basis: 66.6%;
+        text-align: left;
+      }
+
+      .nav {
+        flex-basis: 33.3%;
+      }
+    }
+  }
 }

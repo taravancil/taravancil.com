@@ -1,7 +1,18 @@
 .nav {
   @extend %flex-container;
+  justify-content: center;
+  align-content: center;
 
-  &--footer {
-    flex-direction: column;
+  &__item {
+    display: inline-block;
+    border-bottom: 2px solid $color-primary;
+  }
+}
+
+.footer .nav {
+  flex-direction: column;
+
+  &__item {
+    display: block;
   }
 }

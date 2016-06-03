@@ -9,6 +9,14 @@
       @extend %link;
       text-decoration: underline;
     }
+
+    ul {
+      @extend %formatted-list;
+    }
+  }
+
+  &__meta {
+    font-size: .9em;
   }
 
   &__date {

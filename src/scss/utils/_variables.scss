@@ -1,4 +1,7 @@
-$breakpoints: ();
+$breakpoints: (
+  'show-cols-2': (min-width: 700px),
+  'show-cols-3': (min-width: 800px),
+);
 
 $black: #000;
 $white: #fff;

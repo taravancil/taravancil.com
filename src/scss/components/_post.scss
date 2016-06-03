@@ -4,4 +4,17 @@
     @extend %link;
     text-decoration: underline;
   }
+
+  &__date {
+    color: $color-primary;
+  }
+
+  &__title {
+    @extend %transition;
+    transition-property: color;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
 }

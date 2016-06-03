@@ -1,5 +1,6 @@
 .intro {
   @extend %accent-font;
+  margin-bottom: 2em;
 
   &__heading {
     color: $color-text--accent;

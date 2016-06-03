@@ -3,19 +3,18 @@
   {{ partial "head.html" . }}
 
   <body>
-    <div class="intro">
-      <div class="container">
-        <h1 class="intro__heading">
-          Hi. I'm <span class="intro__name">Tara Vancil</span>.
-        </h1>
+    <header class="header--home">
+      <div class="container grid">
+        <div class="intro">
+          <h1 class="intro__heading">Hi. I'm Tara Vancil.</h1>
+          <p class="intro__blurb">
+            I <a href="https://github.com/taravancil">write code.</a>
+          </p>
+        </div>
 
-        <p class="intro__blurb">I'm a person who writes code.</p>
+        {{ partial "navigation.html" . }}
       </div>
-    </div>
-
-    <div class="home__nav">
-      {{ partial "navigation.html" . }}
-    </div>
+    </header>
 
     <div class="recent">
       <div class="container">

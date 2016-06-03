@@ -1,0 +1,7 @@
+.post {
+
+  &__content a {
+    @extend %link;
+    text-decoration: underline;
+  }
+}

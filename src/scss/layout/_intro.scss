@@ -2,10 +2,23 @@
   @extend %accent-font;
 
   &__heading {
-    color: $color-text;
+    color: $color-text--accent;
+    font-size: 2.1em;
   }
 
-  &__name {
-    color: $color-primary;
+  &__blurb {
+    max-width: 500px;
+
+    p {
+      margin: 1em 0;
+    }
+
+    a {
+      color: $color-primary;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }

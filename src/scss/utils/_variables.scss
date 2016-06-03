@@ -1,1 +1,16 @@
 $breakpoints: ();
+
+$black: #000;
+$white: #fff;
+
+$color-primary: #ff004b;
+$color-secondary: #0d8cb2;
+$color-secondary--light: #1ba3cc;
+
+// Text colors
+$color-text: mix($color-primary, $black, 2%);
+$color-text--accent: $color-primary;
+$color-text--link: $color-secondary;
+
+// Background colors
+$color-bg: mix($color-secondary, $white, 2%);

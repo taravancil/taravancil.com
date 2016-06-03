@@ -28,3 +28,9 @@
   margin-bottom: .5em;
 }
 
+%module {
+  background: mix($color-secondary, $white, 30%);
+  padding: 1.5em 2em;
+  font-size: .9em;
+}
+

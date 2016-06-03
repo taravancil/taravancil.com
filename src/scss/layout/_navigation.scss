@@ -1,16 +1,18 @@
 .nav {
-  @extend %flex-container;
   @extend %accent-font;
-  justify-content: center;
-  align-content: center;
+  padding: .4em 0;
+
+  &__items {
+    @extend %flex-container;
+    justify-content: right;
+  }
 
   &__item {
     @extend %transition;
     transition-property: color;
-    display: inline-block;
-    border-bottom: 2px solid;
-    padding: .2em;
     margin-right: 1.5em;
+    display: inline-block;
+    padding: .2em;
 
     &--last {
       margin-right: 0;
@@ -18,15 +20,6 @@
 
     &:hover {
       color: $color-primary;
-      cursor: pointer;
     }
-  }
-}
-
-.footer .nav {
-  flex-direction: column;
-
-  &__item {
-    display: block;
   }
 }

@@ -1,3 +1,21 @@
 body {
   background: $color-bg;
 }
+
+pre {
+  border: 1px solid mix($color-secondary, $white, 20%);
+  border-radius: 1px;
+  background: mix($color-secondary, $white, 5%);
+  padding: .5em;
+}
+
+code {
+  border: none;
+  background: mix($color-secondary, $white, 17%);
+  padding: .1em .4em;
+}
+
+pre code {
+  border: none;
+  background: none;
+}

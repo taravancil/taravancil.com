@@ -1,0 +1,11 @@
+.intro {
+  @extend %accent-font;
+
+  &__heading {
+    color: $color-text;
+  }
+
+  &__name {
+    color: $color-primary;
+  }
+}

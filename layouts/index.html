@@ -3,13 +3,18 @@
   {{ partial "head.html" . }}
 
   <body>
-    <header class="header--home">
+    <header class="header header--home">
       <div class="container">
         <div class="intro">
-          <h1 class="intro__heading">Hi. I'm Tara Vancil.</h1>
-          <p class="intro__blurb">
-            I <a href="https://github.com/taravancil">write code.</a>
-          </p>
+          <h1 class="intro__heading">Hi. I'm Tara.</h1>
+          <div class="intro__blurb">
+            <p>
+              I'm a software developer with an interest in security, privacy, and cryptography.
+            </p>
+            <p>
+              This is my personal blog where I write about boring personal and sometimes technical stuff. You can also find me on <a href="https://github.com/taravancil">Github</a> and <a href="https://twitter.com/tbvancil">Twitter</a>.
+            </p>
+          </div>
         </div>
 
         {{ partial "navigation.html" . }}
@@ -18,8 +23,8 @@
 
     <div class="recent">
       <div class="container">
-        {{ range first 3 .Data.Pages }}
-          {{ .Render "summary" }}
+        {{ range first 10 .Data.Pages }}
+          {{ .Render "li" }}
         {{ end }}
       </div>
     </div>

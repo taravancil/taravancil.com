@@ -1,0 +1,13 @@
+.container {
+  width: 97%;
+  max-width: 900px;
+  margin: auto;
+
+  @include respond-to(contain-80) {
+    width: 80%;
+  }
+
+  @include respond-to(contain-70) {
+    width: 70%;
+  }
+}

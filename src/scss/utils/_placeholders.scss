@@ -29,7 +29,8 @@
 }
 
 %module {
-  background: mix($color-secondary, $white, 30%);
+  background: mix($color-secondary, $white, 20%);
+  border: 1px solid mix($color-secondary, $white, 40%);
   padding: 1.5em 2em;
   font-size: .9em;
 }

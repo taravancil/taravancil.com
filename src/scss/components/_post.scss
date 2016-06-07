@@ -28,6 +28,10 @@
       margin: 1.3em 0;
     }
 
+    ul {
+      @extend %formatted-list;
+    }
+
     a {
       @extend %link;
       text-decoration: underline;

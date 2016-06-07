@@ -1,0 +1,20 @@
+.tags {
+  list-style: none;
+  font-size: .8em;
+  color: mix($color-text, $color-secondary--light, 10%);
+}
+.tag {
+  @extend %transition;
+  transition-property: border-color;
+  display: inline-block;
+  margin-right: .5em;
+  background: mix($color-secondary, $white, 10%);
+  border: 1px solid;
+  border-color: mix($color-secondary, $white, 20%);
+  padding: .2em .5em;
+
+  &:hover {
+    cursor: pointer;
+    border-color: inherit;
+  }
+}

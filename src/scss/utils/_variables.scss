@@ -19,3 +19,6 @@ $color-secondary--light: #1ba3cc;
 $color-text: $black;
 $color-text--accent: $color-primary;
 $color-text--link: $color-secondary;
+
+// Background colors
+$color-bg: mix($color-primary, $white, 2%);

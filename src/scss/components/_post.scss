@@ -1,18 +1,36 @@
 .post {
 
+  h2, h3, h4, h5, h6 {
+    margin: 1em 0;
+  }
+
+  h2, h4, h6 {
+    text-decoration: underline;
+  }
+
+  h3, h5 {
+    color: $color-text--accent;
+  }
+
+  h5 {
+    font-size: 1em;
+  }
+
+  li {
+    margin-bottom: .5em;
+  }
+
   &__content {
+    margin: 1em 0 3em 0;
+
     p {
-      margin: 1em 0;
       text-align: justify;
+      margin: 1.3em 0;
     }
 
     a {
       @extend %link;
       text-decoration: underline;
-    }
-
-    ul {
-      @extend %formatted-list;
     }
 
     @include respond-to(align-left) {
@@ -23,19 +41,14 @@
   }
 
   &__meta {
+    @extend %accent-font;
+    margin: 1.5em 0 2em 0;
+    padding-bottom: .5em;
     font-size: .9em;
+    border-bottom: 1px solid $black;
   }
 
-  &__date {
-    color: $color-primary;
-  }
-
-  &__title {
-    @extend %transition;
-    transition-property: color;
-
-    &:hover {
-      color: $color-primary;
-    }
+  &__category {
+    color: $color-text--accent;
   }
 }

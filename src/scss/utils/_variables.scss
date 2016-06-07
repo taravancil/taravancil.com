@@ -5,6 +5,7 @@ $breakpoints: (
   'contain-70': (min-width: 950px),
   'expand-header-home': (min-width: 700px),
   'expand-footer': (min-width: 800px),
+  'align-left': (min-width: 500px),
 );
 
 $black: #000;
@@ -18,8 +19,3 @@ $color-secondary--light: #1ba3cc;
 $color-text: $black;
 $color-text--accent: $color-primary;
 $color-text--link: $color-secondary;
-$color-text--footer: $black;
-
-// Background colors
-$color-bg: mix($color-secondary, $white, 2%);
-$color-bg--footer: $color-primary;

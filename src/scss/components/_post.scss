@@ -3,6 +3,7 @@
   &__content {
     p {
       margin: 1em 0;
+      text-align: justify;
     }
 
     a {
@@ -12,6 +13,12 @@
 
     ul {
       @extend %formatted-list;
+    }
+
+    @include respond-to(align-left) {
+      p {
+        text-align: left;
+      }
     }
   }
 

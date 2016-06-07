@@ -47,11 +47,23 @@ man in the middle (MITM)
 Status: Established Standard [http://www.w3.org/TR/CSP/](http://www.w3.org/TR/CSP/)
 
 <div class="status">
-  <ul>
-    <li class="available">Chrome<span class="hidden">Available</span></li>
-    <li class="available">Firefox<span class="hidden">Available</span></li>
-    <li class="available">Edge<span class="hidden">Available</span></li>
-    <li class="unavailable">Safari*<span class="hidden">Unavailable</span></li>
+  <ul class="status__items">
+    <li class="status__item available">
+      Chrome
+      <span class="hidden">Available</span>
+    </li>
+    <li class="status__item available">
+      Firefox
+      <span class="hidden">Available</span>
+    </li>
+    <li class="status__item available">
+      Edge
+      <span class="hidden">Available</span>
+    </li>
+    <li class="status__item unavailable">
+      Safari*
+      <span class="hidden">Unavailable</span>
+    </li>
   </ul>
   <a href="https://www.chromestatus.com/feature/4957003285790720">Details</a>
   <span>* Content Security Policy Level 1 offers many of the same features and is available in Safari.</span>
@@ -271,14 +283,26 @@ powerful web security tools available today, but it is only one piece of a
 defense-in-depth approach. It is not a panacea!
 
 <h2 id="mixed-content">Mixed Content</h2>
-Status: Status: Working Draft [http://www.w3.org/TR/mixed-content/](http://www.w3.org/TR/mixed-content/)
+Status: Working Draft [http://www.w3.org/TR/mixed-content/](http://www.w3.org/TR/mixed-content/)
 
 <div class="status">
-  <ul>
-    <li class="available">Chrome<span class="hidden">On By Default</span></li>
-    <li class="available">Firefox<span class="hidden">On By Default</span></li>
-    <li class="available">Edge<span class="hidden">On By Default</span></li>
-    <li class="available">Safari<span class="hidden">On By Default</span></li>
+  <ul class="status__items">
+    <li class="status__item available">
+      Chrome
+      <span class="hidden">On By Default</span>
+    </li>
+    <li class="status__item available">
+      Firefox
+      <span class="hidden">On By Default</span>
+    </li>
+    <li class="status__item available">
+      Edge
+      <span class="hidden">On By Default</span>
+    </li>
+    <li class="status__item available">
+      Safari
+      <span class="hidden">On By Default</span>
+    </li>
   </ul>
   <a href="https://www.chromestatus.com/features/6263395770695680">Details</a>
 </div>
@@ -286,11 +310,23 @@ Status: Status: Working Draft [http://www.w3.org/TR/mixed-content/](http://www.w
 Strict Mixed Content Checking Status
 
 <div class="status">
-  <ul>
-    <li class="unavailable">Chrome<span class="hidden">Unavailable</span></li>
-    <li class="unavailable">Firefox<span class="hidden">Unavailable</span></li>
-    <li class="unavailable">Edge<span class="hidden">Unavailable</span></li>
-    <li class="unavailable">Safari<span class="hidden">Unavailable</span></li>
+  <ul class="status__items">
+    <li class="status__item unavailable">
+      Chrome
+      <span class="hidden">Unavailable</span>
+    </li>
+    <li class="status__item unavailable">
+      Firefox
+      <span class="hidden">Unavailable</span>
+    </li>
+    <li class="status__item unavailable">
+      Edge
+      <span class="hidden">Unavailable</span>
+    </li>
+    <li class="status__item unavailable">
+      Safari
+      <span class="hidden">Unavailable</span>
+    </li>
   </ul>
   <a href="https://www.chromestatus.com/features/5823679871057920">Details</a>
 </div>
@@ -347,8 +383,10 @@ encounters optionally-blockable mixed content, the UA *must* notify the user by
 degrading the security UI.
 
   <figure>
-    <img src="{{ site.url }}/assets/mixed.png" />
-    <figcaption>Fig1. Mixed content warnings for popular browsers. In order: Chrome 45, Firefox 40, Chrome Canary, Safari. Note that Canary entirely removes any indication that the site is potentially secure, other browsers will likely follow suit in due time. Read about the motivation for this change <a href="https://www.chromium.org/Home/chromium-security/marking-http-as-non-secure">here</a>.</figcaption>
+    <img src="/images/mixed.png">
+    <figcaption>
+      Fig1. Mixed content warnings for popular browsers. In order: Chrome 45, Firefox 40, Chrome Canary, Safari. Note that Canary entirely removes any indication that the site is potentially secure, other browsers will likely follow suit in due time. Read about the motivation for this change <a href="https://www.chromium.org/Home/chromium-security/marking-http-as-non-secure">here</a>
+    </figcaption>
   </figure>
 
 #### Strict Mixed Content Checking
@@ -376,11 +414,11 @@ do!
 Status: Working Draft [http://www.w3.org/TR/upgrade-insecure-requests/](http://www.w3.org/TR/upgrade-insecure-requests/)
 
 <div class="status">
-  <ul>
-    <li class="available">Chrome</li>
-    <li class="available">Firefox</li>
-    <li class="unavailable">Edge</li>
-    <li class="unavailable">Safari</li>
+  <ul class="status__items">
+    <li class="status__item available">Chrome</li>
+    <li class="status__item available">Firefox</li>
+    <li class="status__item unavailable">Edge</li>
+    <li class="status__item unavailable">Safari</li>
   </ul>
   <a href="https://www.chromestatus.com/features/6534575509471232">Details</a>
 </div>
@@ -435,11 +473,11 @@ for several scenarios. It's worth reading if you plan to use this feature.
 Status: Working Draft [http://www.w3.org/TR/SRI/](http://www.w3.org/TR/SRI/)
 
 <div class="status">
-  <ul>
-    <li class="available">Chrome</li>
-    <li class="available">Firefox</li>
-    <li class="unavailable">Edge</li>
-    <li class="unavailable">Safari</li>
+  <ul class="status__items">
+    <li class="status__item available">Chrome</li>
+    <li class="status__item available">Firefox</li>
+    <li class="status__item unavailable">Edge</li>
+    <li class="status__item unavailable">Safari</li>
   </ul>
   <a href="https://www.chromestatus.com/features/6183089948590080">Details</a>
 </div>
@@ -508,11 +546,23 @@ control over the site's HTML and could just remove or modify the original
 Status: First Public Working Draft [http://www.w3.org/TR/csp-pinning/](http://www.w3.org/TR/csp-pinning/)
 
 <div class="status">
-  <ul>
-    <li class="unavailable">Chrome<span class="hidden">Unavailable</span></li>
-    <li class="unavailable">Firefox<span class="hidden">Unavailable</span></li>
-    <li class="unavailable">Edge<span class="hidden">Unavailable</span></li>
-    <li class="unavailable">Safari<span class="hidden">Unavailable</span></li>
+  <ul class="status__items">
+    <li class="status__item unavailable">
+      Chrome
+      <span class="hidden">Unavailable</span>
+    </li>
+    <li class="status__item unavailable">
+      Firefox
+      <span class="hidden">Unavailable</span>
+    </li>
+    <li class="status__item unavailable">
+      Edge
+      <span class="hidden">Unavailable</span>
+    </li>
+    <li class="status__item unavailable">
+      Safari
+      <span class="hidden">Unavailable</span>
+    </li>
   </ul>
 </div>
 
@@ -572,11 +622,11 @@ implementations stronger and to prevent the headache of malicious pin injection.
 Status: First Public Working Draft [http://www.w3.org/TR/referrer-policy/](http://www.w3.org/TR/referrer-policy/)
 
 <div class="status">
-  <ul>
-    <li class="unavailable">Chrome</li>
-    <li class="unavailable">Firefox</li>
-    <li class="unavailable">Edge</li>
-    <li class="unavailable">Safari</li>
+  <ul class="status__items">
+    <li class="status__item unavailable">Chrome</li>
+    <li class="status__item unavailable">Firefox</li>
+    <li class="status__item unavailable">Edge</li>
+    <li class="status__item unavailable">Safari</li>
   </ul>
 </div>
 
@@ -646,11 +696,23 @@ one of four ways:
 Status: First Public Working Draft [http://www.w3.org/TR/epr/](http://www.w3.org/TR/epr/)
 
 <div class="status">
-  <ul>
-    <li class="unavailable">Chrome<span class="hidden">Unavailable</span></li>
-    <li class="unavailable">Firefox<span class="hidden">Unavailable</span></li>
-    <li class="unavailable">Edge<span class="hidden">Unavailable</span></li>
-    <li class="unavailable">Safari<span class="hidden">Unavailable</span></li>
+  <ul class="status__items">
+    <li class="status__item unavailable">
+      Chrome
+      <span class="hidden">Unavailable</span>
+    </li>
+    <li class="status__item unavailable">
+      Firefox
+      <span class="hidden">Unavailable</span>
+    </li>
+    <li class="status__item unavailable">
+      Edge
+      <span class="hidden">Unavailable</span>
+    </li>
+    <li class="status__item unavailable">
+      Safari
+      <span class="hidden">Unavailable</span>
+    </li>
   </ul>
 </div>
 

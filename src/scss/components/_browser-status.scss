@@ -1,0 +1,39 @@
+.status {
+  font-size: .8em;
+  padding: 1em;
+
+  &__items {
+    @extend %flex-container;
+    list-style: none;
+    background: $black;
+    color: $white;
+  }
+
+  &__item {
+    text-align: center;
+    flex-grow: 1;
+    margin-left: 0;
+
+    &.available:before, &.unavailable:before {
+      font-size: 1.1em;
+      margin-right: 6px;
+    }
+
+    &.available:before {
+      content: '\2713';
+      color: #357335;
+      font-weight: bold;
+    }
+
+    &.unavailable:before {
+      content: '\2716';
+      color: #a61717;
+    }
+  }
+
+  .hidden {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+}

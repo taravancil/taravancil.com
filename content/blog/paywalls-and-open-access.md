@@ -1,6 +1,7 @@
 ---
 title: Paywalls and Open Access
 date: 2013-05-21
+tags: [open access, information, academia]
 ---
 
 As a student at Central Michigan University, I am granted access to a multitude

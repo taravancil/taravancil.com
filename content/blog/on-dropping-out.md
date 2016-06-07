@@ -1,6 +1,8 @@
 ---
 title: On Dropping Out
 date: 2015-02-25
+tags: [college, university]
+categories: [personal]
 ---
 
 After leaving university in the spring semester of my senior year, I've

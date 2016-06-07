@@ -1,6 +1,8 @@
 ---
 title: Voice
 date: 2013-05-25
+tags: [monsanto, mcnair, protesting]
+categories: [personal]
 ---
 
 During an afternoon bike ride through downtown Mt. Pleasant, I found myself

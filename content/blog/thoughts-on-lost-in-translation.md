@@ -1,5 +1,7 @@
 ---
 title: Thoughts on Lost in Translation
+tags: [film, relationships]
+categories: [personal]
 date: 2013-09-22
 ---
 

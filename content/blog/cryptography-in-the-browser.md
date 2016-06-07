@@ -1,6 +1,8 @@
 ---
 title: Cryptography in the Browser
 date: 2015-04-22
+tags: [security, cryptography]
+categories: [technology]
 ---
 
 Yesterday I spoke at [AustinJS](http://austinjavascript.com) about in-browser

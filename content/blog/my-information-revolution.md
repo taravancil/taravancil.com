@@ -1,6 +1,7 @@
 ---
 title: My Information Revolution
 date: 2015-03-21
+categories: [personal]
 ---
 
 I grew up in a rural area, in a town with a population of < 300. In addition to

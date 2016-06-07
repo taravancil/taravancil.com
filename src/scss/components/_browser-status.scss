@@ -2,11 +2,12 @@
   font-size: .8em;
   padding: 1em;
 
-  &__items {
+  ul.status__items {
     @extend %flex-container;
     list-style: none;
     background: $black;
     color: $white;
+    margin-left: 0;
   }
 
   &__item {

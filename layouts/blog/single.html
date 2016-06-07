@@ -12,6 +12,12 @@
         <p class="post__meta">
           Posted on
           <span class="post__date">{{ .Date.Format "Jan 01, 2006" }}</span>
+          {{ if .Params.categories }}
+            in
+            {{ range .Params.categories }}
+              <a class="post__category" href="{{ . | urlize }}">{{ . }}</a>
+            {{ end }}
+          {{ end }}
         </p>
 
         <div class="post__content">
@@ -20,6 +26,8 @@
 
         {{ partial "tags.html" . }}
       </article>
+
+      {{ partial "pagination.html" . }}
 
     </div>
 

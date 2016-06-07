@@ -1,0 +1,13 @@
+<div class="pagination">
+  {{ if .Prev }}
+    <a href="{{ .Prev.Permalink }}" class="pagination__prev">
+      {{ .Prev.Title }}
+    </a>
+  {{ end }}
+
+  {{ if .Next }}
+    <a href="{{ .Next.Permalink }}" class="pagination__next">
+      {{ .Next.Title }}
+    </a>
+  {{ end }}
+</div>

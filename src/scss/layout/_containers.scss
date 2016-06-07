@@ -1,6 +1,6 @@
 .container {
   width: 95%;
-  max-width: 850px;
+  max-width: 650px;
   margin: auto;
 
   @include respond-to(contain-90) {

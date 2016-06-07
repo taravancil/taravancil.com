@@ -40,7 +40,7 @@ gulp.task('hugo-server', function() {
 });
 
 gulp.task('hugo-build', function() {
-    exec('hugo', function(stdout, stderr) {
+    exec('hugo --canonifyURLs=true', function(stdout, stderr) {
       console.log(stdout);
       console.log(stderr);
     });

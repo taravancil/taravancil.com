@@ -1,0 +1,38 @@
+.pagination {
+  @extend %flex-container;
+  @extend %accent-font;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: stretch;
+  margin-top: 1em;
+  font-size: .9em;
+  flex-wrap: wrap;
+
+  &__prev, &__next {
+    flex-grow: 1;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__prev {
+    text-align: left;
+
+    &:before {
+      display: inline-block;
+      content: '<<';
+      margin-right: .5em;
+    }
+  }
+
+  &__next {
+    text-align: right;
+
+    &:after {
+      display: inline-block;
+      content: '>>';
+      margin-left: .5em;
+    }
+  }
+}

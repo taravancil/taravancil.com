@@ -7,10 +7,14 @@ pre, code {
   border-radius: 1px;
 }
 
-pre, {
-  border-color: mix($color-secondary, $white, 20%);
-  background: mix($color-secondary, $white, 5%);
-  padding: .5em;
+.highlight, pre {
+  max-width: 600px;
+}
+pre {
+  background: $black;
+  padding: 1.5em;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 
 code {

@@ -205,17 +205,19 @@ Let's start out with a base policy that prohibits all scripts, fonts, styles,
 images, and more. Recall that the `default-src` directive applies sets a
 fallback policy for a whole bunch of other directives.
 
-    Content-Security-Policy: default-src 'none'
+``` javascript
+Content-Security-Policy: default-src 'none'
+```
 
 To build a more realistic policy, iterate on this by whitelisting all of the
 acceptable resources and content for the page. It's possible to be highly
 specific by listing specific URLs or to be broad by using a glob pattern.
 
-```
+``` javascript
 Content-Security-Policy:
     default-src 'none';
     img-src *.example.com;
-    script-src https://code.jquery.com `self`;
+    script-src https://code.jquery.com 'self';
     font-src *
 ```
 
@@ -239,7 +241,7 @@ which inline `<script>` and `<style>` elements were included intentionally.
 To whitelist an inline `<script>` or `<style>`, on each request the server
 should generate a random nonce and include it in the CSP header like so:
 
-```
+``` javascript
 Content-Security-Policy:
     script-src 'self' https://example.com 'nonce-SomeRandomValueHere'
 ```
@@ -255,7 +257,7 @@ listed in the CSP header, when the UA encounters inline code, it will calculate
 its hash. If the hash matches the value listed in the CSP header, it will
 execute.
 
-```
+``` javascript
 Content-Security-Policy:
     style-src 'self' 'sha256-base64EncodedHash'
 ```
@@ -469,11 +471,11 @@ For example, to request jQuery but verify its contents before execution,
 calculate the hash of the code for the desired version of jQuery, base64 encode
 it, and stick it in the `integrity` attribute like so.
 
-{% highlight html %}
+``` html
 <script src="https://code.jquery.com/jquery-2.1.4.js"
         integrity="sha256-siFczlgw4jULnUICcdm9gjQPZkw/YPDqhQ9+nAOScE4=
                    sha512-KMPrOyKoxZ63TdrHyYlRKwGX6eWGe98FYB65BWaH9E2GoE9VXY+Mmj3WKWwBTchwj64ZeDlYjEkN3A6uJyKQ==">
-{% endhighlight %}
+```
 
 All UAs that implement SRI support SHA-256, SHA-384, and SHA-512, and may
 support others. It is acceptable (wise, even) to list multiple values for the
@@ -731,25 +733,28 @@ allowed to contain query strings.
 
 An EPR policy might look something like this:
 
-    {
-      "epr": {
-        "redirectURL": "https://example.com/",
-        "navigationBehavior": "allowStrippedGET",
-        "subresourceBehavior": "allow",
-        "rules": [
-          {
-            "path": "/",
-            "types": ["navigational"],
-            "allowData": false
-          },
-          {
-            "path": "/image",
-             "types": [ "subresource" ],
-             "allowData": true
-          },
-        ]
-      }
-    }
+
+``` javascript
+{
+  "epr": {
+    "redirectURL": "https://example.com/",
+    "navigationBehavior": "allowStrippedGET",
+    "subresourceBehavior": "allow",
+    "rules": [
+      {
+        "path": "/",
+        "types": ["navigational"],
+        "allowData": false
+      },
+      {
+        "path": "/image",
+         "types": [ "subresource" ],
+         "allowData": true
+      },
+    ]
+  }
+}
+```
 
 Notice that there aren't many paths listed in this policy. That's OK, because if
 a path isn't listed, it will be restricted to the behavior listed for the type

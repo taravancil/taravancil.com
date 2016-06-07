@@ -103,8 +103,11 @@ do that.
 
 ###### Example
 
-{% highlight html %} <script src="https://cdn.lib.js"
-integrity="sha256-Sl0s0ljfwaef0...sjf9piWEjlafw"> </script> {% endhighlight %}
+``` html
+<script src="https://cdn.lib.js"
+        integrity="sha256-Sl0s0ljfwaef0...sjf9piWEjlafw">
+</script>
+```
 
 In this case the author specifies both the hash function (in this case,
 [SHA-256](http://www.w3.org/TR/SRI/#dfn-sha-2) and the expected digest of the

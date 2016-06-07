@@ -36,9 +36,13 @@ the extension, the alert was injected onto the malicious page as a node with
 `id="warning_banner"` and could easily be removed if the attacker who wrote the
 phishing page included the following snippet of code on the page.
 
-{% highlight javascript %} setInterval(function() {
-if(document.getElementById("warning_banner")) {
-document.getElementById("warning_banner").remove(); } }, 5); {% endhighlight %}
+``` javascript
+setInterval(function() {
+    if(document.getElementById("warning_banner")) {
+        document.getElementById("warning_banner").remove();
+    }
+}, 5);
+```
 
 Easy peasy, huh? You can see it here action
 [here](https://www.youtube.com/watch?v=HwEGYwCgqtk).

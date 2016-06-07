@@ -1,3 +1,5 @@
 baseurl = "https://taravancil.github.io"
 title = "Tara Vancil"
 pluralizelisttitles = false
+pygmentsstyle = "monokai"
+pygmentscodefences = true

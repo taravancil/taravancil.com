@@ -11,6 +11,7 @@
 
   &:hover {
     text-decoration: underline;
+    color: darken($color-text--link, 10%);
   }
 }
 
@@ -29,9 +30,9 @@
 }
 
 %module {
-  background: mix($color-secondary, $white, 20%);
-  border: 1px solid mix($color-secondary, $white, 40%);
+  background: mix($black, $white, 1%);
+  border: 1px solid mix($black, $white, 8%);
   padding: 1.5em 2em;
-  font-size: .9em;
+  font-size: .8em;
 }
 

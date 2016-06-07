@@ -828,11 +828,23 @@ of request it is.
 Status: First Public Working Draft [http://www.w3.org/TR/clear-site-data/](http://www.w3.org/TR/clear-site-data/)
 
 <div class="status">
-  <ul class="browsers">
-    <li class="unavailable">Chrome<span class="hidden">Unavailable</span></li>
-    <li class="unavailable">Firefox<span class="hidden">Unavailable</span></li>
-    <li class="unavailable">Edge<span class="hidden">Unavailable</span></li>
-    <li class="unavailable">Safari<span class="hidden">Unavailable</span></li>
+  <ul class="status__items">
+    <li class="status__item unavailable">
+      Chrome
+      <span class="hidden">Unavailable</span>
+    </li>
+    <li class="status__item unavailable">
+      Firefox
+      <span class="hidden">Unavailable</span>
+    </li>
+    <li class="status__item unavailable">
+      Edge
+      <span class="hidden">Unavailable</span>
+    </li>
+    <li class="status__item unavailable">
+      Safari
+      <span class="hidden">Unavailable</span>
+    </li>
   </ul>
 </div>
 

@@ -1,0 +1,35 @@
+.posts-list {
+  @extend %accent-font;
+  list-style: none;
+  margin: 1em 0;
+
+  .post__title {
+    display: inline-block;
+
+    &:hover {
+      color: $color-text--accent;
+    }
+  }
+
+  .post__meta {
+    border: 0;
+    display: inline-block;
+    margin: .3em .5em 0 0;
+  }
+
+  .post__date {
+    background: $black;
+    color: $white;
+    padding: .1em .4em;
+  }
+
+  a.all-posts {
+    display: block;
+    color: $color-text--accent;
+    margin-top: 1em;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

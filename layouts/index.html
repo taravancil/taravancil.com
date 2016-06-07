@@ -18,11 +18,14 @@
         </div>
       </div>
 
-      <div class="recent">
+      <h2>Recent Posts</h2>
+      <ul class="posts-list">
         {{ range first 10 .Data.Pages }}
           {{ .Render "li" }}
         {{ end }}
-      </div>
+
+        <a href="/blog" class="all-posts">All posts</a>
+      </ul>
     </div>
 
     {{ partial "footer.html" .}}

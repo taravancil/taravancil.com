@@ -99,9 +99,10 @@ actual confirmation that the scripts delivered to us are verified to be the
 scripts we expect. The proposed standards for subresource integrity can help us
 do that.
 
-##### The Integrity Attribute The subresource integrity standard introduces an
-##### `integrity` attribute for `<script>` elements which holds a cryptographic
-##### hash of the resource the UA expects to load.
+##### The Integrity Attribute
+
+The subresource integrity standard introduces an
+`integrity` attribute for `<script>` elements which holds a cryptographic hash of the resource the UA expects to load.
 
 ###### Example
 

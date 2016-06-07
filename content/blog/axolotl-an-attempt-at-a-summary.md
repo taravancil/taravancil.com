@@ -50,9 +50,9 @@ primer](https://www.slideshare.net/ChristineCorbettMora/axolotl-protocol-an-illu
 by [Christine Corbett Moran](http://www.christinecorbettmoran.com), the the
 Signal lead developer, helpful.
 
-## The Axolotl Ratchet Protocol - An Introduction The Axolotl Ratchet Protocol
-## is largely built upon [OTR](https://otr.cypherpunks.ca/)'s protocol which, in
-## addition to encrypting your messages, provides the following characteristics:
+## The Axolotl Ratchet Protocol
+
+The Axolotl ratchet protocol is largely built on [OTR](https://otr.cypherpunks.ca/)'s protocol which, in addition to encrypting your messages, provides the following characteristics:
 
 * Authentication: you can be confident that your conversation partner is who you
 * think it is. Deniability: at the conclusion of a conversation, anyone can

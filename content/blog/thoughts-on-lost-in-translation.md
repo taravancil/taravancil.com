@@ -14,7 +14,9 @@ while forbidden by their respective marriages, and sometimes uncomfortable to
 witness, is forged with their shared ennui, and begs viewers to question if they
 might someday enter their steady state of pale, muted emotion.
 
-> Charlotte: I just don't know what I'm supposed to be.  > Bob: You'll figure
+> Charlotte: I just don't know what I'm supposed to be.
+
+> Bob: You'll figure
 that out. The more you know who you are, and what you want, the less you let
 things upset you.
 

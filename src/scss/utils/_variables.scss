@@ -18,7 +18,8 @@ $color-secondary--light: #1ba3cc;
 // Text colors
 $color-text: $black;
 $color-text--accent: $color-primary;
-$color-text--link: $color-secondary;
+$color-text--link: darken($color-secondary, 5%);
+$color-text--accent-inline: darken($color-primary, 4.7%);
 
 // Background colors
 $color-bg: mix($color-primary, $white, 2%);

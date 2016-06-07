@@ -16,5 +16,9 @@
     color: $color-text--accent;
     display: inline-block;
     margin-right: 1.5em;
+
+    &:hover {
+      color: $color-text--accent;
+    }
   }
 }

@@ -1,5 +1,7 @@
 .footer {
   @extend %accent-font;
+  position: absolute;
+  bottom: 0;
   padding: 1.5em 0;
   width: 100%;
   margin-top: 2em;
@@ -11,7 +13,7 @@
 
   &__social-link {
     @extend %link;
-    color: $color-primary;
+    color: $color-text--accent;
     display: inline-block;
     margin-right: 1.5em;
   }

@@ -2,29 +2,25 @@ body {
   background: $color-bg;
 }
 
-pre, code {
-  border: 1px solid;
-  border-radius: 1px;
-}
-
 pre {
   background: $black;
   padding: 1.5em;
   white-space: pre-wrap;
   word-wrap: break-word;
+  font-size: .9em;
+  margin: 2em 0;
 }
 
 code {
-  border-color: mix($color-primary, $white, 15%);
-  background: mix($color-primary, $white, 3%);
-  color: mix($color-primary, $white, 95%);
-  padding: .1em .4em;
+  color: $color-text--accent-inline;
+  font-weight: 400;
+  padding: .1em .2em;
 }
 
 pre code {
+  color: inherit;
   border: none;
   background: none;
-  color: inherit;
 }
 
 dl {

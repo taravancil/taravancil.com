@@ -205,7 +205,7 @@ Let's start out with a base policy that prohibits all scripts, fonts, styles,
 images, and more. Recall that the `default-src` directive applies sets a
 fallback policy for a whole bunch of other directives.
 
-``` javascript
+``` nginx
 Content-Security-Policy: default-src 'none'
 ```
 
@@ -213,7 +213,7 @@ To build a more realistic policy, iterate on this by whitelisting all of the
 acceptable resources and content for the page. It's possible to be highly
 specific by listing specific URLs or to be broad by using a glob pattern.
 
-``` javascript
+``` nginx
 Content-Security-Policy:
     default-src 'none';
     img-src *.example.com;
@@ -241,7 +241,7 @@ which inline `<script>` and `<style>` elements were included intentionally.
 To whitelist an inline `<script>` or `<style>`, on each request the server
 should generate a random nonce and include it in the CSP header like so:
 
-``` javascript
+``` nginx
 Content-Security-Policy:
     script-src 'self' https://example.com 'nonce-SomeRandomValueHere'
 ```
@@ -257,7 +257,7 @@ listed in the CSP header, when the UA encounters inline code, it will calculate
 its hash. If the hash matches the value listed in the CSP header, it will
 execute.
 
-``` javascript
+``` nginx
 Content-Security-Policy:
     style-src 'self' 'sha256-base64EncodedHash'
 ```

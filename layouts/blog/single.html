@@ -1,36 +1,29 @@
 <!doctype html>
 <html>
   {{ partial "head.html" . }}
-
   <body>
-    {{ partial "header.html" . }}
-
     <div class="container">
-      <article class="post">
-        <h1>{{ .Title }}</h1>
-
-        <p class="post__meta">
-          Posted on
-          <span class="post__date">{{ .Date.Format "Jan 01, 2006" }}</span>
-          {{ if .Params.categories }}
-            in
-            {{ range .Params.categories }}
-              <a class="post__category" href="{{ . | urlize }}">{{ . }}</a>
+      {{ partial "header.html" . }}
+      <main>
+        <article class="main__content post">
+          <h1>{{ .Title }}</h1>
+          <p class="post__meta">
+            Posted on
+            <span class="post__date">{{ .Date.Format "Jan 01, 2006" }}</span>
+            {{ if .Params.categories }}
+              in
+              {{ range .Params.categories }}
+                <a class="post__category" href="/categories/{{ . | urlize }}">{{ . }}</a>
+              {{ end }}
             {{ end }}
-          {{ end }}
-        </p>
-
-        <div class="post__content">
-          {{ .Content }}
-        </div>
-
-        {{ partial "tags.html" . }}
-      </article>
-
-      {{ partial "pagination.html" . }}
-
+          </p>
+          <div class="post__content">
+            {{ .Content }}
+          </div>
+          {{ partial "tags.html" . }}
+        </article>
+        {{ partial "sidebar.html" . }}
+      </main>
     </div>
-
-    {{ partial "footer.html" .}}
   </body>
 </html>

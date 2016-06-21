@@ -1,13 +1,4 @@
 {
-  "name": "taravancil.github.io",
-  "version": "0.0.0",
-  "description": "Tara Vancil's personal site",
-  "main": "gulpfile.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/taravancil/taravancil.github.io"
-  },
-  "author": "Tara Vancil",
   "devDependencies": {
     "es6-promise": "^3.2.1",
     "gulp": "~3.9.1",

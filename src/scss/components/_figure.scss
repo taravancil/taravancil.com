@@ -9,5 +9,5 @@ figcaption {
   margin-top: 1em;
   padding: .5em 0;
   font-size: .8em;
-  color: lighten($color-text, 30%);
+  color: mix($white, $black, 45%);
 }

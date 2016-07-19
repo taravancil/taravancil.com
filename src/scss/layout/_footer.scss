@@ -1,22 +1,27 @@
 .footer {
-  @extend %accent-font;
-  padding: 1.5em 0;
-  width: 100%;
-  margin-top: 2em;
-
-  &__social-links {
-    display: inline-block;
-    font-size: .9em;
-  }
-
-  &__social-link {
-    @extend %link;
-    color: $color-text--accent;
-    display: inline-block;
-    margin-right: 1.5em;
+  background: $color-bg--footer;
+  min-height: 300px;
+  padding: 65px 0;
+  font-size: .9em;
+  
+  &__link {
+    list-style: none;
+    color: inherit;
+    border-bottom: 1px solid;
+    margin-bottom: 1em;
 
     &:hover {
-      color: $color-text--accent;
+      color: $color-text--link;
+    }
+  }
+  
+  .links {
+    list-style: none;
+    text-align: right;
+    float: right;
+
+    li {
+      margin-bottom: .5em;
     }
   }
 }

@@ -1,24 +1,23 @@
 .intro {
-  @extend %accent-font;
-  margin-bottom: 2em;
-
-  &__heading {
-    color: $color-text--accent;
-    font-size: 2.1em;
-  }
-
+  padding: .5em 0 3em 0;
+  font-size: 1.1em;
+  background: $color-bg--header;
+  
   &__blurb {
-    max-width: 500px;
-
     p {
-      margin: 1em 0;
+      line-height: 1.7;
     }
 
     a {
-      color: $color-primary;
-
+      @extend %transition;
+      transition-property: background;
+      color: $color-text--link;
+      border-bottom: 2px solid $color-text--link;
+      padding: 0 2px;
+      
       &:hover {
-        text-decoration: underline;
+        background: $color-text--link;
+        color: $white;
       }
     }
   }

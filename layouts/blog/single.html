@@ -2,14 +2,14 @@
 <html>
   {{ partial "head.html" . }}
   <body>
-    <div class="container">
-      {{ partial "header.html" . }}
-      <main>
+    {{ partial "header.html" . }}
+    <main class="main">
+      <div class="container">
         <article class="main__content post">
-          <h1>{{ .Title }}</h1>
+          <h1 class="post__title">{{ .Title }}</h1>
           <p class="post__meta">
             Posted on
-            <span class="post__date">{{ .Date.Format "Jan 01, 2006" }}</span>
+            <span class="post__date">{{ .Date.Format "January 01, 2006" }}</span>
             {{ if .Params.categories }}
               in
               {{ range .Params.categories }}
@@ -19,11 +19,11 @@
           </p>
           <div class="post__content">
             {{ .Content }}
+            {{ partial "tags.html" . }}
           </div>
-          {{ partial "tags.html" . }}
         </article>
-        {{ partial "sidebar.html" . }}
-      </main>
-    </div>
+      </div>
+    </main>
+    {{ partial "footer.html" . }}
   </body>
 </html>

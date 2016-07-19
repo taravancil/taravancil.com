@@ -9,7 +9,3 @@
     @warn "`#{$name}` does not exist in ``$breakpoints`."
   }
 };
-
-@mixin margin($top, $right: top, $bottom: $top, $left: $top) {
-  margin: $top, $right, $bottom, $left;
-};

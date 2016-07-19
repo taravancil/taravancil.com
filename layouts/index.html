@@ -4,30 +4,32 @@
 
   <body>
     {{ partial "header.html" . }}
-
-    <div class="container">
-      <div class="intro">
+    <div class="intro">
+      <div class="container">
         <h1 class="intro__heading">Hi. I'm Tara.</h1>
         <div class="intro__blurb">
           <p>
             I'm a software developer with an interest in security, privacy, and cryptography.
           </p>
           <p>
-            This is my personal blog where I write about boring personal and sometimes technical stuff. You can also find me on <a href="https://github.com/taravancil">Github</a> and <a href="https://twitter.com/tbvancil">Twitter</a>.
+            This is my personal blog where I sometimes write about technical stuff. I also maintain a <a href="/food">food journal</a>, where I loosely document my experience eating a ketogenic diet.</a>
+          </p>
+          <p>
+            You can also find me on <a href="https://github.com/taravancil">Github</a> and <a href="https://twitter.com/tbvancil">Twitter</a>.
           </p>
         </div>
       </div>
-
-      <h2>Recent Posts</h2>
-      <ul class="posts-list">
-        {{ range first 10 .Data.Pages }}
-          {{ .Render "li" }}
-        {{ end }}
-
-        <a href="/blog" class="all-posts">All posts</a>
-      </ul>
     </div>
-
-    {{ partial "footer.html" .}}
+    <main class="main home">
+      <div class="main__content container">
+        <h2>Recent Posts</h2>
+        <ul class="posts-list">
+          {{ range first 7 (where .Data.Pages "Section" "blog") }}
+            {{ .Render "li" }}
+          {{ end }}
+        </ul>
+      </div>
+    </main>
+    {{ partial "footer.html" . }}
   </body>
 </html>

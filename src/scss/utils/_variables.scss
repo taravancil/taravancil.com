@@ -1,25 +1,34 @@
 $breakpoints: (
   'show-cols-2': (min-width: 700px),
   'show-cols-3': (min-width: 800px),
-  'contain-90': (min-width: 600px),
-  'contain-70': (min-width: 950px),
+  'big-screen': (min-width: 850px),
+  'contain-90': (min-width: 650px),
   'expand-header-home': (min-width: 700px),
   'expand-footer': (min-width: 800px),
+  'expand-page': (min-width: 800px),
   'align-left': (min-width: 500px),
+  'show-sidebar': (min-width: 825px),
 );
 
 $black: #000;
 $white: #fff;
 
-$color-primary: #ff004b;
-$color-secondary: #0d8cb2;
-$color-secondary--light: #1ba3cc;
+$gray: #2f4858;
+$red: #f93943;
+$purple: #7b5e7b;
+$dark-purple: #1c0221;
+$seafoam: #9dcbba;
 
 // Text colors
-$color-text: $black;
-$color-text--accent: $color-primary;
-$color-text--link: darken($color-secondary, 5%);
-$color-text--accent-inline: darken($color-primary, 4.7%);
+$color-text: transparentize(mix($gray, $black), .15);
+$color-text--header: $color-text;
+$color-text--accent: mix($seafoam, $gray, 25%);
+$color-text--header--accent: mix($dark-purple, $red, 15%);
+$color-text--accent-inline: mix($red, $purple, 5%);
+$color-text--link: mix($dark-purple, $red, 15%);
+$color-text--meta: mix($gray, $seafoam, 30%);
 
 // Background colors
-$color-bg: mix($color-primary, $white, 2%);
+$color-bg--main: mix($seafoam, $white, 1%);
+$color-bg--header: mix($seafoam, $white, 20%);
+$color-bg--footer: mix($seafoam, $white, 20%);

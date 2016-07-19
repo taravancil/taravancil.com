@@ -3,3 +3,4 @@ title = "Tara Vancil"
 pluralizelisttitles = false
 category = "categories"
 tags = "tags"
+canonifyurls = true

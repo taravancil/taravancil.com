@@ -1,5 +1,5 @@
 ---
-title: The Power of People
+title: The power of people
 date: 2013-06-13
 tags: [mcnair]
 categories: [personal]

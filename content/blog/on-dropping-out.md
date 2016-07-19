@@ -1,5 +1,5 @@
 ---
-title: On Dropping Out
+title: On dropping out
 date: 2015-02-25
 tags: [college, university]
 categories: [personal]

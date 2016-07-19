@@ -1,5 +1,5 @@
 ---
-title: Axolotol, an Attempt at a Summary
+title: Axolotol, an attempt at a summary
 date: 2015-04-22
 tags: [encryption, cryptography, privacy, signal, axolotl]
 categories: [technology]

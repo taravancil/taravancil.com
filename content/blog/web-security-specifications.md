@@ -1,5 +1,5 @@
 ---
-title: Web Security Specifications You Should Know About
+title: Web security specifications you should know about
 date: 2015-09-04
 tags: [security, privacy, xss, csp]
 categories: [technology]
@@ -18,12 +18,14 @@ WebAppSec WG. Some are available cross-platform while others are in the most
 nascent stages.
 
 #### Features You Can Implement Today
+
 * [Content Security Policy](#content-security-policy)
 * [Mixed Content](#mixed-content)
 * [Upgrade Insecure Requests](#upgrade-insecure-requests)
-* [Subresource Integrity]({{ post.permalink }}#subresource-integrity)
+* [Subresource Integrity](#subresource-integrity)
 
 #### Not Yet Available
+
 * [Content Security Policy Pinning](#content-security-policy-pinning)
 * [Referrer Policy](#referrer-policy)
 * [Entry Point Regulation](#entry-point-regulation)
@@ -45,7 +47,6 @@ man in the middle (MITM)
 
 <h2 id="content-security-policy">Content Security Policy Level 2</h2>
 Status: Established Standard [http://www.w3.org/TR/CSP/](http://www.w3.org/TR/CSP/)
-
 <div class="status">
   <ul class="status__items">
     <li class="status__item available">
@@ -513,8 +514,7 @@ it, and stick it in the `integrity` attribute like so.
 
 ``` html
 <script src="https://code.jquery.com/jquery-2.1.4.js"
-        integrity="sha256-siFczlgw4jULnUICcdm9gjQPZkw/YPDqhQ9+nAOScE4=
-                   sha512-KMPrOyKoxZ63TdrHyYlRKwGX6eWGe98FYB65BWaH9E2GoE9VXY+Mmj3WKWwBTchwj64ZeDlYjEkN3A6uJyKQ==">
+        integrity="sha256-siFczlgw4jULnUICcdm9gjQPZkw/YPDqhQ9+nAOScE4=sha512-KMPrOyKoxZ63TdrHyYlRKwGX6eWGe98FYB65BWaH9E2GoE9VXY+Mmj3WKWwBTchwj64ZeDlYjEkN3A6uJyKQ=="></script>
 ```
 
 All UAs that implement SRI support SHA-256, SHA-384, and SHA-512, and may
@@ -895,10 +895,10 @@ contribute.
 
 If you have suggestions about how to improve any of these specifications,
 definitely chime in! It's an open process and there are a lot of different ways
-to get involved:
+to get involved.
 
-  * Sign up for and participate in the WebAppSec [mailing list](https://lists.w3.org/Archives/Public/public-webappsec/)
-  * Make an account on [Specifiction](http://discourse.wicg.io/t/welcome-to-specifiction/6) (a really welcoming platform for discussing web standards)
+  * Sign up for and participate in the [Webappsec mailing list](https://lists.w3.org/Archives/Public/public-webappsec/)
+  * [Make an account on Specifiction](http://discourse.wicg.io/t/welcome-to-specifiction/6) (a really welcoming platform for discussing web standards)
   * File an issue on the [WebAppSec Github repo](https://github.com/w3c/WebAppSec)
 
 Even if you don't have anything to say, you'll likely learn a lot by just

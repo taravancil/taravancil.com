@@ -1,5 +1,5 @@
 ---
-title: Success Is Whatever You Call It
+title: Success is whatever you call it
 date: 2013-06-16
 tags: [success, mcnair]
 categories: [personal]

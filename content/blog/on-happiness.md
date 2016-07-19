@@ -1,5 +1,5 @@
 ---
-title: On Happiness
+title: On happiness
 date: 2013-07-23
 tags: [happiness, mcnair]
 categories: [personal]

@@ -1,5 +1,5 @@
 ---
-title: Cryptography in the Browser
+title: Cryptography in the browser
 date: 2015-04-22
 tags: [security, cryptography]
 categories: [technology]

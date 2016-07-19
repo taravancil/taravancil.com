@@ -1,5 +1,5 @@
 ---
-title: Growth and Exploration, Dude
+title: Growth and exploration, dude
 date: 2013-05-16
 tags: [mcnair]
 categories: [personal]

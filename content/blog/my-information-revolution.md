@@ -1,5 +1,5 @@
 ---
-title: My Information Revolution
+title: My information revolution
 date: 2015-03-21
 categories: [personal]
 ---

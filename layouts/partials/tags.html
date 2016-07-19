@@ -1,7 +1,9 @@
-<ul class="tags">
+<aside class="tags">
+  <ul>
   {{ range .Params.tags }}
     <li class="tag">
       <a href="/tags/{{ . | urlize }}">#{{ . }}</a>
     </li>
   {{ end }}
-</ul>
+  </ul>
+</aside>

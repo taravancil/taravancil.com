@@ -2,9 +2,9 @@
 <html>
   {{ partial "head.html" . }}
   <body>
-    <div class="container">
-      {{ partial "header.html" . }}
-      <main>
+    {{ partial "header.html" . }}
+    <main class="main">
+      <div class="container">
         <div class="main__content">
           <h1>{{ .Title }}</h1>
 
@@ -17,8 +17,8 @@
             </ul>
           {{ end }}
         </div>
-        {{ partial "sidebar.html" . }}
-      </main>
-    </div>
+      </div>
+    </main>
+    {{ partial "footer.html" . }}
   </body>
 </html>

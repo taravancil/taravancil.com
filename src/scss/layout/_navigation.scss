@@ -1,25 +1,24 @@
 .nav {
-  @extend %accent-font;
-  padding: .4em 0;
+  height: 75px;
+  vertical-align: middle;
+  line-height: 70px;
+  font-size: 1.1em;
+  float: right;
 
   &__items {
     @extend %flex-container;
-    justify-content: right;
+    list-style: none;
   }
 
   &__item {
-    @extend %transition;
-    transition-property: color;
-    margin-right: 2em;
-    display: inline-block;
-    padding: .2em;
+    margin-right: 3em;
 
     &--last {
       margin-right: 0;
     }
-
+    
     &:hover {
-      color: $color-primary;
+      text-decoration: underline;
     }
   }
 }

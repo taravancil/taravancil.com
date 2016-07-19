@@ -1,10 +1,17 @@
 ## Development
 
-`npm install` gets the dependencies.
+```
+npm install
+```
 
-`gulp` builds the `.scss` files, watches for changes in `src/scss/**/*.scss`
-and `.html` files in `public/`, and starts the Hugo development server.
+then
 
-### Building the site with Hugo
+```
+npm start
+```
 
-`hugo` builds the site into `public/`. See `hugo -h` for a full set of options.
+then open `localhost:1313`.
+
+### Building the site
+
+`hugo` builds the site into `public/`. See `hugo -h` for more options.

@@ -1,20 +1,27 @@
 .tags {
-  list-style: none;
-  font-size: .8em;
-  color: mix($color-text, $color-secondary--light, 10%);
+  padding-top: 1em;
+  font-size: .9em;
+
+  ul {
+    margin: 0;
+  }
 }
+
 .tag {
-  @extend %transition;
-  transition-property: border-color;
+  list-style: none;
   display: inline-block;
   margin-right: .5em;
-  background: mix($color-secondary, $white, 10%);
-  border: 1px solid;
-  border-color: mix($color-secondary, $white, 20%);
+  border-radius: 2px;
+  background: $color-text;
+  color: transparentize($white, .1);
   padding: .2em .5em;
 
   &:hover {
     cursor: pointer;
-    border-color: inherit;
+    background: lighten($color-text, 5%);
+  }
+
+  a {
+    color: inherit;
   }
 }

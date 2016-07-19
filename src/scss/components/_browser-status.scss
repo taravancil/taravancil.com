@@ -1,13 +1,13 @@
 .status {
   font-size: .8em;
-  padding: 1em;
 
   ul.status__items {
     @extend %flex-container;
     list-style: none;
     background: $black;
     color: $white;
-    margin-left: 0;
+    margin: 1em 0;
+    padding-top: .2em;
   }
 
   &__item {

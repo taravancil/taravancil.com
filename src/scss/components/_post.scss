@@ -1,40 +1,32 @@
 .post {
-
-  h2, h3, h4, h5, h6 {
-    margin: 1em 0;
-  }
-
-  h2, h4, h6 {
-    text-decoration: underline;
-  }
-
-  h3, h5 {
-    color: $color-text--accent;
-  }
-
-  h5 {
-    font-size: 1em;
-  }
-
-  li {
+  h1.post__title {
+    line-height: 1.2;
     margin-bottom: .5em;
   }
 
+  &__meta {
+    font-style: italic;
+    padding-bottom: .5em;
+    font-size: .9em;
+    color: transparentize($color-text, .2);
+    border-bottom: 1px dotted
+    transparentize($color-text, .5);
+  }
+
+  &__category {
+    @extend %link;
+  }
+
   &__content {
-    margin: 1em 0 3em 0;
+    font-size: 1em;
+    margin: 2em auto 0 auto;
+
+    img {
+      max-width: 100%;
+    }
 
     p {
       text-align: justify;
-      margin: 1.3em 0;
-    }
-
-    ul {
-      @extend %formatted-list;
-    }
-
-    a {
-      @extend %link;
-      text-decoration: underline;
     }
 
     @include respond-to(align-left) {
@@ -44,15 +36,19 @@
     }
   }
 
-  &__meta {
-    @extend %accent-font;
-    margin: 1.5em 0 2em 0;
-    padding-bottom: .5em;
-    font-size: .9em;
-    border-bottom: 1px solid $black;
+  a {
+    @extend %link;
   }
 
-  &__category {
-    color: $color-text--accent;
+  h2 {
+    color: $color-text;
+  }
+
+  blockquote {
+    border-left: transparentize($color-text, .3) 2px solid;
+    padding-left: 15px;
+    font-style: italic;
+    font-size: 1.2em;
+    color: transparentize($color-text, .3);
   }
 }

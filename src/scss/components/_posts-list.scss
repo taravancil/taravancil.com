@@ -1,35 +1,27 @@
 .posts-list {
-  @extend %accent-font;
-  list-style: none;
-  margin: 1em 0;
+  li {
+    list-style: none;
+  }
 
   .post__title {
     display: inline-block;
-
+    
     &:hover {
-      color: $color-text--accent;
+      color: $gray;
+      text-decoration: underline;
     }
   }
 
   .post__meta {
     border: 0;
     display: inline-block;
-    margin: .3em .5em 0 0;
+    margin: .3em 1em 0 0;
+    font-style: normal;
+    font-size: .9em;
   }
+}
 
-  .post__date {
-    background: $black;
-    color: $white;
-    padding: .1em .4em;
-  }
-
-  a.all-posts {
-    display: block;
-    color: $color-text--accent;
-    margin-top: 1em;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
+ul.posts-list {
+  margin: 0;
+  padding: 0;
 }

@@ -1,27 +1,30 @@
 .footer {
-  background: $color-bg--footer;
-  min-height: 300px;
-  padding: 65px 0;
-  font-size: .9em;
-  
-  &__link {
-    list-style: none;
-    color: inherit;
-    border-bottom: 1px solid;
-    margin-bottom: 1em;
+    padding: 1em 0;
+    color: blue;
+    border-top: 1px dotted;
+    margin-top: 2em;
 
-    &:hover {
-      color: $color-text--link;
-    }
-  }
-  
-  .links {
-    list-style: none;
-    text-align: right;
-    float: right;
+    &__link {
+        list-style: none;
+        color: inherit;
+        margin-bottom: 1em;
 
-    li {
-      margin-bottom: .5em;
+        &:hover {
+            text-decoration: underline;
+        }
     }
-  }
+
+    .links {
+        @extend %flex-container;
+        list-style: none;
+
+        li {
+            margin: 0 1em;
+            margin-bottom: .5em;
+        }
+
+        li:first-child {
+            margin-left: 0;
+        }
+    }
 }

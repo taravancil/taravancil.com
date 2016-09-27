@@ -1,5 +1,20 @@
 .header {
-  color: $color-text--header;
-  background: $color-bg--header;
-  height: 75px;
+    margin: 2em 0;
+
+    a {
+        color: blue;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .name {
+        font-size: 2em;
+        font-style: italic;
+    }
+
+    .tagline {
+        margin: .25em 0;
+     }
 }

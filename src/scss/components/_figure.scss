@@ -1,12 +1,12 @@
 figure {
-  margin: 2em 0;
+    margin: 2em 0;
 }
 
 figcaption {
-  border-top: 1px solid mix($black, $white, 20%);
-  border-bottom: 1px solid mix($black, $white, 20%);
-  margin-top: 1em;
-  padding: .5em 0;
-  font-size: .8em;
-  color: mix($white, $black, 45%);
+    border-top: transparentize(black, .5);
+    border-bottom: transparentize(black, .5);
+    margin-top: 1em;
+    padding: .5em 0;
+    font-size: .8em;
+    color: mix(white, black, 45%);
 }

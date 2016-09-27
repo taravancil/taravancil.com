@@ -5,19 +5,19 @@
 
   .post__title {
     display: inline-block;
-    
+
     &:hover {
-      color: $gray;
       text-decoration: underline;
     }
   }
 
   .post__meta {
+      font-family: 'Helvetica Neue', helvetica, sans-serif;
     border: 0;
     display: inline-block;
     margin: .3em 1em 0 0;
     font-style: normal;
-    font-size: .9em;
+    font-size: .85em;
   }
 }
 

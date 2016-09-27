@@ -2,28 +2,32 @@
 <html>
   {{ partial "head.html" . }}
   <body>
-    {{ partial "header.html" . }}
-    <main class="main">
-      <div class="container">
+    <div class="container">
+    {{ partial "header.html" }}
+      <main class="main">
         <article class="main__content post">
           <h1 class="post__title">{{ .Title }}</h1>
           <p class="post__meta">
             Posted on
-            <span class="post__date">{{ .Date.Format "January 01, 2006" }}</span>
+            <span class="post__date">
+              {{ .Date.Format "January 01, 2006" }}
+            </span>
+
             {{ if .Params.categories }}
-              in
-              {{ range .Params.categories }}
-                <a class="post__category" href="/categories/{{ . | urlize }}">{{ . }}</a>
-              {{ end }}
+            in
+            {{ range .Params.categories }}
+            <a class="post__category" href="/categories/{{ . | urlize}}">{{ . }}</a>
             {{ end }}
+          {{ end }}
           </p>
+
           <div class="post__content">
             {{ .Content }}
-            {{ partial "tags.html" . }}
+            {{ partial "tags.html" }}
           </div>
         </article>
+      </main>
+      {{ partial "footer.html" . }}
       </div>
-    </main>
-    {{ partial "footer.html" . }}
   </body>
 </html>

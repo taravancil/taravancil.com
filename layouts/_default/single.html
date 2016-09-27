@@ -2,17 +2,13 @@
 <html>
   {{ partial "head.html" . }}
   <body>
-    {{ partial "header.html" . }}
+    {{ partial "header.html" }}
+    <div class="grid">
     <main class="main">
-      <div class="container">
-        <article class="main__content post">
-          <h1>{{ .Title }}</h1>
-          <div class="post__content">
-            {{ .Content }}
-          </div>
-        </article>
-      </div>
+      <h1>{{ .Title }}</h1>
+      {{ .Content }}
     </main>
+
     {{ partial "footer.html" . }}
   </body>
 </html>

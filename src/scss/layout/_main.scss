@@ -1,11 +1,4 @@
 .main {
-  @extend %flex-container;
-  flex-wrap: wrap;
-  width: 100%;
-  background: $color-bg--main;
-  padding: 2em 0 3.5em 0;
-  min-height: calc(100vh - 275px);
-
   &__content {
     ul {
       @extend %formatted-list;

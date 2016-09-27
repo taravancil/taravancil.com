@@ -2,19 +2,19 @@
 <html>
   {{ partial "head.html" . }}
   <body>
-    {{ partial "header.html" . }}
-    <main class="main">
-      <div class="container">
+    <div class="container">
+      {{ partial "header.html" . }}
+      <main class="main">
         <article class="main__content post">
           <h1>Page Not Found </h1>
           <div class="post__content">
             <p>
               Sorry, that page doesn't exist.</p>
-            </p>
-          </div>
-        </article>
-      </div>
-    </main>
-    {{ partial "footer.html" . }}
-  </body>
+</p>
+</div>
+</article>
+</main>
+{{ partial "footer.html" . }}
+</div>
+</body>
 </html>

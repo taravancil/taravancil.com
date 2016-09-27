@@ -8,9 +8,9 @@
     font-style: italic;
     padding-bottom: .5em;
     font-size: .9em;
-    color: transparentize($color-text, .2);
+    color: transparentize(black, .2);
     border-bottom: 1px dotted
-    transparentize($color-text, .5);
+    transparentize(black, .5);
   }
 
   &__category {
@@ -28,27 +28,17 @@
     p {
       text-align: justify;
     }
-
-    @include respond-to(align-left) {
-      p {
-        text-align: left;
-      }
-    }
   }
 
   a {
     @extend %link;
   }
 
-  h2 {
-    color: $color-text;
-  }
-
   blockquote {
-    border-left: transparentize($color-text, .3) 2px solid;
+    color: transparentize(black, .3);
+    border-left: 2px solid;
     padding-left: 15px;
     font-style: italic;
     font-size: 1.2em;
-    color: transparentize($color-text, .3);
   }
 }

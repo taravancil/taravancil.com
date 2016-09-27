@@ -4,8 +4,8 @@
   ul.status__items {
     @extend %flex-container;
     list-style: none;
-    background: $black;
-    color: $white;
+    background: black;
+    color: white;
     margin: 1em 0;
     padding-top: .2em;
   }

@@ -8,17 +8,17 @@
 }
 
 .tag {
+  color: blue;
   list-style: none;
   display: inline-block;
   margin-right: .5em;
-  border-radius: 2px;
-  background: $color-text;
-  color: transparentize($white, .1);
+  border: 1px solid blue;
   padding: .2em .5em;
 
   &:hover {
-    cursor: pointer;
-    background: lighten($color-text, 5%);
+      cursor: pointer;
+      background: blue;
+      color: white;
   }
 
   a {

@@ -1,24 +1,24 @@
 .highlight {
-  max-width: 500px;
+    max-width: 500px;
 }
 
 pre {
-  @extend %module;
-  padding: 1.5em 2em;
-  color: $color-text--accent;
-  white-space: pre-wrap;
-  word-wrap: break-word;
+    @extend %module;
+    padding: 1.5em 2em;
+    white-space: pre-wrap;
+    word-wrap: break-word;
 }
 
 code {
-  color: $color-text--accent-inline;
-  padding: .1em .2em;
-  font-size: 1.2em;
+    border-radius: 1px;
+    background: mix(lime, white, 12%);
+    padding: .1em .2em;
+    font-size: 1em;
 }
 
 pre code {
-  color: inherit;
-  border: none;
-  background: none;
-  font-size: 1em;
+    color: inherit;
+    border: none;
+    background: none;
+    font-size: 1em;
 }

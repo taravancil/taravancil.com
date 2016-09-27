@@ -29,6 +29,7 @@ gulp.task('build-scss', function() {
 gulp.task('minify-html', function() {
     return gulp.src('public/**/*.html')
         .pipe(minifyHtml({collapseWhitespace: true}))
+        .pipe(gulp.dest('public'))
 });
 
 gulp.task('hugo-server', function() {

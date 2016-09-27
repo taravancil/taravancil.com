@@ -1,7 +1,7 @@
 .container {
   width: 95%;
   margin: auto;
-  max-width: 750px;
+  max-width: 550px;
 
   @include respond-to(contain-90) {
     width: 85%;

@@ -4,3 +4,4 @@ pluralizelisttitles = false
 category = "categories"
 tags = "tags"
 canonifyurls = true
+builddrafts = false

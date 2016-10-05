@@ -1,9 +1,11 @@
+{{ if .Params.tags }}
+{{ with .Params.tags }}
 <aside class="tags">
-  <ul>
-  {{ range .Params.tags }}
-    <li class="tag">
-      <a href="/tags/{{ . | urlize }}">#{{ . }}</a>
-    </li>
-  {{ end }}
-  </ul>
+  Tags:
+  {{ $sort := sort . }}
+  {{ $links := apply $sort "partial" "tag" "." }}
+  {{ $clean := apply $links "chomp" "." }}
+  {{ delimit $clean ", " }}
 </aside>
+{{ end }}
+{{ end }}

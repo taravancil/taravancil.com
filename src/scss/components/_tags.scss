@@ -1,24 +1,9 @@
 .tags {
-  padding-top: 1em;
-  font-size: .9em;
+    padding-top: 1em;
+    font-weight: bold;
+    font-size: .9em;
 
-  ul {
-    margin: 0;
-  }
-}
-
-.tag {
-  color: blue;
-  list-style: none;
-  display: inline-block;
-
-  &:hover {
-      cursor: pointer;
-      background: blue;
-      color: white;
-  }
-
-  a {
-    color: inherit;
-  }
+    a {
+        font-weight: normal;
+    }
 }

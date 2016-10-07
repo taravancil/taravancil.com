@@ -6,7 +6,7 @@ categories: [recurse center]
 ---
 
 I'm reimplementing [my cryptopals
-solutions](/https://github.com/taravancil/cryptopals/tree/master/python)
+solutions](https://github.com/taravancil/cryptopals/tree/master/python)
 in Python, and today I worked a challenge that required me to
 calculate the Hamming distance between two equal-length
 strings. Hamming distance is a measure of difference - it indicates

@@ -1,21 +1,17 @@
 .header {
-   font-size: 1.2em;
-    margin: 2em 0;
+  font-size: 1.2em;
+  margin: 2em 0;
 
-    a {
-        color: blue;
+  a {
+    color: blue;
+  }
 
-        &:hover {
-            text-decoration: underline;
-        }
-    }
+  .name {
+    font-size: 2em;
+    font-style: italic;
+  }
 
-    .name {
-        font-size: 2em;
-        font-style: italic;
-    }
-
-    .tagline {
-        margin: .25em 0;
-     }
+  .tagline {
+    margin: .25em 0;
+  }
 }

@@ -9,10 +9,6 @@
 
   &__prev, &__next {
     flex-grow: 1;
-
-    &:hover {
-      text-decoration: underline;
-    }
   }
 
   &__prev {

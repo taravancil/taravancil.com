@@ -1,7 +1,14 @@
 .main {
   &__content {
-    ul {
-      @extend %formatted-list;
+
+    p a,
+    h1 a,
+    h2 a,
+    h3 a,
+    h4 a,
+    h5 a,
+    h6 a {
+      @extend %link;
     }
 
     ul li, ol li {

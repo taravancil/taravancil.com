@@ -20,9 +20,14 @@ body.home {
       z-index: -1;
       user-select: none;
 
+      @media (min-width: 700px) {
+        width: 900px;
+        height: 900px;
+      }
+
       @media (min-width: 1000px) {
-        width: 1500px;
-        height: 1500px;
+        width: 1300px;
+        height: 1300px;
       }
     }
   }

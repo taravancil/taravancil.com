@@ -1,0 +1,16 @@
+<li class="post-summary">
+  <div class="metadata">
+    <time datetime="{{ .Date }}">
+      {{ .Date.Format "2006-01-02" }}
+    </time>
+  </div>
+
+  <a href="{{ .RelPermalink }}" class="title">
+    {{ .Title }}
+  </a>
+
+  <p>
+    {{ .Summary }}
+  </p>
+  <a href="{{ .RelPermalink }}" class="more">Read more</a>
+</li>

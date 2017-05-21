@@ -21,21 +21,36 @@
             </p>
 
             <!-- TODO -->
+          </div>
 
+          <div class="links">
+            <a href="/about">About me</a>
+            <a href="/work">My work</a>
+            <a href="/blog">Blog</a>
           </div>
         </div>
 
         <img class="shapes" src="/images/shapes.svg" />
       </div>
 
-	      <h2>Posts</h2>
-	      <ul class="posts-list">
-	        {{ range (where .Data.Pages "Section" "blog") }}
-	        {{ .Render "li" }}
-	        {{ end }}
-	      </ul>
-      </main>
-      {{ partial "footer.html" . }}
-    }
+      <div class="recent-activity">
+        <div class="container">
+          <div class="posts">
+  	        <h2>Recent posts</h2>
+  	        <ul class="posts-list">
+    	        {{ range first 3 (where .Data.Pages "Section" "blog") }}
+                {{ partial "post-summary.html" . }}
+    	        {{ end }}
+    	      </ul>
+          </div>
+
+          <div class="talks">
+            <h2>Talks</h2>
+          </div>
+        </div>
+      </div>
+
+    </main>
+    {{ partial "footer.html" . }}
   </body>
 </html>

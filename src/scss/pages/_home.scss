@@ -2,6 +2,7 @@ body.home {
 
   .hero {
     padding: 2em 0;
+    padding-bottom: 2.3em;
     position: relative;
     border-bottom: 2px solid;
     border-top: 2px solid;
@@ -20,19 +21,19 @@ body.home {
       user-select: none;
 
       @media (min-width: 1000px) {
-        width: 1000px;
-        height: 1000px;
+        width: 1500px;
+        height: 1500px;
       }
     }
   }
 
   h1 {
-    font-weight: 700;
+    font-weight: 500;
     font-size: 3rem;
     line-height: 1;
     padding: 0;
     margin-top: 0;
-    margin-bottom: .5em;
+    margin-bottom: 2rem;
 
     @media (min-width: 600px) {
       font-size: 3.5rem;
@@ -50,14 +51,14 @@ body.home {
 
   .intro {
     font-family: Rubik; // TODO
-    margin: 1em 0;
+    margin-bottom: 2rem;
     position: relative;
     max-width: 550px;
     font-size: .9rem;
 
     @media (min-width: 600px) {
       font-size: .95rem;
-      padding: .5em;
+      padding-left: .5rem;
     }
 
     @media (min-width: 1000px) {
@@ -67,6 +68,45 @@ body.home {
     a {
       // @extend %link; // TODO
       text-decoration: underline;
+    }
+  }
+
+  .links {
+
+    @media (min-width: 600px) {
+      padding-left: .5rem;
+    }
+
+    a {
+      padding: .25em .5em;
+      margin-right: .5em;
+      border: 2px solid;
+      background: $color-bg;
+
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+
+  .recent-activity {
+
+    .container {
+      @extend %flex-container;
+      flex-direction: column;
+    }
+
+    @media (min-width: 800px) {
+      flex-direction: row;
+
+      .posts {
+        flex: 2;
+      }
+    }
+
+    .talks,
+    .posts {
+      flex: 1;
     }
   }
 }

@@ -1,3 +1,64 @@
 .footer {
-  @extend %flex-container;
+  @extend %antialiased;
+  background: $color-text;
+  padding: 3em 0;
+  color: $color-bg;
+  text-align: center;
+
+  .name {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  .links {
+    display: block;
+  }
+
+  li {
+    padding: 5px 0;
+    border-top: 1px solid transparentize($color-bg, .5);
+    width: 100%;
+    display: block;
+    cursor: pointer;
+
+    &.name {
+      border: 0;
+    }
+
+    &:last-child {
+      border-bottom: 1px solid transparentize($color-bg, .5);
+    }
+
+    &:hover {
+      // text-decoration: underline;
+      background: transparentize($color-bg, .75);
+    }
+  }
+
+  @media (min-width: 600px) {
+    text-align: left;
+
+    .links {
+      display: inline-block;
+      max-width: 200px;
+      margin-right: 50px;
+      vertical-align: top;
+    }
+
+    .name {
+      margin-left: -.25rem;
+    }
+
+    li {
+      padding: 0;
+      border: 0 !important;
+
+      &:hover {
+        background: none;
+        text-decoration: underline;
+      }
+    }
+  }
 }

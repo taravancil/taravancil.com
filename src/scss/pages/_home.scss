@@ -1,0 +1,72 @@
+body.home {
+
+  .hero {
+    padding: 2em 0;
+    position: relative;
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+
+    .container {
+      position: relative;
+    }
+
+    .shapes {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 700px;
+      height: 700px;
+      z-index: -1;
+      user-select: none;
+
+      @media (min-width: 1000px) {
+        width: 1000px;
+        height: 1000px;
+      }
+    }
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: .5em;
+
+    @media (min-width: 600px) {
+      font-size: 3.5rem;
+    }
+  }
+
+  .first-name,
+  .last-name {
+    display: block;
+
+    @media (min-width: 600px) {
+      display: inline-block;
+    }
+  }
+
+  .intro {
+    font-family: Rubik; // TODO
+    margin: 1em 0;
+    position: relative;
+    max-width: 550px;
+    font-size: .9rem;
+
+    @media (min-width: 600px) {
+      font-size: .95rem;
+      padding: .5em;
+    }
+
+    @media (min-width: 1000px) {
+      font-size: 1rem;
+    }
+
+    a {
+      // @extend %link; // TODO
+      text-decoration: underline;
+    }
+  }
+}

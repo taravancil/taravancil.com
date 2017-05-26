@@ -1,9 +1,22 @@
 (function () {
   var expandBtns = document.querySelectorAll('.click-to-expand')
+  var thumbnails = document.querySelectorAll('.thumbnails img')
 
   expandBtns.forEach(function (el) {
     el.onclick = function () {
       expandProject(el.dataset.project)
+    }
+  })
+
+  thumbnails.forEach(function (img) {
+    img.onclick = function () {
+      var parentContainer = img.closest('.project')
+      var activeScreenshot = parentContainer.querySelector('.img-container.ss img')
+      var newScreenshotSrc = img.src.replace('-thumbnail.jpg', '.png')
+      var newThumbnailSrc = activeScreenshot.src.replace('.png', '-thumbnail.jpg')
+
+      activeScreenshot.src = newScreenshotSrc
+      img.src = newThumbnailSrc
     }
   })
 

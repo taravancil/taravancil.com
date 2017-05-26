@@ -1,0 +1,19 @@
+title: 'Hashbase'
+id: hashbase
+summary:
+  ''
+description:
+  ''
+screenshots:
+  - hashbase
+  - hashbase2
+  - hashbase3
+  - hashbase4
+links:
+  - hashbase.io
+  - github.com/beakerbrowser/hypercloud-hashbase-ui
+  - github.com/datproject/hypercloud
+technologies:
+  - Electron
+  - Node
+  - Javascript

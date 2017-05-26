@@ -1,0 +1,16 @@
+title: 'Nippler'
+id: nippler
+summary:
+  ''
+description:
+  ''
+screenshots:
+  - nippler
+  - nippler2
+links:
+  - nippler.org
+  - github.com/taravancil/nippler.org
+technologies:
+  - Electron
+  - Node
+  - Javascript

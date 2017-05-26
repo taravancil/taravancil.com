@@ -1,0 +1,18 @@
+title: 'beakerbrowser.com'
+id: beaker-website
+summary:
+  ''
+description:
+  ''
+screenshots:
+  - beaker-website
+  - beaker-website2
+  - beaker-website3
+  - beaker-website4
+  - beaker-website5
+links:
+  - beakerbrowser.com
+  - github.com/beakerbrowser/beakerbrowser.com
+technologies:
+  - Node
+  - Javascript

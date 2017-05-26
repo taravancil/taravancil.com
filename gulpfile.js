@@ -58,6 +58,7 @@ gulp.task('hugo-build', function() {
 
 gulp.task('watch', function() {
     gulp.watch('src/scss/**/*.scss', ['build-scss']);
+    gulp.watch('src/js/*', ['build-js']);
 });
 
 gulp.task('default', ['build-scss', 'build-js', 'watch', 'hugo-server']);

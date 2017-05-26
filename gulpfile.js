@@ -7,6 +7,8 @@ var minifyHtml   = require('gulp-htmlmin');
 var notification = require('gulp-notify');
 var exec         = require('child_process').exec;
 var plumber      = require('gulp-plumber');
+var uglify       = require('gulp-uglify');
+var pump         = require('pump');
 
 gulp.task('build-scss', function() {
     var onError = function(err) {
@@ -32,6 +34,14 @@ gulp.task('minify-html', function() {
         .pipe(gulp.dest('public'))
 });
 
+gulp.task('build-js', function () {
+    pump([
+        gulp.src('src/js/*'),
+        uglify(),
+        gulp.dest('static/js')
+    ])
+})
+
 gulp.task('hugo-server', function() {
     exec('hugo server', function(stdout, stderr) {
         console.log(stdout);
@@ -50,5 +60,5 @@ gulp.task('watch', function() {
     gulp.watch('src/scss/**/*.scss', ['build-scss']);
 });
 
-gulp.task('default', ['build-scss', 'watch', 'hugo-server']);
+gulp.task('default', ['build-scss', 'build-js', 'watch', 'hugo-server']);
 gulp.task('build', ['hugo-build', 'minify-html']);

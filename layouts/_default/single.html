@@ -1,14 +1,14 @@
 <!doctype html>
 <html>
   {{ partial "head.html" . }}
-  <body>
-    {{ partial "header.html" }}
-    <div class="grid">
-    <main class="main">
-      <h1>{{ .Title }}</h1>
-      {{ .Content }}
-    </main>
-
+  <body class="post">
+    {{ partial "nav.html" }}
+    <div class="container">
+      <main>
+        <h1>{{ .Title }}</h1>
+        {{ .Content }}
+      </main>
+    </div>
     {{ partial "footer.html" . }}
   </body>
 </html>

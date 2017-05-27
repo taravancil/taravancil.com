@@ -1,16 +1,15 @@
 <li class="post-summary">
+  <h3 class="title">
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  </h3>
+
   <div class="metadata">
     <time datetime="{{ .Date }}">
-      {{ .Date.Format "2006-01-02" }}
+      Posted on {{ .Date.Format "Jan 02, 2006" }}
     </time>
   </div>
 
-  <a href="{{ .RelPermalink }}" class="title">
-    {{ .Title }}
-  </a>
-
-  <p>
-    {{ .Summary }}
+  <p class="summary">
+    {{ .Summary }} <a href="{{ .RelPermalink }}" class="more">Read more &raquo;</a>
   </p>
-  <a href="{{ .RelPermalink }}" class="more">Read more</a>
 </li>

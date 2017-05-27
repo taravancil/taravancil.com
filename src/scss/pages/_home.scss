@@ -107,6 +107,20 @@ body.home {
 
     .posts {
       margin-bottom: 2rem;
+
+      .posts-list {
+        margin-top: 2rem;
+      }
+
+      > .more {
+        display: block;
+        margin-top: 1.5rem;
+        text-decoration: underline;
+
+        &:hover {
+          color: $red;
+        }
+      }
     }
 
     .container {
@@ -130,7 +144,7 @@ body.home {
     }
 
     .talks-list,
-    .posts-list {
+    .recent-posts-list {
       margin-top: 2rem;
     }
 

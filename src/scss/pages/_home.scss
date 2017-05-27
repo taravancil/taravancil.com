@@ -142,9 +142,10 @@ body.home {
 
       h3 {
         font-size: 1rem;
+        text-decoration: underline;
 
         &:hover {
-          text-decoration: underline;
+          color: $red;
         }
       }
 

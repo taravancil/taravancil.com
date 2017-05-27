@@ -1,13 +1,13 @@
-<div class="post post--summary">
-  <h2 class="post__title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-  <div class="post__meta">
-    <span class="post__date">{{ .Date.Format "2006-01-02" }}</span>
-    <div class="post__tags"></div>
+<div class="post post-summary">
+  <h2 class="title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+  <div class="meta">
+    <span class="date">{{ .Date.Format "2006-01-02" }}</span>
+    <div class="tags"></div>
   </div>
 
-  <div class="post__content">
+  <div class="content">
     {{ .Summary }}
   </div>
 
-  <a href="{{ .Permalink }}" class="post__more">&gt&gt Read more</a>
+  <a href="{{ .RelPermalink }}" class="more">&gt&gt Read more</a>
 </div>

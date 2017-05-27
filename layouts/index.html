@@ -37,19 +37,117 @@
         <div class="container">
           <div class="posts">
   	        <h2>Recent posts</h2>
-  	        <ul class="posts-list">
-    	        {{ range first 3 (where .Data.Pages "Section" "blog") }}
+  	        <ul class="recent-posts-list">
+    	        {{ range first 1 (where .Data.Pages "Section" "blog") }}
                 {{ partial "post-summary.html" . }}
     	        {{ end }}
+            </ul>
+
+            <ul class="posts-list">
+              {{ range (first 3 (after 1 (where .Data.Pages "Section" "blog") )) }}
+                {{ .Render "li" }}
+              {{ end }}
     	      </ul>
+            <a class="more" href="/blog">All posts &raquo;</a>
           </div>
 
           <div class="talks">
             <h2>Talks</h2>
+            <ul class="talks-list">
+              {{ range sort $.Site.Data.talks ".weight" }}
+                <li>
+                  <h3>
+                    <a href="{{ .link }}">{{ .title }}</a>
+                  </h3>
+                  <span>{{ .event }}</span>
+                  —
+                  <time datetime="{{ .date }}">{{ .date }}</time>
+
+                  <span class="links">
+                    {{ if .slides }}
+                      <a class="slides" href="{{ .slides }}">Slides</a>
+                    {{ end }}
+
+                    {{ if and .video .slides }}
+                      <span> | </span>
+                    {{ end }}
+
+                    {{ if .video }}
+                      <a class="video" href="{{ .video }}">Video</a>
+                    {{ end }}
+                  </span>
+                </li>
+              {{ end }}
+            </ul>
           </div>
         </div>
       </div>
 
+      <div id="projects" class="projects">
+        <div class="container">
+          <h2>My projects</h2>
+
+          <ul class="projects-list">
+            {{ range $.Site.Data.projects }}
+              {{ if .screenshots }}
+                <li id="{{ .id }}" class="project">
+                  <h3 class="title">{{ .title }}</h3>
+
+                  <div data-project="{{ .id }}" class="img-container ss click-to-expand">
+                    <img src="/images/{{ index .screenshots 0 }}.png" />
+                  </div>
+
+                  <div class="thumbnails">
+                    {{ range after 1 .screenshots }}
+                      <div class="img-container">
+                        <img data-src="{{ . }}" src="/images/{{ . }}-thumbnail.jpg" />
+                      </div>
+                    {{ end }}
+                  </div>
+
+                  <div class="desc">
+                    {{ .description | markdownify }}
+                  </div>
+
+                  <div class="summary">
+                    {{ .summary | markdownify }}
+                  </div>
+
+                  <p class="links">
+                    <ul class="links-list">
+                      {{ range .links }}
+                        <li>
+                          <a href="https://{{ . }}">{{ . }}</a>
+                        </li>
+                      {{ end }}
+                    </ul>
+                  </p>
+
+                  <span data-project="{{ .id }}" class="more click-to-expand">
+                    More +
+                  </span>
+
+                  <span data-project="{{ .id }}" class="less click-to-close">
+                    Close -
+                  </span>
+                </li>
+              {{ else }}
+                <li class="project list-item">
+                  <h3 class="title">{{ .title }}</h3>
+                  <p class="desc">{{ .description | markdownify }}</p>
+                  <ul class="links-list">
+                    {{ range .links }}
+                      <li>
+                        <a href="https://{{ . }}">{{ . }}</a>
+                      </li>
+                    {{ end }}
+                  </ul>
+                </li>
+              {{ end }}
+            {{ end }}
+          </ul>
+        </div>
+      </div>
     </main>
     {{ partial "footer.html" . }}
     <script src="/js/projects.js"></script>

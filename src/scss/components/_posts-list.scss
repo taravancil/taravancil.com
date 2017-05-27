@@ -3,15 +3,14 @@
   li {
     margin-bottom: 5px;
     font-size: .9rem;
-    height: 20px;
-    line-height: 20px;
+    height: 25px;
+    line-height: 25px;
     vertical-align: middle;
 
     * {
       display: inline-block;
-      height: 20px;
+      height: 25px;
       vertical-align: middle;
-      line-height: middle;
     }
   }
 
@@ -33,6 +32,7 @@
     display: inline-block;
     margin-right: 5px;
     font-style: italic;
+    width: 90px;
   }
 }
 

@@ -6,3 +6,9 @@ body {
   text-rendering: optimizeLegibility;
   color: $color-text;
 }
+
+%antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+}

@@ -1,10 +1,10 @@
 <li>
-  <div class="post__meta">
-    <span class="post__date">
+  <div class="meta">
+    <span class="date">
       {{ .Date.Format "2006-01-02" }}
     </span>
   </div>
-  <a href="{{ .Permalink }}" class="post__title">
+  <a href="{{ .RelPermalink }}" class="title">
     {{ .Title }}
   </a>
 </li>

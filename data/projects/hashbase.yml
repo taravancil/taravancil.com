@@ -1,9 +1,15 @@
 title: 'Hashbase'
 id: hashbase
 summary:
-  ''
-description:
-  ''
+  A service for rehosting files on the peer-to-peer Web.
+description: |
+  Hashbase is a service for rehosting files published with Dat,
+  a peer-to-peer data syncing protocol.
+
+  Hashbase is the counterpart to Beaker and Dat — because Dat archives are hosted
+  directly from the user’s device and by peers on the network, files are not
+  download-able if no peers are actively hosting them. Hashbase acts as a
+  “super peer” guaranteeing uptime and availability.
 screenshots:
   - hashbase
   - hashbase2
@@ -11,8 +17,8 @@ screenshots:
   - hashbase4
 links:
   - hashbase.io
-  - github.com/beakerbrowser/hypercloud-hashbase-ui
-  - github.com/datproject/hypercloud
+  - github.com/beakerbrowser/hypercloud-ui-hashbase
+  - github.com/datprotocol/hypercloud
 technologies:
   - Electron
   - Node

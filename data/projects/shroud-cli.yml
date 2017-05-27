@@ -1,0 +1,7 @@
+title: Shroud CLI
+description: |
+  Shroud CLI is a command line interface for managing passwords and other,
+  secrets like recovery codes and password reset questions.
+links:
+  - github.com/taravancil/shroud-cli
+  - npmjs.com/package/shroud-cli

@@ -1,16 +1,15 @@
 title: 'Nippler'
 id: nippler
 summary:
-  ''
+  A satirical tool for replacing female nipples in photos.
 description:
   ''
 screenshots:
   - nippler
   - nippler2
 links:
-  - nippler.org
+  - nippler-taravancil.hashbase.io
   - github.com/taravancil/nippler.org
 technologies:
-  - Electron
   - Node
   - Javascript

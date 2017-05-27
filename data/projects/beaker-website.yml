@@ -1,9 +1,12 @@
 title: 'beakerbrowser.com'
 id: beaker-website
-summary:
-  ''
-description:
-  ''
+summary: |
+  The website and documentation for the Beaker browser.
+description: |
+  The website and documentation for the Beaker browser.
+
+  With[@pfrazee](https://twitter.com/pfrazee), I designed and built the
+  website for Beaker.
 screenshots:
   - beaker-website
   - beaker-website2

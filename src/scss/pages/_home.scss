@@ -181,31 +181,73 @@ body.home {
 
   .projects-list {
     @extend %flex-container;
+    margin-top: 2rem;
 
     .project {
       width: 100%;
-      padding: 2rem 0;
+      padding: 1rem;
+      margin-bottom: 2rem;
       font-size: .85rem;
+      border: 1px solid $color-text;
+      position: relative;
 
-      @media (min-width: 975px) {
-        width: 400px;
+      @media (min-width: 550px) {
+
+        .thumbnails {
+          display: inline-block;
+          width: 130px;
+          margin-top: 0;
+        }
+
+        .img-container.ss {
+          width: 300px;
+          margin-right: 5px;
+        }
+      }
+
+      &.list-item {
+
+        .desc {
+          display: block !important;
+        }
+
+        .links-list {
+          margin-bottom: 0;
+        }
+      }
+
+      @media (min-width: 850px) {
+        width: 345px;
+        margin-right: 2rem;
+
+        .thumbnails {
+          display: block;
+          margin-top: 5px;
+        }
+
+        .img-container.ss {
+          width: 100%;
+        }
+      }
+
+      @media (min-width: 1130px) {
+        width: 468px;
         margin-right: 2rem;
 
         .thumbnails {
           display: inline-block;
-          width: 190px;
+          margin-top: 0;
         }
 
         .img-container.ss {
-          width: 200px;
-          margin-right: 5px;
+          width: 290px;
         }
       }
     }
 
     .project.active {
       width: 100%;
-      border-bottom: 1px solid #ddd;
+      max-width: 850px;
 
       .img-container.ss {
         width: 100%;
@@ -228,7 +270,7 @@ body.home {
         display: none;
       }
 
-      .description {
+      .desc {
         display: block;
       }
 
@@ -241,8 +283,20 @@ body.home {
       }
     }
 
-    .description {
+    .title {
+      margin-top: 0;
+      margin-bottom: 1.5rem;
+      border-bottom: 1px dotted;
+    }
+
+    .summary,
+    .desc {
+      margin-top: 1.5rem;
+    }
+
+    .desc {
       display: none;
+      max-width: 600px;
     }
 
     .more,
@@ -254,6 +308,9 @@ body.home {
       padding: 3px 8px;
       font-size: .85rem;
       font-weight: 500;
+      position: absolute;
+      bottom: 1rem;
+      left: 1rem;
 
       &:hover {
         text-decoration: underline;
@@ -345,9 +402,16 @@ body.home {
     .links-list {
       list-style: disc;
       margin-left: 20px;
+      margin-bottom: 3rem;
+      display: block;
 
-      li:hover {
-        color: $red;
+      li {
+        text-decoration: underline;
+
+        &:hover {
+          color: $red;
+          text-decoration: underline;
+        }
       }
     }
   }

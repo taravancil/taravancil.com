@@ -1,19 +1,38 @@
 .posts-list {
+
   li {
-    list-style: none;
+    margin-bottom: 5px;
+    font-size: .9rem;
+    height: 20px;
+    line-height: 20px;
+    vertical-align: middle;
+
+    * {
+      display: inline-block;
+      height: 20px;
+      vertical-align: middle;
+      line-height: middle;
+    }
   }
 
-  .post__title {
+  .title {
     display: inline-block;
+    max-width: calc(100% - 100px);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-decoration: underline;
+
+    &:hover {
+      color: $red;
+    }
   }
 
-  .post__meta {
-      font-family: 'Helvetica Neue', helvetica, sans-serif;
+  .meta {
     border: 0;
     display: inline-block;
-    margin: .3em 1em 0 0;
-    font-style: normal;
-    font-size: .85em;
+    margin-right: 5px;
+    font-style: italic;
   }
 }
 

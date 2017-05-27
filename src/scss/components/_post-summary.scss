@@ -1,10 +1,37 @@
-.post--summary {
-  margin: 1.5em 0;
+.post-summary {
+  max-width: 700px;
 
+  &:not(:last-child) {
+    margin-bottom: 1.5irem;
+  }
+
+  .metadata {
+    font-size: .8rem;
+    font-style: italic;
+    display: block;
+  }
+
+  .title {
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
+
+    &:hover {
+
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .summary {
+    margin: 1rem 0;
+  }
+
+  .more {
+    text-decoration: underline;
+
+    &:hover {
+      color: $red;
+    }
+  }
 }
-
-.post__more {
-  @extend %link;
-  text-align: right;
-}
-

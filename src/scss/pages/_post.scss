@@ -1,23 +1,44 @@
-.post {
-  h1.post__title {
+body.post {
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    border-bottom: none;
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 500;
+  }
+
+  main {
+    position: relative;
+
+    p,
+    ul {
+      font-family: 'Helvetica Neue', Helvetica, arial, sans-serif;
+    }
+  }
+
+  .title {
     line-height: 1.2;
+    font-size: 1.5rem;
+    margin-top: 0;
     margin-bottom: .5em;
   }
 
-  &__meta {
+  .meta {
     font-style: italic;
     padding-bottom: .5em;
     font-size: .9em;
     color: transparentize(black, .2);
-    border-bottom: 1px dotted
-    transparentize(black, .5);
   }
 
-  &__category {
+  .category {
     @extend %link;
   }
 
-  &__content {
+  .content {
     font-size: 1em;
     margin: 2em auto 0 auto;
 
@@ -25,13 +46,9 @@
       max-width: 100%;
     }
 
-    p {
-      text-align: justify;
+    a {
+      @extend %link;
     }
-  }
-
-  a {
-    @extend %link;
   }
 
   blockquote {

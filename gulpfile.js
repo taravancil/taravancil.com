@@ -62,4 +62,4 @@ gulp.task('watch', function() {
 });
 
 gulp.task('default', ['build-scss', 'build-js', 'watch', 'hugo-server']);
-gulp.task('build', ['hugo-build', 'minify-html']);
+gulp.task('build', ['hugo-build']);

@@ -1,5 +1,5 @@
 <div class="post post-summary">
-  <h2 class="title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+  <h2 class="title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
   <div class="meta">
     <span class="date">{{ .Date.Format "2006-01-02" }}</span>
     <div class="tags"></div>
@@ -9,5 +9,5 @@
     {{ .Summary }}
   </div>
 
-  <a href="{{ .RelPermalink }}" class="more">&gt&gt Read more</a>
+  <a href="{{ .URL }}" class="more">&gt&gt Read more</a>
 </div>

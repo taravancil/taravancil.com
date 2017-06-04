@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <pattern id="stripes" width="5" height="5" patternTransform="rotate(63.5 0 0)" patternUnits="userSpaceOnUse">
+    <line x1="0" y1="0" x2="0" y2="5" style="stroke:black; stroke-width:3" />
+  </pattern>
+  <polygon points="900,0 1000,0 1000,400 100,400" fill="url(#stripes)"/>
+</svg>

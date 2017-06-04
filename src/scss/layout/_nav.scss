@@ -1,0 +1,55 @@
+.nav {
+  height: 80px;
+  font-size: 1rem;
+  padding: .75em 0;
+
+  .container {
+    @extend %flex-container;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include respond-to(vertical-tablet) {
+      justify-content: flex-end;
+
+      .nav-item {
+        padding: 0 1.25em;
+
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+
+  .name {
+    width: 100%;
+    font-size: 1.7rem;
+    font-weight: 500;
+    border-bottom: 2px solid $color-text;
+
+    @media (min-width: 800px) {
+      font-size: 2.75rem;
+    }
+
+    &:hover {
+      color: $red;
+    }
+  }
+
+  .nav-items {
+    padding: .5em .15em;
+  }
+
+  .nav-item {
+    // letter-spacing: .5px;
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-right: 1em;
+    }
+
+    &:hover {
+      text-decoration: underline; // TODO: @extend link
+    }
+  }
+}

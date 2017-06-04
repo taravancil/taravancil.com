@@ -1,7 +1,7 @@
 .container {
   width: 95%;
   margin: auto;
-  max-width: 1100px;
+  max-width: 600px;
 
   @include respond-to(contain-90) {
     position: relative;

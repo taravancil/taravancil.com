@@ -1,0 +1,13 @@
+main {
+  min-height: calc(100vh - 450px);
+  margin: 3rem 0;
+  position: relative;
+
+  @media (min-width: 800px) {
+    margin: 6rem 0;
+  }
+}
+
+body.home main {
+  margin: 0;
+}

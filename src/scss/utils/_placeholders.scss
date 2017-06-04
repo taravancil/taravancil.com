@@ -12,11 +12,7 @@
 }
 
 %link {
-    color: blue;
-
-  &:hover {
-    text-decoration: underline;
-  }
+  text-decoration: underline; // TODO
 }
 
 %transition {

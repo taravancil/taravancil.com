@@ -1,48 +1,48 @@
 dl {
-    @extend %module;
+  @extend %module;
 }
 
 dt {
-    font-weight: bold;
+  font-weight: bold;
 
-    &:after {
-        content: ':';
-    }
+  &:after {
+    content: ':';
+  }
 }
 
 dd {
-    margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    margin: .5em 0;
+  margin: .5em 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: normal;
+  font-weight: normal;
 }
 
 h1 {
-    font-size: 1.65em;
+  font-size: 2rem;
 }
 
 h2 {
-    font-size: 1.5em;
+  font-size: 1.7rem;
 }
 
 h3 {
-    font-size: 1.3em;
+  font-size: 1.3rem;
 }
 
 h4 {
-    font-size: 1.2em;
-    border-bottom: 1px dotted;
+  font-size: 1.2rem;
+  border-bottom: 1px dotted;
 }
 
 h6 {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 h5, h6 {
-    font-size: 1.1em;
+  font-size: 1rem;
 }

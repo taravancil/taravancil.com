@@ -2,12 +2,30 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>
-    {{ if .Title }}{{ .Title }} | {{ end }}
+    {{ if ne .Title "Tara Vancil" }}{{ .Title }} &bull; {{ end }}
     {{ .Site.Title }}
   </title>
-  <link rel="canonical" href="{{ .Permalink }}" />
+
+  <!-- open graph -->
+  <meta property="og:url" content="https://taravancil.com{{ .Permalink }}">
+
+  <meta property="og:type" content="website">
+
+  <meta property="twitter:site" content="@taravancil">
+
+  <meta property="og:title" content="{{ .Title }}">
+  <meta name="twitter:title" content="{{ .Title }}">
+
+  <meta property="og:description" content="Tara Vancil is a programmer and
+  decentralized Web enthusiast in Austin, TX.">
+  <meta name="twitter:description" content="Tara Vancil is a programmer and
+  decentralized Web enthusiast in Austin, TX.">
+
+  <meta name="twitter:card" content="summary">
+
+  <link rel="canonical" href="{{ .URL }}" />
   <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Rubik:400,500,700">
   <link rel="stylesheet" href="/css/style.min.css" />
-  <link rel="icon" href="https://taravancil.com/favicon2.ico">
+  <link rel="icon" href="/favicon3.ico">
 </head>

@@ -3,8 +3,8 @@
   {{ partial "head.html" . }}
 
   <body>
+    {{ partial "nav.html" }}
     <div class="container">
-    {{ partial "header.html" }}
       <main>
 	      <h1>Tags &raquo {{ .Title }}</h1>
 	      <ul class="posts-list">
@@ -13,7 +13,7 @@
 	        {{ end }}
 	      </ul>
       </main>
-      {{ partial "footer.html" . }}
     </div>
+    {{ partial "footer.html" . }}
   </body>
 </html>

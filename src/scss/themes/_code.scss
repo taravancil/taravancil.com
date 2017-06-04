@@ -1,23 +1,28 @@
 .highlight {
-    max-width: 500px;
+  max-width: 500px;
+}
+
+pre,
+code {
+  font-family: Consolas, 'Lucida console', monaco, monospace;
+  font-size: .85rem;
+  font-weight: 500;
 }
 
 pre {
-    @extend %module;
-    padding: 1.5em 2em;
-    white-space: pre-wrap;
-    word-wrap: break-word;
+  @extend %module;
+  padding: 1.5em 2em;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 
 code {
-    background: mix(gray, white, 12%);
-    padding: .1em .2em;
-    font-size: 1em;
+  background: mix(gray, white, 12%);
+  padding: .1em .2em;
 }
 
 pre code {
-    color: inherit;
-    border: none;
-    background: none;
-    font-size: 1em;
+  color: inherit;
+  border: none;
+  background: none;
 }

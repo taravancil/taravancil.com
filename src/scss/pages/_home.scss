@@ -36,6 +36,14 @@ body.home {
     }
   }
 
+  a.more {
+    text-decoration: underline;
+
+    &:hover {
+      color: $red;
+    }
+  }
+
   h1 {
     font-weight: 500;
     font-size: 3rem;
@@ -119,11 +127,6 @@ body.home {
       > .more {
         display: block;
         margin-top: 1.5rem;
-        text-decoration: underline;
-
-        &:hover {
-          color: $red;
-        }
       }
     }
 

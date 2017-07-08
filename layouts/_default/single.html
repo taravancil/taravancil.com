@@ -6,7 +6,9 @@
     <div class="container">
       <main>
         <h1>{{ .Title }}</h1>
-        {{ .Content }}
+        <div class="content">
+          {{ .Content }}
+        </div>
       </main>
     </div>
     {{ partial "footer.html" . }}

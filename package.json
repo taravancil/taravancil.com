@@ -14,7 +14,8 @@
     "pump": "^1.0.2"
   },
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "build": "hugo"
   },
   "author": "Tara Vancil <tbvanc@gmail.com>"
 }

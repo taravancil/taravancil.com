@@ -1,7 +1,6 @@
-baseurl = "https://taravancil.com"
 title = "Tara Vancil"
 pluralizelisttitles = false
 category = "categories"
 tags = "tags"
-canonifyurls = true
+canonifyurls = false
 builddrafts = false

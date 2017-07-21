@@ -2,7 +2,6 @@ body.post {
 
   h1 {
     font-size: 2rem;
-    font-weight: 500;
     line-height: 1.2;
   }
 
@@ -12,11 +11,11 @@ body.post {
 
   h2 {
     font-size: 1.45rem;
-    font-weight: 500;
   }
 
   h3 {
     font-size: 1.1rem;
+    font-weight: 400;
     border-bottom: 1px dotted;
   }
 
@@ -24,11 +23,6 @@ body.post {
     border-bottom: none;
     text-transform: uppercase;
     font-size: .95rem;
-    font-weight: 500;
-  }
-
-  h5 {
-    font-weight: 500;
   }
 
   main {

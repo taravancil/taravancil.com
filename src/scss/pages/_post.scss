@@ -2,12 +2,32 @@ body.post {
 
   h1 {
     font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  h2,h3,h4,h5 {
+    margin-top: 2.25rem;
+  }
+
+  h2 {
+    font-size: 1.45rem;
+    font-weight: 500;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    border-bottom: 1px dotted;
   }
 
   h4 {
     border-bottom: none;
     text-transform: uppercase;
-    font-size: .9rem;
+    font-size: .95rem;
+    font-weight: 500;
+  }
+
+  h5 {
     font-weight: 500;
   }
 
@@ -15,16 +35,11 @@ body.post {
     position: relative;
 
     p,
-    ul {
-      font-family: 'Helvetica Neue', Helvetica, arial, sans-serif;
+    ul,
+    ol,
+    table {
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     }
-  }
-
-  .title {
-    line-height: 1.2;
-    font-size: 1.5rem;
-    margin-top: 0;
-    margin-bottom: .5em;
   }
 
   .meta {
@@ -39,8 +54,8 @@ body.post {
   }
 
   .content {
-    font-size: 1em;
-    margin: 2em auto 0 auto;
+    font-size: .95rem;
+    margin: 1rem auto 0 auto;
 
     img {
       max-width: 100%;

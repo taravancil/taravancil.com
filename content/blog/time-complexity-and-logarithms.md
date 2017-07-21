@@ -42,7 +42,7 @@ examples 1 and 4 are actually the same expression just represested differently.
 
 ## Big O Notation Refresher
 
-**You can skip this if you're already comfortable with Big O Notation**
+*(You can skip this if you're already comfortable with Big O Notation)*
 
 When evaluating an algorithm, it's often helpful to think about how it
 will scale as the number of inputs (n) increases toward infinity. A

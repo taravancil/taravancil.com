@@ -16,7 +16,7 @@ There are two powerful centralizing forces that affect how the Web works today:
 
 We'll address them in turn.
 
-### The server problem
+### 1. The server problem
 
 If you want to host files on the Web, you need a server. But running your
 own server is both expensive and burdensome, so most people don't run their
@@ -26,7 +26,7 @@ service dedicated to providing reliable and affordable hosting.
 Sure, these services are cheap and convenient, but since the barrier to entry
 for self-hosting content is so high, a lot of content ends up being concentrated on the infrastructure of a handful of hosting providers.
 
-### Host-based addressing
+### 2. Host-based addressing
 
 The Web currently uses a host-based addressing model to provide unique names
 for pieces on content, and it's imperfect at best. Consider a situation where

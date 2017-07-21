@@ -115,6 +115,7 @@ body.home {
       background: $color-text;
       color: $color-bg;
       display: inline;
+      font-weight: 500;
     }
 
     .posts {
@@ -153,6 +154,10 @@ body.home {
     .talks-list,
     .recent-posts-list {
       margin-top: 2rem;
+
+      p {
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      }
     }
 
     .talks {
@@ -191,7 +196,7 @@ body.home {
   }
 
   .projects {
-    padding-bottom: 3rem;
+    margin-bottom: 100px;
 
     h2 {
       @extend %antialiased;
@@ -202,6 +207,7 @@ body.home {
       background: $color-text;
       color: $color-bg;
       display: inline;
+      font-weight: 500;
     }
   }
 

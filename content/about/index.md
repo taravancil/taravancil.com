@@ -7,10 +7,12 @@ Hi. I'm Tara. I'm co-founder of Blue Link Labs, the team that builds [Beaker](ht
 a peer-to-peer Web browser, and [Hashbase](https://hashbase.io),
 a cloud peer service for files hosted with the Dat protocol.
 
-Before Blue Link Labs, I worked at Cloudflare where I helped build their [Apps platform](https://cloudflare.com/apps/), and before that I spent time at the [Recurse Center](https://recurse.com), an amazing community for programmers.
+Before Blue Link Labs, I worked at Cloudflare, where I helped build their [Apps platform](https://cloudflare.com/apps/), and before that I spent time at the [Recurse Center](https://recurse.com), an amazing community for programmers.
 
 I'm passionate about re-decentralizing the Web.
 
 ## Stay in touch
 
 I'm @taravancil on [Twitter](https://twitter.com/taravancil), [GitHub](https://github.com/taravancil), [Instagram](https://instagram.com/taravancil) and pretty much everywhere else.
+
+I hang out in #beakerbrowser and #dat on freenode. Drop by and say hello!

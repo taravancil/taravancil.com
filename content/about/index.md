@@ -11,6 +11,11 @@ Before Blue Link Labs, I worked at Cloudflare, where I helped build their [Apps 
 
 I'm passionate about re-decentralizing the Web.
 
+## Support my work
+
+The best way to support my work is to sign up for [Hashbase
+Pro](https://hashbase.io/pricing)! Alternatively, you can support Beaker on [OpenCollective](https://opencollective.com/beaker).
+
 ## Stay in touch
 
 I'm @taravancil on [Twitter](https://twitter.com/taravancil), [GitHub](https://github.com/taravancil), [Instagram](https://instagram.com/taravancil) and pretty much everywhere else.

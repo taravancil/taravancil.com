@@ -2,12 +2,14 @@
 layout: single
 title: About
 ---
+Hi. I'm Tara. I'm co-founder of [Blue Link Labs](https://bluelinklabs.com), the team behind
+[Beaker](https://beakerbrowser.com), a peer-to-peer Web browser, and
+[Hashbase](https://hashbase.io), a cloud peer service for files hosted with the
+[Dat protocol](https://github.com/datproject/dat).
 
-Hi. I'm Tara. I'm co-founder of Blue Link Labs, the team that builds [Beaker](https://beakerbrowser.com),
-a peer-to-peer Web browser, and [Hashbase](https://hashbase.io),
-a cloud peer service for files hosted with the Dat protocol.
-
-Before Blue Link Labs, I worked at Cloudflare, where I helped build their [Apps platform](https://cloudflare.com/apps/), and before that I spent time at the [Recurse Center](https://recurse.com), an amazing community for programmers.
+Before starting Blue Link Labs, I worked at Cloudflare, where I helped build
+their [Apps platform](https://cloudflare.com/apps/), and before that I spent
+time at the [Recurse Center](https://recurse.com), an amazing community for programmers.
 
 I'm passionate about re-decentralizing the Web.
 

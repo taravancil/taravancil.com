@@ -58,7 +58,17 @@ body.post {
     a {
       @extend %link;
     }
+
+    ul {
+      list-style: disc;
+      margin-bottom: 20px;
+      margin-left: 40px;
+
+    li {
+      margin-bottom: 4px;
+    }
   }
+ }
 
   blockquote {
     color: transparentize(black, .3);

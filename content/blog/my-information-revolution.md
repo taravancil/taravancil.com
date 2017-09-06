@@ -72,12 +72,12 @@ how it was acceptable for publicly-funded research to not only be entirely
 inaccessible to the people who paid for it, let alone universities who pay for
 it twice over.
 
-So I wrote [this]() short essay about my feelings on the subject, and in the
-process learned about Aaron Swartz's efforts, and the heartbreaking end to his
-life's work. I was enraged, and I entered my senior year of college with a foul
-taste in my mouth, left behind by what I had learned about the status of
-academic research and publishing. Call it a major case of senioritis if you
-will, but I had zero motivation to graduate.
+So I wrote [this](/blog/paywalls-and-open-access) short essay about my feelings
+on the subject, and in the process learned about Aaron Swartz's efforts, and the
+heartbreaking end to his life's work. I was enraged, and I entered my senior
+year of college with a foul taste in my mouth, left behind by what I had
+learned about the status of academic research and publishing. Call it a major
+case of senioritis if you will, but I had zero motivation to graduate.
 
 By the beginning of the spring semester of my senior year, it was abundantly
 clear that I did not want to graduate - I started skipping almost all of my

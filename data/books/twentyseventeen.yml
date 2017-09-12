@@ -1,0 +1,18 @@
+books:
+  - title: The Food Lab
+    author: J. Kenji López-Alt
+    link: https://www.amazon.com/gp/product/1133607160/ref=as_li_tl?ie=UTF8&tag=taravancil-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=1133607160&linkId=6301227483499f43667b738186658fd4
+  - title: Code, the Hidden Language of Computer Hardware and Software
+    author: Charles Petzold
+    link: https://www.amazon.com/gp/product/0735611319/ref=as_li_tl?ie=UTF8&tag=taravancil-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=0735611319&linkId=dd2a5be9dbcff25b71349d8326f83599
+    recommend: true
+  - title: On Writing, a Memoir of the Craft
+    author: Stephen King
+    link: https://www.amazon.com/gp/product/B009BDVD2Q/ref=as_li_tl?ie=UTF8&tag=taravancil-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B009BDVD2Q&linkId=6b23be8d49f4eb6bb9fac97e8568cc5c
+    recommend: true
+  - title: Drive, the Surprising Truth About What Motivates Us
+    author: Daniel H. Pink
+    link:
+  - title: The Gift of Fear
+    author: Gavin De Becker
+    link: https://www.amazon.com/gp/product/0440508835/ref=as_li_tl?ie=UTF8&tag=taravancil-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=0440508835&linkId=23a592042eb74ebace98d9dcf19164d2

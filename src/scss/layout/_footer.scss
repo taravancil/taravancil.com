@@ -14,6 +14,10 @@
 
   .links {
     display: block;
+
+    &.external li:first-of-type {
+      border-top: 0;
+    }
   }
 
   li {

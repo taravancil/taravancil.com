@@ -6,7 +6,7 @@
     {{ partial "nav.html" }}
     <div class="container">
       <main>
-	      <h1>Blog</h2>
+	      <h1>Blog</h1>
 	      <ul class="posts-list">
 	        {{ range (where .Data.Pages "Section" "blog") }}
 	        {{ .Render "li" }}

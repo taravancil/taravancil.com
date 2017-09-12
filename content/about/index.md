@@ -11,6 +11,9 @@ Before starting Blue Link Labs, I worked at Cloudflare, where I helped build
 their [Apps platform](https://cloudflare.com/apps/), and before that I spent
 time at the [Recurse Center](https://recurse.com), an amazing community for programmers.
 
+I grew up in [rural northern Michigan](https://en.wikipedia.org/wiki/Wolverine,_Michigan),
+but I currently reside in Austin, TX.
+
 I'm passionate about re-decentralizing the Web.
 
 ## Support my work

@@ -2,7 +2,6 @@
 title: Axolotol, an attempt at a summary
 date: 2015-04-22
 tags: [encryption, cryptography, privacy, signal, axolotl]
-categories: [technology]
 ---
 
 After [Zooko](https://www.twitter.com/zooko) introduced me to TextSecure/Signal

@@ -2,7 +2,6 @@
 title: "Recurse Center Day 4: Tara Learns to Sort"
 date: 2016-09-29
 tags: [recurse center]
-categories: [recurse center]
 ---
 
 I don't have a formal CS education, so one thing I'm focusing on at RC

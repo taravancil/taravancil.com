@@ -2,7 +2,6 @@
 title: "Recurse Center Day 9: A Peer-To-Peer Chat System"
 date: 2016-10-06
 tags: [recurse center, p2p, distributed systems, node]
-categories: [recurse center]
 ---
 
 Today I worked on a fun 'lil set of p2p exercises

@@ -2,7 +2,6 @@
 title: Growth and exploration, dude
 date: 2013-05-16
 tags: [mcnair]
-categories: [personal]
 ---
 
 This summer I'm participating in the CMU McNair Scholars Program Summer Research

@@ -2,7 +2,6 @@
 title: "Recurse Center Day 1: New Faces and W-Shingling"
 date: 2016-09-26
 tags: [recurse center]
-categories: [recurse center]
 ---
 
 Today was the first day of the Recurse Center. I've understood for a

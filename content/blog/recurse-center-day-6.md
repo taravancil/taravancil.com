@@ -3,7 +3,6 @@ title: "Recurse Center Day 6: Raft's Safety Argument and Cryptopals
 Round 2"
 date: 2016-10-03
 tags: [recurse center]
-categories: [recurse center]
 ---
 
 Today I read a lot. Per the recommendation of [Mike

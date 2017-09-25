@@ -2,7 +2,6 @@
 title: "Recurse Center Day 5: Heaps, Logarithms, and Interviews"
 date: 2016-09-30
 tags: [recurse center]
-categories: [recurse center]
 ---
 
 Today was *great*. Something I'd been trying and failing to understand

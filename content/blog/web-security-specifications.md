@@ -2,7 +2,6 @@
 title: Web security specifications you should know about
 date: 2015-09-04
 tags: [security, privacy, xss, csp]
-categories: [technology]
 ---
 
 The [W3C WebAppSec working group](https://github.com/w3c/WebAppSec) is tasked

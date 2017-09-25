@@ -2,7 +2,6 @@
 title: "Forking websites on the peer-to-peer Web"
 date: 2017-06-14
 tags: [beaker, decentralized web, decentralization]
-categories: [decentralized web]
 external: true
 externalLink: https://beakerbrowser.com/2017/06/14/forking-websites-on-the-p2p-web.html
 ---

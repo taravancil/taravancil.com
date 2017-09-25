@@ -2,7 +2,6 @@
 title: Building a peer-to-peer Photos app with Beaker and Dat
 date: 2017-08-02
 tags: [beaker, decentralized web, decentralization]
-categories: [decentralized web]
 external: true
 externalLink: https://medium.com/blue-link-labs/building-a-decentralized-peer-to-peer-photos-app-with-beaker-and-dat-c8a470202b4c
 ---

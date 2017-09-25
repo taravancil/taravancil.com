@@ -2,7 +2,6 @@
 title: The cost of clipping coupons
 date: 2015-03-02
 tags: [poverty]
-categories: [personal]
 ---
 
 I used to clip coupons.

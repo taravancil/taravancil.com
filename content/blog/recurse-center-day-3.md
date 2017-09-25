@@ -2,7 +2,6 @@
 title: "Recurse Center Day 3: Asking for Help"
 date: 2016-09-28
 tags: [recurse center]
-categories: [recurse center]
 ---
 
 Today was marked by the realization that when one asks for help at the Recurse

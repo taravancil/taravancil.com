@@ -2,7 +2,6 @@
 title: Success is whatever you call it
 date: 2013-06-16
 tags: [success, mcnair]
-categories: [personal]
 ---
 
 I've been prompted to respond to the question, How do you define success?

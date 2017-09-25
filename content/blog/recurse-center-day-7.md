@@ -2,7 +2,6 @@
 title: "Recurse Center Day 7: I Moved Fast and Broke Things"
 date: 2016-10-04
 tags: [recurse center]
-categories: [recurse center]
 ---
 
 Today I moved fast and broke things -- this site to be specific -- but it's all

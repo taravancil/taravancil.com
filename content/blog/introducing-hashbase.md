@@ -2,7 +2,6 @@
 title: Introducing Hashbase
 date: 2017-07-06
 tags: [beaker, decentralized web, decentralization, hashbase]
-categories: [decentralized web]
 external: true
 externalLink: https://medium.com/blue-link-labs/introducing-hashbase-bf4dd2328f7e
 ---

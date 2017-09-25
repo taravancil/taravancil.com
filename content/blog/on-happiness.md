@@ -2,7 +2,6 @@
 title: On happiness
 date: 2013-07-23
 tags: [happiness, mcnair]
-categories: [personal]
 ---
 
 * Cobbling and exploring the caverns of discomfort.

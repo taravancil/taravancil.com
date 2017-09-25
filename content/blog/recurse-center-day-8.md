@@ -2,7 +2,6 @@
 title: "Recurse Center Day 8: Hamming Weight: I Am So Confused"
 date: 2016-10-05
 tags: [recurse center, cryptography, python]
-categories: [recurse center]
 ---
 
 I'm reimplementing [my cryptopals

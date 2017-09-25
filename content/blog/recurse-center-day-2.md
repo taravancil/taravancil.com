@@ -2,7 +2,6 @@
 title: "Recurse Center Day 2: Pairing Is Great "
 date: 2016-09-27
 tags: [recurse center, pair programming, algorithms, zsh]
-categories: [recurse center]
 ---
 
 Today was the first "regular day" of RC, wherein the schedule was

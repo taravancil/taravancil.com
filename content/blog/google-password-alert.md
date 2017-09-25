@@ -2,7 +2,6 @@
 title: Google Password Alert
 date: 2015-05-02
 tags: [passwords, security, google]
-categories: [technology]
 ---
 
 A few days ago, Google released an extension, [Password

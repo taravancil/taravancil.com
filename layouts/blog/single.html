@@ -13,13 +13,6 @@
               <span class="date">
                 {{ .Date.Format "Jan 02, 2006" }}
               </span>
-
-              {{ if .Params.categories }}
-              in
-              {{ range .Params.categories }}
-              <a class="post" href="/categories/{{ . | urlize}}">{{ . }}</a>
-              {{ end }}
-            {{ end }}
             </div>
           </div>
 

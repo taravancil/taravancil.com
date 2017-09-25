@@ -25,7 +25,7 @@ verbs like "pontificate".
 
 Most importantly, King offers the slightly vague premise that being a good
 writer requires telling the truth. What he means is that you can only write
-well about what you know, whether that's botany, being a middle school girl whose
+well about what you know, whether that's botany, being a high school girl whose
 classmates throw tampons at her, or just being human. He's not suggesting then
 that all fiction writers are bad writers (he writes fiction himself),
 but that all masterful writers have tapped into some magic that allows them to

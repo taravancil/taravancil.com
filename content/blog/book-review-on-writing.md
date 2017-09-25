@@ -10,6 +10,8 @@ tags: [book-review, writing]
 part-autobiography and part-styleguide, and much less tactical writing guide
 than one might expect from a book about writing by one of the world's bestselling authors.
 
+<!--more-->
+
 King's telling of how he became a writer is scattered with side-stitching stories
 about poison ivy and heartwarming affirmations of his [wife Tabby's](https://en.wikipedia.org/wiki/Tabitha_King)
 role in his commerical success. You might think an autobiography in a book like this would

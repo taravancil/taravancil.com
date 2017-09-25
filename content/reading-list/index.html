@@ -55,6 +55,9 @@
               </h3>
               by {{ .author }}
               {{ if .recommend }} * {{ end }}
+              {{ if .review }}
+                (<a href="{{ .review }}">my review</a>)
+              {{ end }}
             </li>
           {{ end }}
         </ul>

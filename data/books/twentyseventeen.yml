@@ -13,6 +13,7 @@ books:
     author: Stephen King
     link: https://www.amazon.com/gp/product/B009BDVD2Q/ref=as_li_tl?ie=UTF8&tag=taravancil-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B009BDVD2Q&linkId=6b23be8d49f4eb6bb9fac97e8568cc5c
     recommend: true
+    review: /blog/book-review-on-writing/
   - title: Drive, the Surprising Truth About What Motivates Us
     author: Daniel H. Pink
     link:

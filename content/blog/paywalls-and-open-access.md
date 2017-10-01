@@ -4,7 +4,7 @@ date: 2013-05-21
 tags: [open access, information, academia]
 ---
 
-As a student at Central Michigan University, I am granted access to a multitude
+As a student at Central Michigan University, I'm granted access to a multitude
 of academic journals. The most reputable of these journals circulate
 revolutionary insights that aim to tackle some of the most pressing and
 fascinating queries of this century: HIV treatment, bacterial antibiotic

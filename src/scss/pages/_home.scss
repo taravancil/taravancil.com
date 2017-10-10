@@ -38,6 +38,26 @@ body.home {
         height: 1300px;
       }
     }
+
+    h2,
+    h3 {
+      font-size: inherit;
+      font-weight: 400;
+    }
+
+    h3 {
+      display: inline-block;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+
+    ul {
+      list-style: disc;
+    }
+
+    li {
+      margin-left: 15px;
+    }
   }
 
   a.more {

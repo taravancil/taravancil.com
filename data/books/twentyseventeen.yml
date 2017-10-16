@@ -1,4 +1,7 @@
 books:
+  - title: Fantastic Beasts and Where to Find Them
+    author: J.K. Rowling
+    link: https://www.amazon.com/gp/product/1338109065/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&tag=taravancil-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=1338109065&linkId=690e361bae7b83611a10bcc541bdef41
   - title: I Am Legend
     author: Richard Matheson
     link: https://www.amazon.com/gp/product/0765357151/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&tag=taravancil-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=0765357151&linkId=249c96e54ac3df857dd92253bbeb306c

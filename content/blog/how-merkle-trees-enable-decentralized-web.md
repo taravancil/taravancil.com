@@ -34,7 +34,7 @@ I've uploaded a video to YouTube. The URL for my video is tightly bound to the
 provider like Vimeo, I'll need to get an entirely new URL.
 
 Because addresses for content are bound to where they're hosted, there's a lot
-of friction involed in exercising choice between hosting providers. So in the above example, even if I decide Vimeo is a superior hosting platform, I may
+of friction involved in exercising choice between hosting providers. So in the above example, even if I decide Vimeo is a superior hosting platform, I may
 choose to continue hosting my video on YouTube, simply because the burden of
 distributing a new URL is too high.
 
@@ -52,7 +52,7 @@ a hash function.
 #### Hash functions
 
 Hash functions are one-way functions that take an input (like a file), and
-generate a fixed-length output. So even even if your input is a 3GB file, the
+generate a fixed-length output. So even if your input is a 3GB file, the
 result will be compressed to the hash functions output length (often 32
 bytes).
 
@@ -122,7 +122,7 @@ the only thing you need to send over the network is the root hash (typically
 ##### How is it useful?
 
 In peer-to-peer protocols, the root hash serves as an address for a set of
-files, not much unlike a Web address. If you have the link, you can downlaod
+files, not much unlike a Web address. If you have the link, you can download
 the files that it addresses. And just like on the traditional Web, we need to
 apply a similar level of caution to who we trust links from. We don't click
 on links in our email from unknown senders, because they could contain malware.

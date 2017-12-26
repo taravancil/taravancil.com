@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tara Vancil’s Recipes</title>
+
+    <!-- open graph -->
+    <meta property="og:url" content="https://taravancil.com/recipes"/>
+
+    <meta property="og:type" content="website">
+
+    <meta property="twitter:site" content="@taravancil">
+
+    <meta property="og:title" content="Tara Vancil’s Recipes">
+    <meta name="twitter:title" content="Tara Vancil’s Recipes">
+
+    <meta name="twitter:card" content="summary">
+
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Rubik:400,500,700">
+    <link rel="stylesheet" href="/css/style.min.css" />
+    <link rel="icon" href="/favicon3.ico">
+  </head>
+
+  <body class="recipes post">
+    {{ partial "nav.html" }}
+    <div class="container">
+      <main>
+        <h1>Recipes</h1>
+
+        <h2>Meat</h2>
+        <ul class="posts-list">
+        {{ range (where (where .Data.Pages "Section" "recipes") ".Params.section" "eq" "meat") }}
+        <li><a href="{{ .Permalink }}" class="title">{{ .Title }}</a></li>
+        {{ end }}
+        </ul>
+
+        <h2>Soups and stews</h2>
+        <ul class="posts-list">
+        {{ range (where (where .Data.Pages "Section" "recipes") ".Params.section" "eq" "soup") }}
+        <li><a href="{{ .Permalink }}" class="title">{{ .Title }}</a></li>
+        {{ end }}
+        </ul>
+
+        <h2>Side dishes</h2>
+        <ul class="posts-list">
+        {{ range (where (where .Data.Pages "Section" "recipes") ".Params.section" "eq" "side") }}
+        <li><a href="{{ .Permalink }}" class="title">{{ .Title }}</a></li>
+        {{ end }}
+        </ul>
+
+        <h2>Casseroles & baked entrees</h2>
+        <ul class="posts-list">
+        {{ range (where (where .Data.Pages "Section" "recipes") ".Params.section" "eq" "casserole") }}
+        <li><a href="{{ .Permalink }}" class="title">{{ .Title }}</a></li>
+        {{ end }}
+        </ul>
+      </main>
+    </div>
+    {{ partial "footer.html" . }}
+  </body>
+</html>

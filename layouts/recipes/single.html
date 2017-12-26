@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ .Title }}</title>
+
+    <!-- open graph -->
+    <meta property="og:url" content="https://taravancil.com/recipes"/>
+
+    <meta property="og:type" content="website">
+
+    <meta property="twitter:site" content="@taravancil">
+
+    <meta property="og:title" content="{{ .Title }}">
+    <meta name="twitter:title" content="{{ .Title }}">
+
+    <meta name="twitter:card" content="summary">
+
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Rubik:400,500,700">
+    <link rel="stylesheet" href="/css/style.min.css" />
+    <link rel="icon" href="/favicon3.ico">
+  </head>
+
+  <body class="recipe post">
+    {{ partial "nav.html" }}
+    <div class="container">
+      <main>
+        <article class="recipe content">
+          <div class="info">
+            <h1>{{ .Title }}</h1>
+          </div>
+
+          <div class="content">
+            <p class="description">
+              {{ $.Params.description }}
+            </p>
+
+            <h2>Ingredients</h2>
+            <ul>
+            {{ range $.Params.ingredients }}
+              <li>{{ . }}</li>
+            {{ end }}
+            </ul>
+
+            <h2>Instructions</h2>
+            <p>{{ .Content }}</p>
+          </div>
+        </article>
+      </main>
+    </div>
+    {{ partial "footer.html" . }}
+  </body>
+</html>

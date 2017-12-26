@@ -3,4 +3,5 @@ npm-debug.log
 nginx.conf
 static/css
 public/
+_site/
 content/drafts/

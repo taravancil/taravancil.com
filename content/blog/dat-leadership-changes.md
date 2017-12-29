@@ -5,7 +5,7 @@ tags: [dat, beaker]
 ---
 
 Today [Code for Science and Society](https://codeforscience.org) (CSS) announced
-that its Executive Director, [Max Ogden](https://twitter.com/denormalize) will
+that its Executive Director, [Max Ogden](https://twitter.com/denormalize), will
 step down from all leadership activities related to CSS and the
 [Dat Project](https://datproject.org).
 
@@ -14,7 +14,7 @@ You can read the [Dat team's complete statement](https://blog.datproject.org/201
 ## Beaker's involvement
 
 I work on the [Beaker browser](https://beakerbrowser.com), and part of our core
-technology is `dat://`, a peer-to-peer protocol developed by the Dat Project,
+technology is `dat://`, a peer-to-peer protocol that's developed by the Dat Project
 and sponsored by CSS.
 
 While we have no official affiliation with CSS or the Dat Project, we work

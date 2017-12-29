@@ -1,4 +1,8 @@
 books:
+  - title: The Elements of Style
+    author: William Strunk Jr., E.B. White
+    link: https://www.amazon.com/gp/product/020530902X/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&tag=taravancil-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=020530902X&linkId=6dd5979f4012d47783593dcec685856e
+    recommend: true
   - title: Fantastic Beasts and Where to Find Them
     author: J.K. Rowling
     link: https://www.amazon.com/gp/product/1338109065/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&tag=taravancil-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=1338109065&linkId=690e361bae7b83611a10bcc541bdef41

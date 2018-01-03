@@ -77,4 +77,25 @@ body.post {
     font-style: italic;
     font-size: 1.2em;
   }
+
+  .img-grid {
+
+    img {
+      display: inline-block;
+      width: calc(50% - 10px);
+
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+
+    &.wide {
+      width: 175%;
+      margin-left: -42.5%;
+    }
+
+    &.center {
+      text-align: center;
+    }
+  }
 }

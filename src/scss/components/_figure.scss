@@ -1,12 +1,15 @@
 figure {
-    margin: 2em 0;
+  text-align: center;
+  margin: 30px auto;
+
+  * {
+    max-width: 100%;
+  }
 }
 
 figcaption {
-    border-top: transparentize(black, .5);
-    border-bottom: transparentize(black, .5);
-    margin-top: 1em;
-    padding: .5em 0;
-    font-size: .8em;
-    color: mix(white, black, 45%);
+  max-width: 500px;
+  margin: 5px auto 0 auto;
+  font-size: 12px;
+  color: rgba(0,0,0,0.7);
 }

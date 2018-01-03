@@ -28,7 +28,7 @@ I hang out in #beakerbrowser and #dat on freenode. Drop by and say hello!
 
 ## Colophon
 
-This website is built with [Hugo](gohugo.io). It's hosted on the peer-to-peer
+This website is built with [Hugo](https://gohugo.io). It's hosted on the peer-to-peer
 Web with [Dat](https://datproject.org) (p2p version [here](dat://6dff5cff6d3fba2bbf08b2b50a9c49e95206cf0e34b1a48619a0b9531d8eb256)) and
 permanently seeded and mirrored on `https://` with
 [`dathttpd`](https://github.com/beakerbrowser/dathttpd). It's also mirrored with

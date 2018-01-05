@@ -10,15 +10,10 @@ code {
 }
 
 pre {
-  @extend %module;
-  padding: 1.5em 2em;
+  padding: 15px;
+  background: mix(gray, white, 12%);
   white-space: pre-wrap;
   word-wrap: break-word;
-}
-
-code {
-  background: mix(gray, white, 12%);
-  padding: .1em .2em;
 }
 
 pre code {

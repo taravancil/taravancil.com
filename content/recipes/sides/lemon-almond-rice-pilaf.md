@@ -16,6 +16,7 @@ section: side
 
 Bring the broth to a boil. Add rice and simmer covered, about 20 minutes.
 
-Meanwhile, sauté the onions. Add the garlic and spinach. Stir in the rice, lemon juice, cumin, time, and salt and pepper to taste.
+Meanwhile, sauté the onions. Add the garlic and spinach. Stir in the rice, lemon
+juice, cumin, thyme, and salt and pepper to taste.
 
 Serve topped with toasted almonds.

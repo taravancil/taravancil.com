@@ -1,6 +1,6 @@
 ## Development
 
-This is the source for [tarvancil.com](https://taravancil.com).
+This is the source for [taravancil.com](https://taravancil.com).
 
 The https version of this website is synced from `dat://taravancil.com` using
 [dathttpd](https://github.com/beakerbrowser/dathttpd). You can open the peer-to-peer

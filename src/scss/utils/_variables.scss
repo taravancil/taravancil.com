@@ -1,4 +1,5 @@
 $breakpoints: (
   'contain-90': (min-width: 650px),
-  'vertical-tablet': (min-width: 800px),
+  'vertical-tablet': (min-width: 550px),
+  'desktop': (min-width: 1000px),
 );

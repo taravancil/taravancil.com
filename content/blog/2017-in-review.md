@@ -4,14 +4,6 @@ date: 2018-01-01
 tags: [year-in-review]
 ---
 
-<style>
-  .content p:first-of-type {
-    font-size: 18px;
-    border-left: 8px solid;
-    padding-left: 10px;
-  }
-</style>
-
 2017 was my most productive year yet. Not because I achieved superhuman levels of productivity, but because I made the transition between figuring out what to do with my life and doing something with my life. It feels damn good.
 
 <!--more-->
@@ -129,3 +121,11 @@ Let's go, y'all.
     </li>
   </ol>
 </div>
+
+<style>
+  .content p:first-of-type {
+    font-size: 18px;
+    border-left: 8px solid;
+    padding-left: 10px;
+  }
+</style>

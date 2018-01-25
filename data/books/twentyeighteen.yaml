@@ -1,4 +1,7 @@
 books:
+  - title: Gravity
+    author: Tess Gerritsen
+    link: https://www.amazon.com/gp/product/0671016776/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&tag=taravancil-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=0671016776&linkId=a9129a9e970f903bfcf89224e69dd066
   - title: HAM Radio Operator's Guide
     author: Carl Bergquist (KG4AIC)
     link: https://www.amazon.com/gp/product/0790612380/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&tag=taravancil-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=0790612380&linkId=85b844166ceb4b81c3ac1b99d39360a9

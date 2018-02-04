@@ -49,7 +49,7 @@ The first time I ran the `dat` command in `/public`, it created a Dat Archive an
 
 Currently `dat://` is only supported in [Beaker](https://github.com/beakerbrowser/beaker) ([Brave](https://brave.com) support to come this year), so I need my website to work over `https://` too.
 
-Further, `dat://` URLs are long and difficult to remember, so it would be nice to be able to access the `dat://` version of my site at a shortname like [dat://taravancil.com](dat://taravancil.com). Luckily, Beaker supports this! Beaker piggybacks off of DNS authentication in combination with the [`/.well-known`](https://tools.ietf.org/html/rfc5785) convention to enable `dat://` shortnames. When you visit [dat://taravancil.com](dat://taravancil.com) in Beaker, it sends a request to [https://taravancil.com/.well-known/dat](https://taravancil.com/.well-known/dat]) and expects to find a file that looks like this:
+Further, `dat://` URLs are long and difficult to remember, so it would be nice to be able to access the `dat://` version of my site at a shortname like [dat://taravancil.com](dat://taravancil.com). Luckily, Beaker supports this! Beaker piggybacks off of DNS authentication in combination with the [`/.well-known`](https://tools.ietf.org/html/rfc5785) convention to enable `dat://` shortnames. When you visit [dat://taravancil.com](dat://taravancil.com) in Beaker, it sends a request to [https://taravancil.com/.well-known/dat](https://taravancil.com/.well-known/dat) and expects to find a file that looks like this:
 
 ```
 dat://6dff5cff6d3fba2bbf08b2b50a9c49e95206cf0e34b1a48619a0b9531d8eb256/

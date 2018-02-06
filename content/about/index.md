@@ -9,7 +9,9 @@ Hi. I'm Tara. I'm the co-founder of [Blue Link Labs](https://bluelinklabs.com), 
 
 Before starting Blue Link Labs, I worked at Cloudflare, where I helped build
 their [Apps platform](https://cloudflare.com/apps/), and before that I spent
-time at the [Recurse Center](https://recurse.com), an amazing community for programmers.
+time at the Recurse Center, an amazing community for programmers.
+
+<p class="rc-scout"></p>
 
 I grew up in [rural northern Michigan](https://en.wikipedia.org/wiki/Wolverine,_Michigan), but I currently reside in Austin, TX.
 
@@ -33,3 +35,5 @@ Web with [Dat](https://datproject.org) (p2p version [here](dat://6dff5cff6d3fba2
 permanently seeded and mirrored on `https://` with
 [`dathttpd`](https://github.com/beakerbrowser/dathttpd). It's also mirrored with
 [hashbase](https://hashbase.io) at [taravancil.hashbase.io](https://taravancil.hashbase.io).
+
+<script async defer src="https://www.recurse-scout.com/loader.js?t=0dcb1e3c1156a3fd0bda3cd94cfb434f"></script>

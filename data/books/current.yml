@@ -1,4 +1,13 @@
 books:
+  - title: Emma
+    author: Jane Austen
+    link: https://www.amazon.com/gp/product/1853260282/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=taravancil-20&creative=9325&linkCode=as2&creativeASIN=1853260282&linkId=a614099236a68a9fb0a6e18e07f44381
+  - title: "Inside the Investments of Warren Buffett: Twenty Cases"
+    author: Yefei Lu
+    link: https://www.amazon.com/gp/product/0231164629/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=taravancil-20&creative=9325&linkCode=as2&creativeASIN=0231164629&linkId=3c0bac472a94544c70482307441a32bb
+  - title: "Reset: My Fight for Inclusion and Lasting Change"
+    author: Ellen Pao
+    link: https://www.amazon.com/gp/product/039959101X/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=taravancil-20&creative=9325&linkCode=as2&creativeASIN=039959101X&linkId=f126c4dad92e5871514716de441b9fea
   - title: "Feudal Society Volume 1: The Growth of Ties of Dependence"
     author: Marc Bloch
     link: https://www.amazon.com/gp/product/B00CR40R0A/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&tag=taravancil-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B00CR40R0A&linkId=a02e76c2a50242bfc65b3d6c5af11843

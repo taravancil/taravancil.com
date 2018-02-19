@@ -51,6 +51,17 @@ body.post {
     font-size: 14.5px;
     margin: 1rem auto 0 auto;
 
+    .div-container {
+      position: relative;
+    }
+
+    // aside {
+    //   position: absolute;
+    //   right: 10px;
+    //   top: 0;
+    //   color: rgba(0,0,0,.7);
+    // }
+
     img {
       max-width: 100%;
     }
@@ -59,15 +70,19 @@ body.post {
       @extend %link;
     }
 
-    ul {
-      list-style: disc;
+    ul,
+    ol {
       margin-bottom: 20px;
       margin-left: 40px;
 
-    li {
-      margin-bottom: 4px;
+      li {
+        margin-bottom: 4px;
+      }
     }
-  }
+
+    ul {
+      list-style: disc;
+    }
  }
 
   blockquote {

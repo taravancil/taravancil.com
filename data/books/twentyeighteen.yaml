@@ -12,3 +12,20 @@ books:
     author: Tim Wu
     link: https://www.amazon.com/gp/product/0804170045/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=taravancil-20&creative=9325&linkCode=as2&creativeASIN=0804170045&linkId=dfe6345aaf8b5ae9a4e080034deb03da
     recommend: true
+  - title: "Reset: My Fight for Inclusion and Lasting Change"
+    author: Ellen Pao
+    link: https://www.amazon.com/gp/product/039959101X/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=taravancil-20&creative=9325&linkCode=as2&creativeASIN=039959101X&linkId=f126c4dad92e5871514716de441b9fea
+  - title: The Cuckoo's Calling
+    author: J.K. Rowling
+    recommend: true
+    link: https://www.amazon.com/gp/product/0316206857/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=taravancil-20&creative=9325&linkCode=as2&creativeASIN=0316206857&linkId=4f5c61f2381e8af40f7eb9d661762c7b
+  - title: "Inside the Investments of Warren Buffett: Twenty Cases"
+    author: Yefei Lu
+    link: https://www.amazon.com/gp/product/0231164629/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=taravancil-20&creative=9325&linkCode=as2&creativeASIN=0231164629&linkId=3c0bac472a94544c70482307441a32bb
+  - title: "Sourdough: A Novel"
+    author: Robin Sloan
+    link: https://www.amazon.com/gp/product/0374203105/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=taravancil-20&creative=9325&linkCode=as2&creativeASIN=0374203105&linkId=a361a5226269c1bca3cd9136b13e9fdb
+  - title: The Silkworm
+    author: J.K. Rowling
+    link: https://www.amazon.com/gp/product/031620689X/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=taravancil-20&creative=9325&linkCode=as2&creativeASIN=031620689X&linkId=848330609518452541be59f2291230c0
+    recommend: true

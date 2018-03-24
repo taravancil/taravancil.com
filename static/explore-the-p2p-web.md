@@ -119,3 +119,10 @@ Want to learn more?
 - dat://sandermoolin.com/
 - dat://blog.kevinsuttle.hashbase.io
 - dat://boucheron.org/brian/
+- dat://full-stack-fest-2018-codegram.hashbase.io/
+- dat://chad.is/
+- dat://about-dferber.hashbase.io/
+- dat://cats-tchoi8.hashbase.io/
+- dat://chatbots-lee2sman.hashbase.io/, a syllabus for studying and designing chatbots
+- dat://folder.studio
+- dat://whois-andrewchou.hashbase.io/

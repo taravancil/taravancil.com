@@ -26,7 +26,8 @@ Saute potatoes, carrot, onion, and celery in butter until tender. Add garlic
 and cook until fragrant, ~30 seconds. Add flour and mix.
 
 Add chicken stock, then bring to a boil. Stir in frozen peas and corn, salt,
-and pepper to taste. Add cooked chicken.
+and pepper to taste. Throw in a couple pinches of dry parsley if you have it.
+Add cooked chicken.
 
 Line a pie dish with crust, then pour filling into dish. Cover with second pie
 crust.

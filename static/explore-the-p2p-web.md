@@ -20,8 +20,10 @@ Want to learn more?
   - https://github.com/beakerbrowser/fritter
 - Rotonde, a decentralized social network
   - https://github.com/Rotonde
+- Cover page creator for Fritter
+  - dat://profile-krismuniz.hashbase.io
 
-## Blogging tools
+## Blogging/writing tools
 
 - Enoki, a tool for peer-to-per publishing
   - dat://enoki.site/
@@ -33,6 +35,8 @@ Want to learn more?
   - dat://netlify-cms-snapshot-1-jimpick.hashbase.io/
 - orkl
   - dat://orkl-kodedninja.hashbase.io/how-to-use-orkl
+- solo
+  - https://solo-kodedninja.hashbase.io/
 
 ## Other apps
 
@@ -48,6 +52,10 @@ Want to learn more?
   - dat://rotosearch-aeon.hashbase.io/
 - Dotgrid, in-browser SVG editor
   - dat://dotgrid-neauoire.hashbase.io/
+- Word and character count tool
+  - dat://count-taravancil.hashbase.io/
+- GLTF to GLB packer
+  - dat://glb-packer-msfeldstein.hashbase.io/
 
 ## Games
 
@@ -92,6 +100,10 @@ Want to learn more?
 - The peer-to-peer Web by Paul Frazee and Tara Vancil
   - https://www.youtube.com/watch?v=9tk9m_QIi2Q
 
+## Developer tools
+
+- https://github.com/rjkip/webpack-dat
+
 ## A 1990s Yahoo-style directory of peer-to-peer websites and blogs
 
 - dat://peer-to-peer-web.com, community site for p2p web workshop events
@@ -126,3 +138,8 @@ Want to learn more?
 - dat://chatbots-lee2sman.hashbase.io/, a syllabus for studying and designing chatbots
 - dat://folder.studio
 - dat://whois-andrewchou.hashbase.io/
+- dat://www.krismuniz.com/
+- dat://hex22.org
+- dat://vjs-msfeldstein.hashbase.io/, WebGL demo
+- dat://journal-cpjobling.hashbase.io/, TiddlyWiki instance
+- dat://datsplit-gabrielpoca.hashbase.io/#/

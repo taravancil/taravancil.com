@@ -63,6 +63,11 @@ Want to learn more?
 - dat://conquest-creationix.hashbase.io/
 - dat://256-farben-emanuelfeld.hashbase.io/
 
+## Music
+
+- Drum machine, dat://drum-machine-from-glitch-mshook.hashbase.io/
+- dat://datradio-cblgh.hashbase.io/
+
 ## Art
 
 - A lovely self-portrait in three parts
@@ -78,6 +83,9 @@ Want to learn more?
 
 ## Tutorials and explainers
 
+- Beaker: the frontend developer's dream browser
+  - https://staltz.com/beaker-frontend-dev-dream-browser/
+  - dat://603a92700145dc4b01ae902a58747b7f676862059ce44dfb7c0e59779b5648f8
 - An introduction to Dat's cryptography
   - https://blog.datproject.org/2017/09/21/dat-cryptography/
 - How to host bots for Rotonde by Alexander Cobleigh
@@ -86,6 +94,8 @@ Want to learn more?
   - https://cblgh.org/host-on-dat.html
 - How I publish taravancil.com on the peer-to-peer Web by Tara Vancil
   - dat://taravancil.com/blog/how-i-publish-taravancil-com/
+- p2p Web browsing with Beaker and Dat
+  - https://simpleit.us/2018/03/31/p2p-browsing-web-with-beaker-and-dat/
 
 ## Presentations
 
@@ -102,7 +112,11 @@ Want to learn more?
 
 ## Developer tools
 
+- ES module Dat utilities
+  - dat://utils-krismuniz.hashbase.io
 - https://github.com/rjkip/webpack-dat
+- forkup, package updater for forked p2p websites
+  - https://www.npmjs.com/package/forkup
 
 ## A 1990s Yahoo-style directory of peer-to-peer websites and blogs
 
@@ -144,3 +158,6 @@ Want to learn more?
 - dat://vjs-msfeldstein.hashbase.io/, WebGL demo
 - dat://journal-cpjobling.hashbase.io/, TiddlyWiki instance
 - dat://datsplit-gabrielpoca.hashbase.io/#/
+- dat://3a2951bde3cfa30c70aeea436223b99862bfa2baad2b4d52d5ff8cad7ce43791/, aerial images from NOAA 18 Satellite (forewaring, contains large images)
+- dat://ismail.hashbase.io/
+- dat://tomjwatson.com/

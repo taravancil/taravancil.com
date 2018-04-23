@@ -97,7 +97,7 @@
 
       <div id="projects" class="projects">
         <div class="container">
-          <h2>My work</h2>
+          <h2>Selected projects</h2>
 
           <ul class="projects-list">
             {{ range $.Site.Data.projects }}
@@ -110,10 +110,12 @@
                   </div>
 
                   <div class="thumbnails">
-                    {{ range after 1 .screenshots }}
-                      <div class="img-container">
-                        <img data-src="{{ . }}" src="/images/{{ . }}-thumbnail.jpg" />
-                      </div>
+                    {{ if gt (len .screenshots) 1 }}
+                      {{ range after 1 .screenshots }}
+                        <div class="img-container">
+                          <img data-src="{{ . }}" src="/images/{{ . }}-thumbnail.jpg" />
+                        </div>
+                      {{ end }}
                     {{ end }}
                   </div>
 

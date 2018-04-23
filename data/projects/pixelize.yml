@@ -1,0 +1,13 @@
+title: PIXEL-EYEZ
+id: pixeleyez
+summary:
+  Convert images to PXON
+description:
+  Tool for pixelizing images and converting images to PXON
+screenshots:
+  - pixel-eyez
+links:
+  - pixel-eyez-taravancil.hashbase.io
+  - github.com/taravancil/pixel-eyez
+technologies:
+  - Javascript

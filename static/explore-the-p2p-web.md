@@ -21,6 +21,9 @@ Want to learn more?
 - ~~Peer-to-peer Web Los Angeles / Decemeber 12, 2017~~
   - ~~https://peer-to-peer-web.com/los-angeles/2017-12-10~~
 
+- ## Podcasts
+  - dat://dat-cast.hashbase.io/
+
 ## Peer-to-peer seeding services
 
 - Hashbase, help keep your files online
@@ -209,3 +212,4 @@ Want to learn more?
 - dat://site-ollybromham.hashbase.io/
 - dat://leon.archetype.cc
 - dat://pixels.archetype.cc/
+- dat://everything-devolves-into-silly-words-faebser.hashbase.io/

@@ -1,6 +1,6 @@
 ---
 title: Teal dots
-date: 2018-04-26
+date: 2018-04-23
 img: /images/nails/teal-dots.jpg
 ---
 

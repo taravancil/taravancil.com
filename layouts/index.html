@@ -1,48 +1,13 @@
 <!doctype html>
 <html>
   {{ partial "head.html" . }}
+  {{ partial "nav.html" . }}
 
   <body class="home">
     <main>
       <div class="hero">
         <div class="container">
-          <h1>
-            <span class="first-name">Tara</span>
-            <span class="last-name">Vancil</span>
-          </h1>
-          <div class="intro">
-            <p>
-              Hi. I'm Tara.
-            </p>
-
-            <p>
-              I'm the co-founder of <a href="https://bluelinklabs.com">Blue Link Labs</a>,
-              the team behind <a href="https://beakerbrowser.com">Beaker</a>, a
-              peer-to-peer Web browser, and <a href="https://hashbase.io">Hashbase</a>,
-              a cloud peer service for files hosted with the <a href="https://github.com/datproject/dat">Dat protocol</a>.
-            </p>
-
-            <h2>I'm currently <a href="/bookshelf/">reading</a>:</h2>
-            <ul>
-              {{ range $.Site.Data.books.current.books }}
-                <li>
-                  <h3>
-                    <a href="{{ .link }}">{{ .title }}</a>
-                  </h3>
-                  by {{ .author }}
-                </li>
-              {{ end }}
-            </ul>
-          </div>
-
-          <div class="nav-links">
-            <a href="/about/">About me</a>
-            <a href="#projects">My work</a>
-            <a href="/blog/">Blog</a>
-          </div>
         </div>
-
-        <img class="shapes" src="/images/shapes.svg" />
       </div>
 
       <div class="recent-activity">

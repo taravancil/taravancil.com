@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wishlist - Tara Vancil</title>
+
+    <!-- open graph -->
+    <meta property="og:url" content="https://taravancil.com/wishlist"/>
+
+    <meta property="og:type" content="website">
+
+    <meta property="twitter:site" content="@taravancil">
+
+    <meta property="og:title" content="Wishlist - Tara Vancil">
+    <meta name="twitter:title" content="Wishlist - Tara Vancil">
+
+    <meta name="twitter:card" content="summary">
+
+    <link rel="stylesheet" href="/css/style.min.css" />
+    <link rel="icon" href="/images/favicon.png">
+  </head>
+
+  <body class="wishlist">
+    <div class="container narrow">
+      <main>
+        <h1>Wishlist</h1>
+
+        <p>
+          This is a list of things I want, like, or need, in no particular order. If you're thinking about buying me a gift, thank you! You're welcome to buy something directly from the list, or use the list as inspiration.
+        </p>
+
+        <ul class="wishlist">
+          {{ range $.Site.Data.wishlist }}
+            <li class="item">
+              <span class="thumbnail-container">
+                <img class="thumbnail" src="{{ .image }}"/>
+              </span>
+
+              <div class="info">
+                <div class="header">
+                  <a href="{{ .buyLink }}" class="title">
+                    {{ .title }}
+                  </a>
+
+                  <span class="price">{{ .price }}</span>
+                </div>
+
+                {{ if .size }}
+                  <span class="size">My size: {{ .size }}</span>
+                {{ end }}
+
+                <a class="btn small dashed buy-link" href="{{ .buyLink }}">
+                  Buy on {{ .buyTitle }}
+                </a>
+              </div>
+            </li>
+          {{ end }}
+        </ul>
+      </main>
+    </div>
+    {{ partial "footer.html" (dict "size" "wide") }}
+  </body>
+</html>

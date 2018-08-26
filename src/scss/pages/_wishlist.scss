@@ -1,0 +1,51 @@
+body.wishlist {
+
+  ul.wishlist {
+    margin-top: 40px;
+  }
+
+  .item {
+    @extend %flex-container;
+    align-items: flex-start;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid transparentize($purple, .85);
+      border-bottom: 1px solid mix($purple, #eee, 2%);
+    }
+
+    .title {
+      font-weight: 500;
+    }
+
+    .info {
+      @extend %flex-container;
+      flex-wrap: wrap;
+      flex-basis: 100%;
+    }
+
+    .header {
+      @extend %flex-container;
+      justify-content: space-between;
+      width: 100%;
+      flex-basis: 100%;
+    }
+
+    .thumbnail-container {
+      flex: 0 0 100px;
+      text-align: center;
+      margin-right: 25px;
+    }
+
+    .thumbnail {
+      max-width: 100px;
+      max-height: 80px;
+    }
+
+    .buy-link {
+      margin-left: auto;
+      margin-top: 10px;
+    }
+  }
+}

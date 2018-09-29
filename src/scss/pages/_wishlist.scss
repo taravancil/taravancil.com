@@ -7,16 +7,22 @@ body.wishlist {
   .item {
     @extend %flex-container;
     align-items: flex-start;
+    position: relative;
+    padding-bottom: 55px;
 
     &:not(:last-child) {
       margin-bottom: 20px;
-      padding-bottom: 15px;
       border-bottom: 1px solid transparentize($purple, .85);
-      border-bottom: 1px solid mix($purple, #eee, 2%);
+      border-bottom: 1px solid $purple--border;
     }
 
-    .title {
+    @include respond-to(tablet) {
+      padding-bottom: 15px;
+    }
+
+    .wishlist-title {
       font-weight: 500;
+      text-decoration: none;
     }
 
     .info {
@@ -33,19 +39,36 @@ body.wishlist {
     }
 
     .thumbnail-container {
-      flex: 0 0 100px;
+      flex: 0 0 80px;
       text-align: center;
       margin-right: 25px;
+
+      @include respond-to(tablet) {
+        flex: 0 0 100px;
+      }
     }
 
     .thumbnail {
-      max-width: 100px;
-      max-height: 80px;
+      max-width: 80px;
+      max-height: 60px;
+
+      @include respond-to(tablet) {
+        max-width: 100px;
+        max-height: 80px;
+      }
     }
 
     .buy-link {
-      margin-left: auto;
-      margin-top: 10px;
+      position: absolute;
+      left: 0;
+      bottom: 15px;
+      width: 100%;
+
+      @include respond-to(vertical-tablet) {
+        position: initial;
+        width: initial;
+        margin: 10px 0 0 auto;
+      }
     }
   }
 }

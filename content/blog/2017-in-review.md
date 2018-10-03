@@ -122,11 +122,3 @@ Let's go, y'all.
     </li>
   </ol>
 </div>
-
-<style>
-  .content p:first-of-type {
-    font-size: 18px;
-    border-left: 8px solid;
-    padding-left: 10px;
-  }
-</style>

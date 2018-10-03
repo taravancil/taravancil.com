@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects- Tara Vancil</title>
+
+    <!-- open graph -->
+    <meta property="og:url" content="https://taravancil.com/projects"/>
+
+    <meta property="og:type" content="website">
+
+    <meta property="twitter:site" content="@taravancil">
+
+    <meta property="og:title" content="Projects - Tara Vancil">
+    <meta name="twitter:title" content="Projects - Tara Vancil">
+
+    <link rel="stylesheet" href="/css/style.min.css" />
+    <link rel="stylesheet" href="/css/projects.min.css" />
+    <link rel="icon" href="/images/favicon.png">
+  </head>
+
+  <body class="projects">
+    {{ partial "breadcrumbs.html" . }}
+
+    <div class="container medium">
+      <main role="main">
+        <h1>Selected projects</h1>
+
+        <p>
+          I build with the Web—websites, apps, tools, you name it. I'm a developer first, but I hit my stride when I have the opportunity to give shape to my work through writing and design too.
+        </p>
+
+        <ul class="grid project-screenshots undecorated-list">
+          {{ range (where .Data.Pages "Section" "projects") }}
+            <li>
+              <a class="undecorated-link" href="{{ .Permalink }}">
+                <img src="{{ .Params.thumbnail }}" class="project-screenshot" alt=""/>
+                <h2 class="inline-heading title">{{ .Title }}</h2>
+              </a>
+            </li>
+          {{ end }}
+        </ul>
+      </main>
+    </div>
+    {{ partial "footer.html" (dict "size" "medium") }}
+  </body>
+</html>

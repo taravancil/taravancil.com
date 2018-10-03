@@ -9,6 +9,8 @@ that its Executive Director, [Max Ogden](https://twitter.com/denormalize), will
 step down from all leadership activities related to CSS and the
 [Dat Project](https://datproject.org).
 
+<!--more-->
+
 You can read the [Dat team's complete statement](https://blog.datproject.org/2017/12/20/organization-changes-dat-css), as well as the [CSS board's statement](https://codeforscience.org/static/CSSBoard-MO.pdf).
 
 ## Beaker's involvement

@@ -1,13 +1,13 @@
-$color-text: #222;
-$color-text: #232323;
-$color-bg: #fffffd;
+$teal: #00ffda;
+$teal--transparent: transparentize($teal, .7);
 
-$purple: #503BC3;
-$red: #fe4d47;
-$teal: #72CAB9;
+$purple: #9b0267;
+$purple--transparent: transparentize($purple, .5);
+$purple--border: mix($purple, #eee, 2%);
 
-$color-text--muted: mix($color-text, white, 75%);
-$color-text--teal: mix($color-text, $teal, 7%);
-// $color-text--teal: $teal;
+$pink: #fb0059;
+$red:  #eb0000;
+$orange: #fe432b;
 
-$gray--light: mix($color-text, white, 10%);
+$color-text: #000;
+$color-text--muted: mix($purple, #777, 7%)

@@ -115,10 +115,10 @@ Let's go, y'all.
 
 ## Footnotes
 
-<div class="footnotes">
+<div class="footnotes small-text">
   <ol>
     <li id="footnote1">
-      Shout out to <a href="https://www.projectalloy.org">Project Alloy</a>. They sponsored my trip Strange Loop, and without their financial support I wouldn't have been able to attend. When I'm no longer living on a startup budget, they're one of the first organazitions I'll look to when I considering how to support important work and good people.
+      Shout out to <a href="https://www.projectalloy.org">Project Alloy</a>. They sponsored my trip Strange Loop. Without their financial support I wouldn't have been able to attend. When I'm no longer living on a startup budget, they're one of the first organazitions I'll look to when I considering how to support important work and good people.
     </li>
   </ol>
 </div>

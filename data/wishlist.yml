@@ -2,70 +2,176 @@
   title: If Hemingway Wrote JavaScript
   buyLink: https://anguscroll.com/hemingway/buy/index.html
   buyTitle: anguscroll.com
-  image: /images/wishlist/if-hemingway-wrote-javascript.png
-  price: $15-$20
+  image: /images/wishlist/if-hemingway-wrote-javascript.jpg
+  price: 20
 -
-  title: Beyoncé and Jay-Z OTR II crop tee
-  buyLink: https://shop.beyonce.com/products/otr-photo-crop-tee
-  buyTitle: beyonce.com
-  image: /images/wishlist/beyonce-jay-z-crop-tee.png
-  price: $40
-  size: Medium
-- 
   title: Beyoncé Nefertiti long sleeve
   buyLink: https://shop.beyonce.com/products/nefertiti-long-sleeve?variant=8019624558652
   buyTitle: beyonce.com
   image: /images/wishlist/beyonce-nefertiti-long-sleeve.png
-  price: $45
+  price: 45
   size: Medium
-- 
+-
   title: Lemonade hat
   buyLink: https://shop.beyonce.com/products/lemonade-hat
   buyTitle: beyonce.com
   image: /images/wishlist/lemonade-hat.png
-  price: $36
+  price: 36
 -
   title: The Elements of Typographic Style
   buyLink: https://www.amazon.com/Elements-Typographic-Style-Robert-Bringhurst/dp/0881792063/
   buyTitle: Amazon
   image: /images/wishlist/elements-of-typographic-style.jpg
-  price: $10-$15
+  price: 12
 -
   title: Puma Suede Classic sneakers
   buyLink: https://us.puma.com/en/us/pd/suede-classic-womens-sneakers/355462.html?dwvar_355462_color=Tibetan%20Red-Hot%20Coral
   buyTitle: puma.com
   image: /images/wishlist/puma-suede-classic.jpg
-  price: $65
+  price: 65
   size: 8.5
 -
-  title: Puma Vikky Softfoam sneakers  
+  title: Puma Vikky Softfoam sneakers
   buyLink: https://us.puma.com/en/us/pd/vikky-softfoam-womens-sneakers/362624.html?dwvar_362624_color=Laurel%20Wreath-Puma%20White
   buyTitle: puma.com
   image: /images/wishlist/puma-vikky-softfoam.jpg
-  price: $55
+  price: 55
   size: 8.5
 -
-  title: Puma Platform Trace sneakers 
+  title: Puma Platform Trace sneakers
   buyLink: https://us.puma.com/en/us/pd/platform-trace-womens-sneakers/365830.html?dwvar_365830_color=Safari-Marshmallow
   buyTitle: puma.com
   image: /images/wishlist/puma-platform-trace.jpg
-  price: $55
+  price: 55
   size: 8.5
 -
-  title: XO Scraper and Chopper
+  title: OXO scraper and chopper
   buyLink: https://smile.amazon.com/gp/product/B00004OCNJ/
   buyTitle: Amazon
   image: /images/wishlist/xo-scraper.jpg
-  price: $10
+  price: 10
 -
   title: Mortar and Pestle
   buyLink: https://smile.amazon.com/dp/B076X8NTYS/
   buyTitle: Amazon
   image: /images/wishlist/mortar-pestle.jpg
-  price: $29
+  price: 29
 -
-  title: Thermapen digital thermometor 
+  title: Thermapen digital thermometor
   buyLink: https://www.thermoworks.com/Thermapen-Mk4
   buyTitle: ThermoWorks
   image: /images/wishlist/thermapen.jpg
-  price: $99
+  price: 99
+-
+  title: Jasmine essential oil
+  buyLink: https://smile.amazon.com/Woolzies-Jasmine-essential-natural-Therapeutic/dp/B01GOLFBIY/
+  buyTitle: Amazon
+  image: /images/wishlist/jasmine.jpg
+  price: 11
+-
+  title: Lavender essential oil
+  buyLink: https://smile.amazon.com/Handcraft-Lavender-Essential-Oil-Therapeutic/dp/B075817VBP/
+  buyTitle: Amazon
+  image: /images/wishlist/lavender.jpg
+  price: 16
+-
+  title: Boar bristle hair brush
+  buyLink: https://smile.amazon.com/Spornette-342-Straightening-Detangling-Maintenance/dp/B002RL8NGI/
+  buyTitle: Amazon
+  image: /images/wishlist/hairbrush.jpg
+  price: 20
+-
+  title: Fenty Beauty Moroccan Spice palette
+  buyLink: https://www.fentybeauty.com/moroccan-spice/eyeshadow-palette/29024.html
+  buyTitle: fentybeauty.com
+  image: /images/wishlist/moroccan-spice.jpg
+  price: 59
+-
+  title: 4 oz. ladle
+  buyLink: https://smile.amazon.com/Vollrath-4970410-One-Piece-Stainless-Steel/dp/B003A2QPU
+  buyTitle: Amazon
+  image: /images/wishlist/ladle.jpg
+  price: 6
+-
+  title: Offset spatula (4 1/2 in.)
+  buyLink: https://smile.amazon.com/Ateco-1385-Spatula-4-5-Inch-Stainless/dp/B000WG14FC/
+  buyTitle: Amazon
+  image: /images/wishlist/offset-spatula.jpg
+  price: 5
+-
+  title: MIU slotted turner
+  buyLink: https://smile.amazon.com/MIU-France-Stainless-Slotted-11-Inch/dp/B000GGTYC8
+  buyTitle: Amazon
+  image: /images/wishlist/slotted-turner.jpg
+  price: 9
+-
+  title: Rubbermaid high heat silicone spatula
+  buyLink: https://smile.amazon.com/Rubbermaid-Commercial-Products-FG1963000000-Silicone/dp/B01LR4XTIW
+  buyTitle: Amazon
+  image: /images/wishlist/high-heat-spatula.jpg
+  price: 12
+-
+  title: Kitchen shears
+  buyLink: https://smile.amazon.com/KitchenAid-KC351OHOBA-Multi-Purpose-Scissors-Stainless/dp/B0050U240O/
+  buyTitle: Amazon
+  image: /images/wishlist/kitchen-shears.jpg
+  price: 11
+-
+  title: Food processor
+  buyLink: https://smile.amazon.com/dp/B01AXM4WV2
+  buyTitle: Amazon
+  image: /images/wishlist/food-processor.jpg
+  price: 160
+-
+  title: OXO Pastry cutter
+  buyLink: https://smile.amazon.com/OXO-Stainless-Bladed-Blender-Cutter/dp/B000QJE48O/
+  buyTitle: Amazon
+  image: /images/wishlist/pastry-cutter.jpg
+  price: 12
+-
+  title: OXO Pizza cutter
+  buyLink: https://smile.amazon.com/OXO-SteeL-Pizza-Wheel-Cutter/dp/B0000E2GYL/
+  buyTitle: Amazon
+  price: 12
+  image: /images/wishlist/pizza-cutter.jpg
+-
+  title: KitchenAid 5-Qt. stand mixer
+  buyLink: https://smile.amazon.com/KitchenAid-KSM150PSWH-Artisan-Pouring-Shield/dp/B00005UP2K
+  buyTitle: Amazon
+  image: /images/wishlist/stand-mixer.jpg
+  price: 210
+-
+  title: Fat Daddio's 8x3 in. cake tin (x3)
+  buyLink: https://smile.amazon.com/Fat-Daddios-Anodized-Aluminum-Inches/dp/B0013374AM/
+  buyTitle: Amazon
+  image: /images/wishlist/cake-tin.jpg
+  price: 12
+-
+  title: Instant Pot
+  buyLink: https://www.target.com/p/instant-pot-7-in-1-pressure-cooker-6qt-stainless-steel/-/A-50608360
+  buyTitle: target.com
+  image: /images/wishlist/instant-pot.jpg
+  price: 80
+-
+  title: Rolling pin
+  buyLink: https://smile.amazon.com/Adams-Maple-Plain-Rolling-Dowel/dp/B000IYYG26/ref=sr_1_3?ie=UTF8&qid=1538257619&sr=8-3&keywords=jk+adams+19-inch+rolling+dowel
+  buyTitle: Amazon
+  image: /images/wishlist/rolling-pin.jpg
+  price: 15
+-
+  title: Goodwill of Central Texas gift card
+  buyLink: https://www.goodwillcentraltexas.org/locations
+  note: Available in-store only
+  image: /images/wishlist/goodwill.png
+-
+  title: 5 qt. stainless steel mixing bowl
+  buyLink: https://www.webstaurantstore.com/5-qt-standard-weight-stainless-steel-mixing-bowl/407MXB5.html
+  buyTitle: webstaurantstore.com
+  price: 2
+  image: /images/wishlist/stainless-steel-mixing-bowl-5qt.jpg
+-
+  title: 3 qt. stainless steel mixing bowl
+  buyLink: https://www.webstaurantstore.com/3-qt-standard-weight-stainless-steel-mixing-bowl/407MXB3.html
+  buyTitle: webstaurantstore.com
+  price: 1.5
+  image: /images/wishlist/stainless-steel-mixing-bowl-3qt.jpg

@@ -16,16 +16,15 @@
   <meta property="og:title" content="{{ .Title }}">
   <meta name="twitter:title" content="{{ .Title }}">
 
-  <meta property="og:description" content="Tara Vancil is a programmer and
-  decentralized Web enthusiast in Austin, TX.">
-  <meta name="twitter:description" content="Tara Vancil is a programmer and
-  decentralized Web enthusiast in Austin, TX.">
+  <meta property="og:description" content="Tara Vancil is a web developer in Austin, TX.">
+  <meta name="twitter:description" content="Tara Vancil is a web developer in Austin, TX.">
 
   <meta name="twitter:card" content="summary">
 
   <link rel="canonical" href="{{ .URL }}" />
-  <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Rubik:400,500,700">
   <link rel="stylesheet" href="/css/style.min.css" />
-  <link rel="icon" href="/favicon3.ico">
+  {{ if .Params.css }}
+    <link rel="stylesheet" href="{{ .Params.css }}" />
+  {{ end }}
+  <link rel="icon" href="/images/favicon.png">
 </head>

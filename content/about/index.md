@@ -1,6 +1,7 @@
 ---
 layout: single
 title: About
+css: /css/about.min.css
 ---
 Hi. I'm Tara. I'm the co-founder of [Blue Link Labs](https://bluelinklabs.com),
 the team behind [Beaker](https://beakerbrowser.com), a peer-to-peer Web browser,

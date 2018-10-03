@@ -26,6 +26,14 @@ gulp.task('build-scss', function () {
     .pipe(cssmin())
     .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest('static/css/'))
+
+  return gulp.src('src/scss/pages/*.scss')
+    .pipe(plumber({errorHandler: onError}))
+    .pipe(sass())
+    .pipe(autoprefixer())
+    .pipe(cssmin())
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(gulp.dest('static/css/'))
 })
 
 gulp.task('minify-html', function () {

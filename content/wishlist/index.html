@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,36 +23,48 @@
   </head>
 
   <body class="wishlist">
+    {{ partial "breadcrumbs.html" . }}
+
     <div class="container narrow">
-      <main>
+      <main role="main">
         <h1>Wishlist</h1>
 
         <p>
-          This is a list of things I want, like, or need, in no particular order. If you're thinking about buying me a gift, thank you! You're welcome to buy something directly from the list, or use the list as inspiration.
+          This is a list of things I want, need, or like. If you're thinking about buying me a gift, thank you! You're welcome to buy something directly from the list, or use the list as inspiration.
         </p>
 
-        <ul class="wishlist">
-          {{ range $.Site.Data.wishlist }}
+        <ul class="wishlist undecorated-list">
+          {{ range sort $.Site.Data.wishlist "price" "asc" }}
             <li class="item">
               <span class="thumbnail-container">
-                <img class="thumbnail" src="{{ .image }}"/>
+                <img class="thumbnail" src="{{ .image }}" alt="" />
               </span>
 
               <div class="info">
                 <div class="header">
-                  <a href="{{ .buyLink }}" class="title">
+                  <a href="{{ .buyLink }}" class="wishlist-title">
                     {{ .title }}
                   </a>
 
-                  <span class="price">{{ .price }}</span>
+                  {{ if .price }}
+                    <span class="price">${{ .price }}</span>
+                  {{ end }}
                 </div>
 
                 {{ if .size }}
                   <span class="size">My size: {{ .size }}</span>
                 {{ end }}
 
-                <a class="btn small dashed buy-link" href="{{ .buyLink }}">
+                {{ if .note }}
+                  <p>
+                    Note: {{ .note }}
+                  </p>
+                {{ end }}
+
+                {{ if .buyTitle }}
+                  <a class="btn btn--small small-text dashed-border buy-link" href="{{ .buyLink }}">
                   Buy on {{ .buyTitle }}
+                {{ end }}
                 </a>
               </div>
             </li>

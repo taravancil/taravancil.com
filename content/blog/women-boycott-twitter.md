@@ -9,6 +9,8 @@ In the aftermath of the recent Harvey Weinstein revelations,
 status of a specific user’s account, which it normally publicly declares
 it does not do.
 
+<!--more-->
+
 Twitter's moderation policies have always been flawed. It seems to apply its
 policies inconsistently and often feigns helplessness when pressed.
 

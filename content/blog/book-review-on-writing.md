@@ -4,8 +4,6 @@ date: 2017-09-25
 tags: [book-review, writing]
 ---
 
-<a target="_blank"  href="https://www.amazon.com/gp/product/B009BDVD2Q/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B009BDVD2Q&linkCode=as2&tag=taravancil-20&linkId=e662c800ad379e0bb9f2116da4593200"><img border="0" src="https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B009BDVD2Q&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=taravancil-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=taravancil-20&l=am2&o=1&a=B009BDVD2Q" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
-
 *On Writing* is part-autobiography and part-styleguide, and much less tactical writing guide
 than one might expect from a book about writing.
 

@@ -1,0 +1,47 @@
+@import '../base/colors';
+
+body.blog {
+
+  main {
+    margin-top: 20px;
+  }
+
+  article {
+    padding: 25px 0;
+    border-top: 1px solid $purple--border;
+
+    h1.title,
+    h1 a {
+      margin-top: 0;
+      font-size: 1.2rem;
+    }
+
+    .info {
+
+      .date {
+        font-style: italic;
+      }
+
+      .tags {
+        margin-top: 20px;
+      }
+    }
+
+    .content {
+      max-width: 650px;
+    }
+
+    .read-more {
+      display: block;
+      margin-top: 10px;
+    }
+  }
+
+  .mozhacks {
+    padding: 10px 0;
+
+    img {
+      margin-right: 5px;
+    }
+  }
+}

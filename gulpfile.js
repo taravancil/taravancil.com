@@ -1,14 +1,14 @@
-var gulp         = require('gulp')
-var sass         = require('gulp-sass')
+var gulp = require('gulp')
+var sass = require('gulp-sass')
 var autoprefixer = require('gulp-autoprefixer')
-var rename       = require('gulp-rename')
-var cssmin       = require('gulp-clean-css')
-var minifyHtml   = require('gulp-htmlmin')
+var rename = require('gulp-rename')
+var cssmin = require('gulp-clean-css')
+var minifyHtml = require('gulp-htmlmin')
 var notification = require('gulp-notify')
-var exec         = require('child_process').exec
-var plumber      = require('gulp-plumber')
-var uglify       = require('gulp-uglify')
-var pump         = require('pump')
+var exec = require('child_process').exec
+var plumber = require('gulp-plumber')
+var uglify = require('gulp-uglify')
+var pump = require('pump')
 
 gulp.task('build-scss', function () {
   var onError = function (err) {

@@ -1,0 +1,211 @@
+@import '../base/colors';
+@import '../utils/all';
+
+body.home {
+
+  main {
+    margin: 0 0 40px 0;
+  }
+
+  .hero-blurb {
+    margin: 20px 0;
+
+    @include respond-to(tablet) {
+      margin: 20px 0 30px 0;
+    }
+
+    .tour-link {
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .magnify {
+      width: 18px;
+      margin: 0 0 0 5px;
+      filter: saturate(6) hue-rotate(20deg) contrast(1)
+    }
+  }
+
+  .latest-activity {
+    margin: 0 0 40px 0;
+    grid-gap: 30px;
+
+    .speaking,
+    .latest-posts {
+      flex-direction: column;
+      align-items: flex-start;
+
+      @media (min-width: 670px) {
+        min-height: 175px;
+      }
+    }
+
+    ul {
+      margin: 0 0 10px 5px;
+    }
+
+    a.btn {
+      margin-top: auto;
+    }
+  }
+
+
+  .highlighted-links {
+    margin-bottom: 40px;
+
+    .heading {
+      vertical-align: top;
+      line-height: 1;
+    }
+
+    .link {
+      @extend %flex-container;
+      align-items: flex-start;
+      padding-right: 40px;
+
+      &:not(:last-of-type) {
+        margin-bottom: 20px;
+      }
+
+      > div {
+        width: 100%;
+      }
+
+      .thumbnails {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(35px, 1fr));
+        grid-gap: 5px;
+
+        img {
+          max-width: 100%;
+        }
+      }
+
+      &.feed {
+
+        .icon {
+          filter: saturate(2) hue-rotate(42deg) contrast(2.5);
+        }
+      }
+
+      &.nails {
+
+        p {
+          margin-bottom: 5px;
+        }
+
+        .icon {
+          filter: contrast(3.5) hue-rotate(90deg) saturate(10);
+        }
+      }
+
+      &.projects {
+
+        p {
+          margin-bottom: 5px;
+        }
+
+        .thumbnails {
+          grid-template-columns: repeat(auto-fill, minmax(55px, 1fr));
+        }
+
+        .icon {
+          filter: contrast(1.5) saturate(8) hue-rotate(170deg) invert(100%);
+        }
+      }
+
+      &.support .icon {
+        filter: saturate(1.75) hue-rotate(35deg) contrast(4)
+      }
+    }
+
+    .icon {
+      flex: 0 0 25px;
+      max-width: 25px;
+      margin-right: 15px;
+      font-size: 28px;
+      text-align: center;
+    }
+
+    .feed-item {
+      @extend %flex-container;
+      align-items: flex-start;
+
+      &:not(:last-of-type) {
+        margin-bottom: 10px;
+      }
+
+      .text {
+        font-style: italic;
+      }
+
+      .icon {
+        font-size: 12.5px;
+        flex: initial;
+        margin-right: 5px;
+      }
+
+      .text {
+        display: inline-block;
+      }
+    }
+  }
+
+  .highlighted-talk {
+    @extend %flex-container;
+    margin-bottom: 15px;
+
+    @media (min-width: 670px) {
+      margin: 0;
+    }
+
+    .thumbnail-container {
+      position: relative;
+      width: 65px;
+      margin-right: 10px;
+      border: 1px solid $teal--transparent;
+
+      &:before,
+      &:after {
+        position: absolute;
+        display: block;
+      }
+
+      &:before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: transparentize($teal, .85);
+        top: 0;
+        left: 0;
+      }
+
+      &:hover {
+
+        &:before {
+          background: $teal--transparent;
+        }
+      }
+
+      &:after {
+        content: '▶︎';
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        padding: 0 0 0 3px;
+        font-size: 17px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        background: $teal;
+
+        border: 1px solid transparentize(#000, .85);
+        color: #fff;
+      }
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}

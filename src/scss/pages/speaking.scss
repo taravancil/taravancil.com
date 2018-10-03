@@ -1,0 +1,110 @@
+@import '../base/colors';
+@import '../utils/all';
+
+.upcoming-talks {
+  margin-left: 5px;
+
+  .talk {
+
+    .info {
+      display: inline-block;
+      width: 165px;
+    }
+
+    .separator {
+      padding: 0 2px;
+    }
+  }
+}
+
+.talks-list {
+
+  li {
+    @extend %flex-container;
+    max-width: 100%;
+    padding: 15px 0;
+    color: $color-text--muted;
+    border-bottom: 1px solid $purple--border;
+
+    &:first-of-type {
+      border-top: 1px solid $purple--border;
+    }
+
+    .icon.play {
+      font-size: 12px;
+    }
+
+    .description,
+    .title {
+      @extend %overflow-ellipsis;
+      max-width: 100%;
+    }
+  }
+
+
+  .column {
+    padding: 0 40px;
+
+    &.date {
+      padding-left: 0;
+      flex: 0 0 50px;
+    }
+
+    &.date,
+    &.thumbnail {
+      display: none;
+
+      @include respond-to(tablet) {
+        display: initial;
+      }
+    }
+
+    &.info {
+      padding-left: 0;
+
+      @include respond-to(tablet) {
+        padding-left: 40px;
+      }
+    }
+
+    &.thumbnail {
+      padding: 0;
+      width: 70px;
+      text-align: center;
+
+      img {
+        max-width: 100%;
+        max-height: 50px;
+      }
+    }
+
+    &.info {
+      align-self: flex-start;
+      min-width: 450px;
+    }
+  }
+
+  .title {
+    display: block;
+    color: initial;
+    margin-bottom: 3px;
+
+    &:hover {
+      color: $red;
+    }
+  }
+
+  .description {
+    margin-top: 15px;
+  }
+
+  .links {
+    margin-top: 15px;
+    color: #000;
+    font-weight: 500;
+
+    a {
+      margin-right: 10px;
+    }
+  }
+}

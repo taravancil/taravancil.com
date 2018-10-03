@@ -1,0 +1,14 @@
+@import '../base/colors';
+
+.project-screenshots {
+  grid-template-columns: repeat(auto-fill, minmax(350px, 400px));
+}
+
+a:hover .project-screenshot {
+  border-color: #000;
+}
+
+.project-screenshot {
+  border: 1px solid $purple--border;
+  max-width: 100%;
+}

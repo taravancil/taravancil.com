@@ -99,12 +99,6 @@
   image: /images/wishlist/offset-spatula.jpg
   price: 5
 -
-  title: MIU slotted turner
-  buyLink: https://smile.amazon.com/MIU-France-Stainless-Slotted-11-Inch/dp/B000GGTYC8
-  buyTitle: Amazon
-  image: /images/wishlist/slotted-turner.jpg
-  price: 9
--
   title: Rubbermaid high heat silicone spatula
   buyLink: https://smile.amazon.com/Rubbermaid-Commercial-Products-FG1963000000-Silicone/dp/B01LR4XTIW
   buyTitle: Amazon
@@ -173,5 +167,11 @@
   title: 3 qt. stainless steel mixing bowl
   buyLink: https://www.webstaurantstore.com/3-qt-standard-weight-stainless-steel-mixing-bowl/407MXB3.html
   buyTitle: webstaurantstore.com
-  price: 1.5
+  price: 1.50
   image: /images/wishlist/stainless-steel-mixing-bowl-3qt.jpg
+-
+  title: FÖRHÖJA kitchen cart
+  buyLink: https://www.ikea.com/us/en/catalog/products/80035920/
+  buyTitle: ikea.com
+  price: 109
+  image: /images/wishlist/kitchen-cart.jpg

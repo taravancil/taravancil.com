@@ -1,8 +1,7 @@
-@import '../base/colors';
-@import '../utils/all';
+@import "../base/colors";
+@import "../utils/all";
 
 body.wishlist {
-
   ul.wishlist {
     margin-top: 40px;
   }
@@ -15,7 +14,7 @@ body.wishlist {
 
     &:not(:last-child) {
       margin-bottom: 20px;
-      border-bottom: 1px solid transparentize($purple, .85);
+      border-bottom: 1px solid transparentize($purple, 0.85);
       border-bottom: 1px solid $purple--border;
     }
 
@@ -60,18 +59,18 @@ body.wishlist {
         max-height: 80px;
       }
     }
+  }
 
-    .buy-link {
-      position: absolute;
-      left: 0;
-      bottom: 15px;
-      width: 100%;
+  .buy-link {
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    width: 100%;
 
-      @include respond-to(vertical-tablet) {
-        position: initial;
-        width: initial;
-        margin: 10px 0 0 auto;
-      }
+    @include respond-to(vertical-tablet) {
+      position: initial;
+      width: initial;
+      margin: 10px 0 0 auto;
     }
   }
 }

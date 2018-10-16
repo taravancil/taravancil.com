@@ -1,0 +1,20 @@
+<div class="breadcrumbs">
+  {{ if or (eq .Section "projects") (eq .Section "nails") }}
+    <div class="container medium">
+  {{ else }}
+    <div class="container wide">
+  {{ end }}
+    <a class="breadcrumb undecorated-link" href="/">Home</a>
+    {{ if and .IsPage .Section }}
+      <span class="breadcrumb-separator">&gt;</span>
+      <a class="breadcrumb undecorated-link" href="/{{ .Section }}">{{ humanize .Section }}</a>
+    {{ end }}
+    <span class="breadcrumb-separator">&gt;</span>
+
+    {{ if .Title }}
+      <span class="breadcrumb active">{{ .Title }}</a>
+    {{ else }}
+      <span class="breadcrumb active">{{ humanize (trim .URL "/") }}</span>
+    {{ end }}
+  </div>
+</div>

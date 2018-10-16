@@ -1,5 +1,4 @@
 body.post {
-
   main {
     position: relative;
   }
@@ -17,48 +16,15 @@ body.post {
   }
 
   .content {
-    max-width: 600px;
-
-    .div-container {
-      position: relative;
-    }
+    width: 100%;
+    max-width: 635px;
 
     img {
       max-width: 100%;
     }
-
-    ul,
-    ol {
-      margin-bottom: 20px;
-      margin-left: 40px;
-      padding: 0;
-
-      li {
-        margin-bottom: 4px;
-      }
-    }
-
-    ul {
-      list-style: disc;
-    }
- }
-
-  img {
-
-    &.full-width {
-      position: relative;
-      width: calc(100vw - 100px);
-      max-width: 1000px;
-      margin-left: auto;
-      margin-right: auto;
-      left: 50%;
-      -webkit-transform: translateX(-50%);
-      transform: translateX(-50%);
-    }
   }
 
   .img-grid {
-
     img {
       display: inline-block;
       width: calc(50% - 10px);

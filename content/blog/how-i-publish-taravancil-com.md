@@ -4,7 +4,7 @@ date: 2018-01-04
 tags: [dat, beaker, peer-to-peer-web, peer-to-peer]
 ---
 
-*Updated August 31, 2018. Originally published on January 4, 2018.*
+_Updated August 31, 2018. Originally published on January 4, 2018._
 
 I publish this website on [`dat://`](https://github.com/datproject/dat) and `https://`. As of August 31, 2018, my publishing workflow involves three tools:
 
@@ -12,7 +12,7 @@ I publish this website on [`dat://`](https://github.com/datproject/dat) and `htt
 
 1. [Hugo](https://gohugo.io), a static site generator
 2. The [Dat CLI](https://github.com/datproject/dat), for publishing updates to the Dat network
-3. [`homebase`](https://github.com/beakerbrowser/homabes), for syncing updates from the `dat://` version of my website to the `https://` version
+3. [`homebase`](https://github.com/beakerbrowser/homebase), for syncing updates from the `dat://` version of my website to the `https://` version
 
 <!--more-->
 
@@ -62,7 +62,7 @@ TTL=3600
 
 Because Beaker can trust the DNS resolution, Beaker can trust that [dat://taravancil.com](dat://taravancil.com) should point to [dat://4fa30df06cbeda4ae87be8fd4334a61289be6648fb0bf7f44f6b91d2385c9328](dat://4fa30df06cbeda4ae87be8fd4334a61289be6648fb0bf7f44f6b91d2385c9328).
 
-### homebase 
+### homebase
 
 [Paul](https://twitter.com/pfrazee) and I built a tool called `homebase` that provides HTTP mirroring, sets up TLS with [Let's Encrypt](https://letsencrypt.org/), and configures `dat://` shortnames.
 

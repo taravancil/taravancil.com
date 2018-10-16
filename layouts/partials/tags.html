@@ -1,7 +1,6 @@
 {{ if .Params.tags }}
 {{ with .Params.tags }}
 <aside class="tags">
-  Tags:
   {{ $sort := sort . }}
   {{ $links := apply $sort "partial" "tag" "." }}
   {{ $clean := apply $links "chomp" "." }}

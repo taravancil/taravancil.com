@@ -5,7 +5,7 @@ description: |
 screenshots:
   - /images/projects/count.png
 thumbnail: /images/projects/count.png
-link: count.taravancil.com
-srcLink: github.com/taravancil/count
+link: https://count.taravancil.com
+srcLink: https://github.com/taravancil/count
 css: /css/projects.min.css
 ---

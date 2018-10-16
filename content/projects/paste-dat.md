@@ -5,7 +5,7 @@ description: |
 screenshots:
   - /images/projects/paste-dat.png
 thumbnail: /images/projects/paste-dat.png
-link: dat://paste-dat.taravancil.hashbase.io
+link: dat://pastedat.taravancil.com
 srcLink: https://github.com/taravancil/paste-dat
 css: /css/projects.min.css
 ---

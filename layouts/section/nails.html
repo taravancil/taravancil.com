@@ -1,45 +1,57 @@
 <!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Amateuer nail art by Tara Vancil</title>
+<html lang="en">
 
-    <!-- open graph -->
-    <meta property="og:url" content="https://taravancil.com/nails"/>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nails - Tara Vancil</title>
 
-    <meta property="og:type" content="website">
+  <!-- open graph -->
+  <meta property="og:url" content="https://taravancil.com/nails" />
 
-    <meta property="twitter:site" content="@taravancil">
+  <meta property="og:type" content="website">
 
-    <meta property="og:title" content="Nails - Tara Vancil">
-    <meta name="twitter:title" content="Nails - Tara Vancil">
+  <meta property="twitter:site" content="@taravancil">
 
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Rubik:400,500,700">
-    <link rel="stylesheet" href="/css/style.min.css" />
-    <link rel="stylesheet" href="/css/nails.min.css" />
-    <link rel="icon" href="/images/favicon.png">
-  </head>
+  <meta property="og:title" content="Nails - Tara Vancil">
+  <meta name="twitter:title" content="Nails - Tara Vancil">
 
-  <body class="nails post">
-    {{ partial "nav.html" }}
-    <div class="container">
-      <main>
-        <h1>Amateur nail art by Tara Vancil</h1>
+  <link rel="stylesheet" href="/css/style.min.css" />
+  <link rel="stylesheet" href="/css/nails.min.css" />
+  <link rel="icon" href="/images/favicon.png">
+</head>
 
-        <ul class="posts-list">
+<body class="nails post">
+  {{ partial "breadcrumbs.html" . }}
+
+  <div class="container narrow">
+    <main role="main">
+      <h1>Nails</h1>
+
+      <p>
+        Like a lot of people, I started painting my nails to discourage nailbiting. I was quickly drawn in by the
+        amazing techniques of nail techs on Instagram, and what started as a preventative measure soon turned into a
+        full-blown hobby.
+      </p>
+
+      <p>
+        I'm not licensed and I mostly work on myself, but I'm pretty decent at doing acrylics and working with gel
+        polish.
+      </p>
+
+      <ul class="nails-grid undecorated-list">
         {{ range (where .Data.Pages "Section" "nails") }}
         <li>
-            <a href="{{ .Permalink }}">
-                <img src="{{ .Params.img }}"/>
-                <span class="title">{{ .Title }}</span>
-            </a>
+          <a class="undecorated-link" href="{{ .Permalink }}">
+            <img src="{{ .Params.img }}" alt="{{ .Params.caption }}" />
+            <span class="title small-text">{{ .Title }}</span>
+          </a>
         </li>
         {{ end }}
-        </ul>
-      </main>
-    </div>
-    {{ partial "footer.html" . }}
-  </body>
+      </ul>
+    </main>
+  </div>
+  {{ partial "footer.html" }}
+</body>
+
 </html>

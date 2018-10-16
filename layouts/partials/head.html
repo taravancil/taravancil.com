@@ -2,11 +2,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>
-    {{ if ne .Title "Tara Vancil" }}{{ .Title }} &bull; {{ end }}
+    {{ if ne .Title "Tara Vancil" }}{{ .Title }} - {{ end }}
     {{ .Site.Title }}
   </title>
 
-  <!-- open graph -->
+  <meta name="author" content="Tara Vancil">
   <meta property="og:url" content="https://taravancil.com{{ .Permalink }}">
 
   <meta property="og:type" content="website">

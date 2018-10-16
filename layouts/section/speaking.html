@@ -1,122 +1,126 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Speaking- Tara Vancil</title>
 
-    <!-- open graph -->
-    <meta property="og:url" content="https://taravancil.com/wishlist"/>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Speaking- Tara Vancil</title>
 
-    <meta property="og:type" content="website">
+  <!-- open graph -->
+  <meta property="og:url" content="https://taravancil.com/wishlist" />
 
-    <meta property="twitter:site" content="@taravancil">
+  <meta property="og:type" content="website">
 
-    <meta property="og:title" content="Speaking - Tara Vancil">
-    <meta name="twitter:title" content="Speaking - Tara Vancil">
+  <meta property="twitter:site" content="@taravancil">
 
-    <meta name="twitter:card" content="summary">
+  <meta property="og:title" content="Speaking - Tara Vancil">
+  <meta name="twitter:title" content="Speaking - Tara Vancil">
 
-    <link rel="stylesheet" href="/css/style.min.css" />
-    <link rel="icon" href="/images/favicon.png">
-  </head>
+  <meta name="twitter:card" content="summary">
 
-  <body class="speaking">
-    {{ partial "breadcrumbs.html" . }}
+  <link rel="stylesheet" href="/css/style.min.css" />
+  <link rel="icon" href="/images/favicon.png">
+</head>
 
-    <div class="container narrow">
-      <main role="main">
-        <h1>Speaking</h1>
+<body class="speaking">
+  {{ partial "breadcrumbs.html" . }}
 
-        <p>
-          I've spoken at a handful of events, mostly about the Web and peer-to-peer protocols. Want to invite me to your event? <a href="mailto:contact@taravancil.com">Email me</a>! I'm taking it easy in 2019, but I might consider speaking at an event or two.
-        </p>
+  <div class="container narrow">
+    <main role="main">
+      <h1>Speaking</h1>
 
-        <h2 class="inline-heading">Upcoming presentations</h2>
+      <p>
+        I've spoken at a handful of events, mostly about the Web and peer-to-peer protocols. Want to invite me to your
+        event? <a href="mailto:contact@taravancil.com">Email me</a>! I'm taking it easy in 2019, but I might consider
+        speaking at an event or two.
+      </p>
 
-        <ul class="upcoming-talks">
-          <li class="talk">
-            <span class="info">
-              Nov. 15-16
-              <span aria-hidden="true" class="separator">/</span>
-              Seattle
-            </span>
+      <h2 class="inline-heading">Upcoming presentations</h2>
 
-            <a class="title " href="https://2018.cascadiajs.com/speakers/tara-vancil">
-              CascadiaJS
-            </a>
-          </li>
+      <ul class="upcoming-talks">
+        <li class="talk">
+          <span class="info">
+            Nov. 15-16
+            <span aria-hidden="true" class="separator">/</span>
+            Seattle
+          </span>
 
-          <li class="talk">
-            <span class="info">
-              Oct. 18
-              <span aria-hidden="true" class="separator">/</span>
-              Buenos Aires
-            </span>
+          <a class="title " href="https://2018.cascadiajs.com/speakers/tara-vancil">
+            CascadiaJS
+          </a>
+        </li>
 
-            <a class="title " href="https://2018.nodeconf.com.ar/">
-              Nodeconf AR
-            </a>
-          </li>
-        </ul>
+        <li class="talk">
+          <span class="info">
+            Oct. 18
+            <span aria-hidden="true" class="separator">/</span>
+            Buenos Aires
+          </span>
 
-        <div class="talks">
-          <ul class="talks-list undecorated-list">
-            {{ range sort $.Site.Data.talks ".date" "desc" }}
-              <li>
-                <div class="column date">{{ .date }}</div>
+          <a class="title " href="https://2018.nodeconf.com.ar/">
+            Nodeconf AR
+          </a>
+        </li>
+      </ul>
 
-                <div aria-hidden="true" class="column thumbnail">
-                  <img aria-hidden="true" alt="" src="{{ .thumbnail }}"/>
-                </div>
+      <div class="talks">
+        <ul class="talks-list undecorated-list">
+          {{ range sort $.Site.Data.talks ".date" "desc" }}
+          <li>
+            <div class="column date">{{ .date }}</div>
 
-                <div class="column info">
-                  <a class="title" href="{{ .link }}">{{ .title }}</a>
+            <div aria-hidden="true" class="column thumbnail">
+              <img aria-hidden="true" alt="" src="{{ .thumbnail }}" />
+            </div>
 
+            <div class="column info">
+              <a class="title" href="{{ .link }}">{{ .title }}</a>
+
+              {{ if eq .type "talk" }}
+              <div class="small-text">
+
+                <span class="event"> {{ .event }}</span>
+                in
+                <span class="location"> {{ .location }}</span>
+              </div>
+              {{ else }}
+              <div class="event small-text">{{ .event }}</div>
+              {{ end }}
+
+              {{ if .description }}
+              <p class="description small-text">
+                {{ .description }}
+              </p>
+              {{ end }}
+
+              {{ if or .slides .recording }}
+              <div class="links">
+                {{ if .recording }}
+                <a class="recording btn btn--small" href="{{ .recording }}">
                   {{ if eq .type "talk" }}
-                    <div class="small-text">
-
-                      <span class="event"> {{ .event }}</span>
-                      in
-                      <span class="location"> {{ .location }}</span>
-                    </div>
+                  Watch
+                  <span class="btn-icon btn-icon--right" aria-hidden="true">▶</span>
                   {{ else }}
-                    <div class="event small-text">{{ .event }}</div>
+                  Listen
                   {{ end }}
+                </a>
+                {{ end }}
 
-                  {{ if .description }}
-                    <p class="description small-text">
-                      {{ .description }}
-                    </p>
-                  {{ end }}
+                {{ if .slides }}
+                <a class="slides small-text" href="{{ .slides }}">
+                  Slides
+                </a>
+                {{ end }}
+              </div>
+              {{ end }}
+            </div>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+    </main>
+  </div>
+  {{ partial "footer.html" }}
+</body>
 
-                  {{ if or .slides .recording }}
-                    <div class="links">
-                      {{ if .recording }}
-                        <a class="recording btn btn--small" href="{{ .recording }}">
-                          {{ if eq .type "talk" }}
-                            Watch
-                            <span class="btn-icon btn-icon--right" aria-hidden="true">▶</span>
-                          {{ else }}
-                            Listen
-                          {{ end }}
-                        </a>
-                      {{ end }}
-
-                      {{ if .slides }}
-                        <a class="slides small-text" href="{{ .slides }}">
-                          Slides
-                        </a>
-                      {{ end }}
-                    </div>
-                  {{ end }}
-                </div>
-              </li>
-            {{ end }}
-          </ul>
-        </div>
-      </main>
-    </div>
-    {{ partial "footer.html" (dict "size" "wide") }}
-  </body>
 </html>

@@ -1,48 +1,94 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ .Title }}</title>
 
-    <!-- open graph -->
-    <meta property="og:url" content="https://taravancil.com/nails"/>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ .Title }} - Nails by Tara Vancil</title>
 
-    <meta property="og:type" content="website">
+  <!-- open graph -->
+  <meta property="og:url" content="https://taravancil.com/nails" />
 
-    <meta property="twitter:site" content="@taravancil">
+  <meta property="og:type" content="website">
 
-    <meta property="og:title" content="{{ .Title }}">
-    <meta name="twitter:title" content="{{ .Title }}">
+  <meta property="twitter:site" content="@taravancil">
 
-    <meta name="twitter:card" content="summary">
+  <meta property="og:title" content="{{ .Title }} - Nails by Tara Vancil">
+  <meta name="twitter:title" content="{{ .Title }} - Nails by Tara Vancil">
 
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Rubik:400,500,700">
-    <link rel="stylesheet" href="/css/style.min.css" />
-    <link rel="icon" href="/favicon3.ico">
-  </head>
+  <meta name="twitter:card" content="summary">
 
-  <body class="nails post">
-    {{ partial "nav.html" }}
-    <div class="container">
-      <main>
-        <article class="recipe content">
-          <div class="info">
-            <h1>{{ .Title }}</h1>
+  <link rel="stylesheet" href="/css/style.min.css" />
+  <link rel="stylesheet" href="/css/nails.min.css" />
+  <link rel="icon" href="/images/favicon.png">
+</head>
+
+<body class="nails single">
+  {{ partial "breadcrumbs.html" . }}
+
+  <div class="container narrow">
+    <main role="main">
+      <article class="content">
+        <h1>{{ .Title }}</h1>
+        <div class="date small-text">
+          {{ .Date.Format "Jan 2, 2006" }}
+        </div>
+
+        <div class="columns">
+          <div class="col col-2-5">
+            <img class="image" alt="{{ $.Params.caption }}" src="{{ $.Params.img }}" />
+
           </div>
 
-          <div class="content">
-            <figure>
-              <img src="{{ $.Params.img }}"/>
-              <figcaption>{{ $.Params.caption }}</figcaption>
-            </figure>
+          <div class="description col col-3-5">
+            {{ .Content }}
 
-            <p>{{ .Content }}</p>
+            {{ if $.Params.polishes }}
+            <h2 class="inline-heading">Polishes used</h2>
+            <ul class="decorated">
+              {{ range $.Params.polishes }}
+              <li>
+                <a href="{{ .link }}">
+                  {{ .name }} by {{ .brand }}
+                </a>
+              </li>
+              {{ end }}
+            </ul>
+            {{ end }}
+
+            {{ if $.Params.accessories }}
+            <h2 class="inline-heading">Accessories used</h2>
+            <ul class="decorated">
+              {{ range $.Params.accessories }}
+              <li><a href="{{ .link }}">{{ .name }}</a></li>
+              {{ end }}
+            </ul>
+            {{ end }}
           </div>
-        </article>
-      </main>
-    </div>
-    {{ partial "footer.html" . }}
-  </body>
+        </div>
+
+        <div class="links">
+
+          {{ if .PrevInSection }}
+          <a class="btn prev" href="{{ .PrevInSection.URL }}">
+            <- Previous: {{ .PrevInSection.Title }} <img class="thumbnail" alt="{{ .PrevInSection.Params.caption }}"
+              src="{{ .PrevInSection.Params.img }}" />
+          </a>
+          {{ end }}
+
+          {{ if .NextInSection }}
+          <a class="btn next" href="{{ .NextInSection.URL }}">
+            <img class="thumbnail" alt="{{ .NextInSection.Params.caption }}" src="{{ .NextInSection.Params.img }}" />
+            Next: {{ .NextInSection.Title }} ->
+          </a>
+          {{ end }}
+
+        </div>
+      </article>
+    </main>
+  </div>
+
+  {{ partial "footer.html" }}
+</body>
+
 </html>

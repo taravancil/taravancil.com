@@ -1,19 +1,67 @@
 <!doctype html>
-<html>
-  {{ partial "head.html" . }}
+<html lang="en">
 
-  <body class="blog">
-    {{ partial "nav.html" }}
-    <div class="container">
-      <main>
-	      <h1>Blog</h1>
-	      <ul class="posts-list">
-	        {{ range (where .Data.Pages "Section" "blog") }}
-	        {{ .Render "li" }}
-	        {{ end }}
-	      </ul>
-      </main>
-    </div>
-    {{ partial "footer.html" . }}
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog - Tara Vancil</title>
+
+  <meta name="author" content="Tara Vancil">
+  <meta property="og:url" content="https://taravancil.com/blog">
+
+  <meta property="og:type" content="website">
+
+  <meta property="twitter:site" content="@taravancil">
+
+  <meta property="og:title" content="Blog - Tara Vancil">
+  <meta name="twitter:title" content="Blog - Tara Vancil">
+
+  <meta name="twitter:card" content="summary">
+
+  <link rel="canonical" href="https://taravancil.com{{ .URL }}" />
+  <link rel="stylesheet" href="/css/style.min.css" />
+  <link rel="stylesheet" href="/css/blog.min.css" />
+  <link rel="icon" href="/images/favicon.png">
+</head>
+
+<body class="blog home">
+  {{ partial "breadcrumbs.html" . }}
+
+  <div class="container wide">
+    <main role="main">
+      <div class="posts-list">
+        <a href="https://hacks.mozilla.org/2018/08/dweb-serving-the-web-from-the-browser-with-beaker/" class="mozhacks wavy flex">
+          <img src="https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/wp-content/themes/Hax/favicon.ico"
+            aria-hidden="true">
+          Read my post on Mozilla Hacks
+        </a>
+
+        {{ range (where .Data.Pages "Section" "blog") }}
+        <article>
+          <div class="columns">
+            <div class="col col-1-5 info">
+              <div class="date">
+                Published on {{ .Date.Format "Jan 02, 2006" }}
+              </div>
+
+              {{ partial "tags.html" . }}
+            </div>
+
+            <div class="content col col-4-5">
+              <h1 class="title">
+                <a href="{{ .URL }}">{{ .Title }}</a>
+              </h1>
+
+              {{ .Summary }}
+
+              <a class="read-more" href="{{ .URL }}">Read more →</a>
+            </div>
+          </div>
+        </article>
+        {{ end }}
+    </main>
+  </div>
+  {{ partial "footer.html" }}
+</body>
+
 </html>

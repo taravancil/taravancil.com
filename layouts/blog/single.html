@@ -1,53 +1,55 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ .Title }} - Tara Vancil</title>
 
-    <meta name="author" content="Tara Vancil">
-    <meta property="og:url" content="https://taravancil.com/blog">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ .Title }} - Tara Vancil</title>
 
-    <meta property="og:type" content="website">
+  <meta name="author" content="Tara Vancil">
+  <meta property="og:url" content="https://taravancil.com/blog">
 
-    <meta property="twitter:site" content="@taravancil">
+  <meta property="og:type" content="website">
 
-    <meta property="og:title" content="{{ .Title }} - Tara Vancil">
-    <meta name="twitter:title" content="{{ .Title }} - Tara Vancil">
+  <meta property="twitter:site" content="@taravancil">
 
-    <meta name="twitter:card" content="summary">
+  <meta property="og:title" content="{{ .Title }} - Tara Vancil">
+  <meta name="twitter:title" content="{{ .Title }} - Tara Vancil">
 
-    <link rel="canonical" href="https://taravancil.com{{ .URL }}" />
-    <link rel="stylesheet" href="/css/style.min.css" />
-    <link rel="stylesheet" href="/css/blog.min.css" />
-    <link rel="stylesheet" href="/css/post.min.css" />
+  <meta name="twitter:card" content="summary">
 
-    <link rel="icon" href="/images/favicon.png">
-  </head>
+  <link rel="canonical" href="https://taravancil.com{{ .URL }}" />
+  <link rel="stylesheet" href="/css/style.min.css" />
+  <link rel="stylesheet" href="/css/blog.min.css" />
+  <link rel="stylesheet" href="/css/post.min.css" />
 
-  <body class="post">
-    {{ partial "breadcrumbs.html" . }}
+  <link rel="icon" href="/images/favicon.png">
+</head>
 
-    <div class="container wide">
-      <main class="main">
-        <article class="content">
-          <div class="info">
-            <h1 class="title">{{ .Title }}</h1>
-            <div class="meta">
-              Posted on
-              <span class="date">
-                {{ .Date.Format "Jan 02, 2006" }}
-              </span>
+<body class="post">
+  {{ partial "breadcrumbs.html" . }}
+
+  <div class="container wide">
+    <main class="main">
+      <article>
+        <div class="columns">
+          <div class="col col-1-5 info">
+            <div class="date">
+              Published on {{ .Date.Format "Jan 02, 2006" }}
             </div>
-          </div>
-
-          <div class="content">
-            {{ .Content }}
             {{ partial "tags.html" . }}
           </div>
-        </article>
-      </main>
-      </div>
-      {{ partial "footer.html" . }}
-  </body>
+
+          <div class="content col col-4-5">
+            <h1 class="title">{{ .Title }}</h1>
+            {{ .Content }}
+          </div>
+        </div>
+      </article>
+    </main>
+  </div>
+
+  {{ partial "footer.html" }}
+</body>
+
 </html>

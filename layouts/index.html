@@ -1,162 +1,283 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>
-      {{ if ne .Title "Tara Vancil" }}{{ .Title }} - {{ end }}
-      {{ .Site.Title }}
-    </title>
 
-    <meta name="author" content="Tara Vancil">
-    <meta property="og:url" content="https://taravancil.com{{ .Permalink }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+    {{ if ne .Title "Tara Vancil" }}{{ .Title }} - {{ end }}
+    {{ .Site.Title }}
+  </title>
 
-    <meta property="og:type" content="website">
+  <meta name="author" content="Tara Vancil">
+  <meta property="og:url" content="https://taravancil.com{{ .Permalink }}">
 
-    <meta property="twitter:site" content="@taravancil">
+  <meta property="og:type" content="website">
 
-    <meta property="og:title" content="Tara Vancil">
-    <meta name="twitter:title" content="Tara Vancil">
+  <meta property="twitter:site" content="@taravancil">
 
-    <meta property="og:description" content="Web developer in Austin, TX.">
-    <meta name="twitter:description" content="Web developer in Austin, TX.">
+  <meta property="og:title" content="Tara Vancil">
+  <meta name="twitter:title" content="Tara Vancil">
 
-    <meta name="twitter:card" content="summary">
+  <meta property="og:description" content="Web developer in Austin, TX.">
+  <meta name="twitter:description" content="Web developer in Austin, TX.">
 
-    <link rel="canonical" href="https://taravancil.com" />
-    <link rel="stylesheet" href="/css/style.min.css" />
-    <link rel="stylesheet" href="/css/home.min.css" />
+  <meta name="twitter:card" content="summary">
 
-    <link rel="icon" href="/images/favicon.png">
-  </head>
+  <link rel="canonical" href="https://taravancil.com" />
+  <link rel="stylesheet" href="/css/style.min.css" />
+  <link rel="stylesheet" href="/css/home.min.css" />
 
-  <body class="home">
-    <main>
-      <div class="hero">
-        <div class="container">
+  <link rel="icon" href="/images/favicon.png">
+</head>
+
+<body class="home">
+  <style>
+    .hero,
+    .container {
+      position: relative;
+    }
+
+    .pattern {
+      position: absolute;
+      left: 0;
+      top: 0;
+      content: '';
+      width: 100%;
+      height: 100%;
+      background: #00ffda;
+      -webkit-mask: url(/images/patterns/squares.svg);
+      mask: url(/images/patterns/squares.svg);
+    }
+
+    .avatar {
+      background: #eb0000;
+      color: #fff;
+      text-align: center;
+    }
+
+    .big-avatar {
+      width: 95px;
+      height: 95px;
+      line-height: 87px;
+      font-size: 48px;
+    }
+  </style>
+  <main role="main">
+    <header class="hero" aria-hidden="true">
+      <svg class="pattern" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="PurpleToTeal">
+            <stop offset="5%" stop-color="#9b0267" />
+            <stop offset="95%" stop-color="#00ffda" />
+          </linearGradient>
+
+          <linearGradient id="RedToPink" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="20%" stop-color="#eb0000" />
+            <stop offset="80%" stop-color="#fb0059" />
+          </linearGradient>
+
+          <pattern id="Pattern" x="0" y="0" width="50px" height="50px" patternUnits="userSpaceOnUse">
+            <rect x="0" y="0" width="50" height="50" fill="#00ffda" />
+            <rect x="0" y="0" width="25" height="25" fill="url(#RedToPink)" />
+            <circle cx="25" cy="25" r="15" fill="url(#PurpleToTeal)" fill-opacity="0.5" />
+          </pattern>
+        </defs>
+        <rect fill="url(#Pattern)" width="100%" height="100%" />
+      </svg>
+
+      <div class="container narrow">
+        <div class="hero-intro">
+          <div aria-hidden="true" class="avatar big-avatar">
+            :-)
+          </div>
         </div>
       </div>
+    </header>
 
-      <div class="recent-activity">
-        <div class="container">
-          <div class="posts">
-  	        <h2>Recent posts</h2>
-  	        <ul class="recent-posts-list">
-    	        {{ range first 1 (where .Data.Pages "Section" "blog") }}
-                {{ partial "post-summary.html" . }}
-    	        {{ end }}
-            </ul>
+    <div class="highlights">
+      <div class="container narrow">
+        <section class="hero-blurb">
+          <p class="large-text">
+            Hi! I'm Tara. I do a lot of things—code, write, design, but most of all, I love building on the Web.
+          </p>
 
-            <ul class="posts-list">
-              {{ range (first 3 (after 1 (where .Data.Pages "Section" "blog") )) }}
-                {{ .Render "li" }}
-              {{ end }}
-    	      </ul>
-            <a class="more" href="/blog">All posts &raquo;</a>
-          </div>
+          <p>
+            I currently work on <a href="https://beakerbrowser.com">Beaker</a>, an experimental browser that explores
+            what happens when you integrate a p2p protocol into the Web.
+            <a class="tour-link wavy" href="https://beakerbrowser.com/docs/tour">
+              Take a tour of Beaker
+              <img class="magnify" aria-hidden="true" src="/images/emoji/magnify-right.png" />
+            </a>
+          </p>
+        </section>
 
-          <div class="talks">
-            <h2>Speaking</h2>
-            <ul class="talks-list">
-              {{ range sort $.Site.Data.talks ".weight" }}
-                <li>
-                  <h3>
-                    <a href="{{ .link }}">{{ .title }}</a>
-                  </h3>
-                  <span>{{ .event }}</span>
-                  —
-                  <time datetime="{{ .date }}">{{ .date }}</time>
+        <section class="latest-activity grid grid--300">
+          <div class="latest-posts flex">
+            <h2 class="inline-heading">
+              Latest posts
+            </h2>
 
-                  <span class="links">
-                    {{ if .slides }}
-                      <a class="slides" href="{{ .slides }}">Slides</a>
-                    {{ end }}
-
-                    {{ if and .video .slides }}
-                      <span> | </span>
-                    {{ end }}
-
-                    {{ if .video }}
-                      <a class="video" href="{{ .video }}">Video</a>
-                    {{ end }}
-                  </span>
-                </li>
+            <ul class="small-text">
+              {{ range first 3 (where .Data.Pages "Section" "blog") }}
+              <li>
+                <a class="title" href="{{ .URL }}" class="post">
+                  {{ .Title }}
+                </a>
+              </li>
               {{ end }}
             </ul>
+
+            <a href="/blog" class="btn btn--small small-text">
+              View all posts ->
+            </a>
           </div>
-        </div>
-      </div>
 
-      <div id="projects" class="projects">
-        <div class="container">
-          <h2>Selected projects</h2>
+          <div class="speaking flex">
+            <h2 class="inline-heading">
+              Upcoming presentations
+            </h2>
 
-          <ul class="projects-list">
-            {{ range $.Site.Data.projects }}
-              {{ if .screenshots }}
-                <li id="{{ .id }}" class="project">
-                  <h3 class="title">{{ .title }}</h3>
+            <ul class="upcoming-talks small-text">
+              <li class="talk">
+                <span class="info">
+                  Oct. 18
+                  <span aria-hidden="true" class="separator">/</span>
+                  Buenos Aires
+                </span>
 
-                  <div data-project="{{ .id }}" class="img-container ss click-to-expand">
-                    <img src="/images/{{ index .screenshots 0 }}.png" />
-                  </div>
+                <a class="title" href="https://2018.nodeconf.com.ar/">
+                  Nodeconf Argentina
+                </a>
+              </li>
 
-                  <div class="thumbnails">
-                    {{ if gt (len .screenshots) 1 }}
-                      {{ range after 1 .screenshots }}
-                        <div class="img-container">
-                          <img data-src="{{ . }}" src="/images/{{ . }}-thumbnail.jpg" />
-                        </div>
-                      {{ end }}
-                    {{ end }}
-                  </div>
+              <li class="talk">
+                <span class="info">
+                  Nov. 15-16
+                  <span aria-hidden="true" class="separator">/</span>
+                  Seattle
+                </span>
 
-                  <div class="desc">
-                    {{ .description | markdownify }}
-                  </div>
+                <a class="title" href="https://2018.cascadiajs.com/speakers/tara-vancil">
+                  CascadiaJS
+                </a>
+              </li>
+            </ul>
 
-                  <div class="summary">
-                    {{ .summary | markdownify }}
-                  </div>
+            <a href="https://www.youtube.com/watch?v=rJ_WvfF3FN8" class="highlighted-talk wavy small-text">
+              <div class="thumbnail-container">
+                <img alt="Tara Vancil on stage at JSConf EU 2018" src="/images/speaking/jsconfeu.jpg" />
+              </div>
 
-                  <p class="links">
-                    <ul class="links-list">
-                      {{ range .links }}
-                        <li>
-                          <a href="https://{{ . }}">{{ . }}</a>
-                        </li>
-                      {{ end }}
-                    </ul>
+              <p>
+                Watch my JSConf EU talk, <br><em>Imagine this: a Web without servers</em>
+              </p>
+            </a>
+
+            <a href="/speaking" class="btn btn--small small-text">
+              View all presentations ->
+            </a>
+          </div>
+        </section>
+
+        <section class="module highlighted-links">
+          <div class="nails link">
+            <img src="/images/emoji/nails.png" aria-hidden="true" class="icon" />
+
+            <div>
+              <a class="heading undecorated-link" href="/nails">
+                Nails →
+              </a>
+
+              <p class="small-text">
+                I love all things nails! I'm not licensed and I mostly work on myself, but I'm pretty decent at doing
+                acrylics and working with gel polish.
+              </p>
+
+              <div class="thumbnails" aria-hidden="true">
+                {{ range first 6 (where .Data.Pages "Section" "nails") }}
+                <a href="{{ .URL }}" class="thumbnail">
+                  <img alt="" src="{{ .Params.thumbnail }}" />
+                </a>
+                {{ end }}
+              </div>
+            </div>
+          </div>
+
+          <div class="projects link">
+            <img src="/images/emoji/wrench.png" aria-hidden="true" class="icon" />
+
+            <div>
+              <a class="heading undecorated-link" href="/projects">
+                My projects →
+              </a>
+
+              <p class="small-text">
+                Selected projects
+              </p>
+
+              <div class="thumbnails">
+                <a aria-hidden="true" href="/projects/pixel-eyez" class="thumbnail">
+                  <img alt="" src="/images/thumbnails/projects/pixel-eyez2.png" />
+                </a>
+
+                <a aria-hidden="true" href="/projects/beaker-browser-com" class="thumbnail">
+                  <img alt="" src="/images/thumbnails/projects/beaker-website.png" />
+                </a>
+
+                <a aria-hidden="true" href="/projects/paste-dat" class="thumbnail">
+                  <img alt="" src="/images/thumbnails/projects/paste-dat.png" />
+                </a>
+
+                <a aria-hidden="true" href="/projects/beaker-docs" class="thumbnail">
+                  <img alt="" src="/images/thumbnails/projects/beaker-docs.png" />
+                </a>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="support link">
+            <img src="/images/emoji/hearts.png" aria-hidden="true" class="icon" />
+
+            <div>
+              <a class="heading undecorated-link" href="https://opencollective.com/beaker">
+                Support my work →
+              </a>
+
+              <p class="small-text">
+                Become a backer on Open Collective and help sustain my work on Beaker.
+              </p>
+            </div>
+          </div>
+
+          <div class="feed link">
+            <img src="/images/emoji/yelling.png" aria-hidden="true" class="icon" />
+
+            <div>
+              <a class="heading undecorated-link" href="/feed">
+                My feed →
+              </a>
+
+              <p class="small-text">
+                <em>Coming soon...</em>
+              </p>
+
+              <!-- <div class="feed-item small-text">
+                  <span class="icon">&gt;</span>
+                  <p class="text">
+                    Cats are good <a class="timestamp" href="/">3m ago</a>
                   </p>
-
-                  <span data-project="{{ .id }}" class="more click-to-expand">
-                    More +
-                  </span>
-
-                  <span data-project="{{ .id }}" class="less click-to-close">
-                    Close -
-                  </span>
-                </li>
-              {{ else }}
-                <li class="project list-item">
-                  <h3 class="title">{{ .title }}</h3>
-                  <p class="desc">{{ .description | markdownify }}</p>
-                  <ul class="links-list">
-                    {{ range .links }}
-                      <li>
-                        <a href="https://{{ . }}">{{ . }}</a>
-                      </li>
-                    {{ end }}
-                  </ul>
-                </li>
-              {{ end }}
-            {{ end }}
-          </ul>
-          <a class="more" href="https://github.com/taravancil">View more on GitHub &raquo;</a>
-        </div>
+                </div> -->
+            </div>
+          </div>
+        </section>
       </div>
-    </main>
-    {{ partial "footer.html" . }}
-    <script src="/js/projects.js"></script>
-  </body>
+    </div>
+  </main>
+
+  {{ partial "footer.html" }}
+</body>
+
 </html>

@@ -1,20 +1,8 @@
 main {
-  margin-bottom: 100px;
+  margin: 20px 0;
+  min-height: calc(100vh - 160px);
 
-  &__content {
-
-    p a,
-    h1 a,
-    h2 a,
-    h3 a,
-    h4 a,
-    h5 a,
-    h6 a {
-      @extend %link;
-    }
-
-    ul li, ol li {
-      margin-bottom: .2em;
-    }
+  @include respond-to(tablet) {
+    margin: 40px 0 60px 0;
   }
 }

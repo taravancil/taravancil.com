@@ -1,48 +1,51 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Projects- Tara Vancil</title>
 
-    <!-- open graph -->
-    <meta property="og:url" content="https://taravancil.com/projects"/>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects - Tara Vancil</title>
 
-    <meta property="og:type" content="website">
+  <!-- open graph -->
+  <meta property="og:url" content="https://taravancil.com/projects" />
 
-    <meta property="twitter:site" content="@taravancil">
+  <meta property="og:type" content="website">
 
-    <meta property="og:title" content="Projects - Tara Vancil">
-    <meta name="twitter:title" content="Projects - Tara Vancil">
+  <meta property="twitter:site" content="@taravancil">
 
-    <link rel="stylesheet" href="/css/style.min.css" />
-    <link rel="stylesheet" href="/css/projects.min.css" />
-    <link rel="icon" href="/images/favicon.png">
-  </head>
+  <meta property="og:title" content="Projects - Tara Vancil">
+  <meta name="twitter:title" content="Projects - Tara Vancil">
 
-  <body class="projects">
-    {{ partial "breadcrumbs.html" . }}
+  <link rel="stylesheet" href="/css/style.min.css" />
+  <link rel="stylesheet" href="/css/projects.min.css" />
+  <link rel="icon" href="/images/favicon.png">
+</head>
 
-    <div class="container medium">
-      <main role="main">
-        <h1>Selected projects</h1>
+<body class="projects">
+  {{ partial "breadcrumbs.html" . }}
 
-        <p>
-          I build with the Web—websites, apps, tools, you name it. I'm a developer first, but I hit my stride when I have the opportunity to give shape to my work through writing and design too.
-        </p>
+  <div class="container medium">
+    <main role="main">
+      <h1>Selected projects</h1>
 
-        <ul class="grid project-screenshots undecorated-list">
-          {{ range (where .Data.Pages "Section" "projects") }}
-            <li>
-              <a class="undecorated-link" href="{{ .Permalink }}">
-                <img src="{{ .Params.thumbnail }}" class="project-screenshot" alt=""/>
-                <h2 class="inline-heading title">{{ .Title }}</h2>
-              </a>
-            </li>
-          {{ end }}
-        </ul>
-      </main>
-    </div>
-    {{ partial "footer.html" (dict "size" "medium") }}
-  </body>
+      <p>
+        I build with the Web—websites, apps, tools, you name it. I'm a developer first, but I hit my stride when I have
+        the opportunity to give shape to my work through writing and design too.
+      </p>
+
+      <ul class="grid project-screenshots undecorated-list">
+        {{ range (where .Data.Pages "Section" "projects") }}
+        <li>
+          <a class="undecorated-link" href="{{ .Permalink }}">
+            <img src="{{ .Params.thumbnail }}" class="project-screenshot" alt="" />
+            <h2 class="inline-heading title">{{ .Title }}</h2>
+          </a>
+        </li>
+        {{ end }}
+      </ul>
+    </main>
+  </div>
+  {{ partial "footer.html" }}
+</body>
+
 </html>

@@ -1,0 +1,23 @@
+a {
+  text-decoration: underline;
+
+  &:hover {
+    color: $red;
+  }
+
+  &.btn {
+    text-decoration: none;
+
+    &:hover {
+      color: initial;
+    }
+  }
+
+  &.wavy:hover {
+    text-decoration: wavy underline;
+  }
+}
+
+.undecorated-link {
+  text-decoration: none;
+}

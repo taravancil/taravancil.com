@@ -1,0 +1,44 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  margin: 20px 0 10px 0;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin: 0 0 20px 0;
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: 1.35rem;
+  font-weight: bold;
+  line-height: 1;
+  padding-bottom: 5px;
+  margin: 40px 0 10px 0;
+}
+
+h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-bottom: 1px dashed;
+}
+
+h4 {
+  text-transform: uppercase;
+  letter-spacing: .3px;
+  font-size: .825rem;
+  margin: 10px 0 5px 0;
+}
+
+.inline-heading {
+  margin: 10px 0;
+  line-height: 1;
+  font-size: inherit;
+  font-weight: 500;
+  border: 0;
+}

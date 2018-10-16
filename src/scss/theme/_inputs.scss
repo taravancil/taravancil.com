@@ -1,0 +1,12 @@
+input[type="text"],
+input[type="search"] {
+  outline: none;
+  padding: 5px;
+  border: 1px solid #000;
+  border-radius: 0;
+  -webkit-appearance: none;
+
+  &:focus {
+    background: $teal--transparent;
+  }
+}

@@ -1,10 +1,17 @@
 .container {
-  width: 95%;
+  width: 100%;
+  padding: 0 10px;
   margin: auto;
-  max-width: 620px;
 
-  @include respond-to(contain-90) {
-    position: relative;
-    width: 90%;
+  &.narrow {
+    max-width: 700px;
+  }
+
+  &.medium {
+    max-width: 850px;
+  }
+
+  &.wide {
+    max-width: 1000px;
   }
 }

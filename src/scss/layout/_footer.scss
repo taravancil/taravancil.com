@@ -1,68 +1,73 @@
 .footer {
-  @extend %antialiased;
-  background: $color-text;
-  padding: 3em 0;
-  color: $color-bg;
-  text-align: center;
+  position: relative;
 
-  .name {
-    font-size: 1.3rem;
-    font-weight: 500;
-    margin-bottom: 1rem;
-    display: block;
-  }
-
-  .links {
-    display: block;
-
-    &.external li:first-of-type {
-      border-top: 0;
-    }
-  }
-
-  li {
-    padding: 5px 0;
-    border-top: 1px solid transparentize($color-bg, .5);
-    width: 100%;
-    display: block;
-    cursor: pointer;
-
-    &.name {
-      border: 0;
+  .container {
+    & > .flex {
+      flex-wrap: wrap;
+      align-items: flex-start;
+      padding: 10px 0;
     }
 
-    &:last-child {
-      border-bottom: 1px solid transparentize($color-bg, .5);
+    .flex-child--right {
+      flex-basis: 100%;
+      margin-top: 20px;
     }
 
-    &:hover {
-      // text-decoration: underline;
-      background: transparentize($color-bg, .75);
-    }
-  }
-
-  @media (min-width: 600px) {
-    text-align: left;
-
-    .links {
-      display: inline-block;
-      max-width: 200px;
-      margin-right: 50px;
-      vertical-align: top;
+    .colophon {
+      max-width: 100%;
     }
 
-    .name {
-      margin-left: -.25rem;
-    }
-
-    li {
-      padding: 0;
-      border: 0 !important;
-
-      &:hover {
-        background: none;
-        text-decoration: underline;
+    @include respond-to(tablet) {
+      & > .flex {
+        flex-wrap: nowrap;
       }
+
+      .flex-child--right {
+        flex-basis: auto;
+        margin-top: 0;
+      }
+
+      .colophon {
+        max-width: 325px;
+      }
+    }
+  }
+
+  .links-list {
+    min-width: 125px;
+
+    h2 {
+      display: inline-block;
+      margin: 0 0 5px 0;
+    }
+  }
+
+  .license {
+    margin-top: 10px;
+    padding: 7px 0;
+    text-align: center;
+    border-top: 1px dashed;
+  }
+
+  .colophon {
+    margin-top: 10px;
+    max-width: 325px;
+  }
+
+  .search {
+    input {
+      margin-right: 5px;
+      width: 100%;
+      height: 28.5px;
+    }
+
+    .btn {
+      width: 115px;
+    }
+
+    label {
+      width: 0;
+      opacity: 0;
     }
   }
 }

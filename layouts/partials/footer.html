@@ -1,26 +1,110 @@
-<footer class="footer">
-  <div class="container">
-    <a class="name" href="/">Tara Vancil</a>
-    <div class="links internal">
-      <ul class="links-list">
-        <li><a href="/">Home</a></li>
-        <li><a href="/about/">About</a></li>
-        <li><a href="/#projects/">Projects</a></li>
-        <li><a href="/blog/">Blog</a></li>
-        <li><a href="/bookshelf/">Bookshelf</a></li>
-        <li><a href="/blog/index.xml">RSS</a></li>
-        <li><a href="/about#colophon">Colophon</a></li>
-      </ul>
+{{ partial "nav.html" }}
+<footer class="footer small-text">
+  <div class="container wide">
+    <div class="flex">
+      <div class="links-list">
+        <h2 class="inline-heading">
+          Here
+        </h2>
+
+        <ul class="undecorated-list">
+          <li>
+            <a class="undecorated-link" href="/nails">
+              Nails
+            </a>
+          </li>
+
+          <li>
+            <a class="undecorated-link" href="/speaking">
+              Speaking
+            </a>
+          </li>
+
+          <li>
+            <a class="undecorated-link" href="/wishlist">
+              Wishlist
+            </a>
+          </li>
+
+          <li>
+            <a class="undecorated-link" href="/blog/index.xml">
+              RSS
+            </a>
+          </li>
+
+          <li>
+            <!-- <a class="undecorated-link" href="/wishlist">
+              My wishlist
+            </a> -->
+          </li>
+
+          <li>
+          </li>
+        </ul>
+      </div>
+
+      <div class="links-list">
+        <h2 class="inline-heading">
+          Elsewhere <span aria-hidden="true">➚</span>
+        </h2>
+
+        <ul class="undecorated-list">
+          <li>
+            <a class="undecorated-link" href="https://github.com/taravancil">
+              GitHub
+            </a>
+          </li>
+
+          <li>
+            <a class="undecorated-link" href="https://twitter.com/taravancil">
+              Twitter
+            </a>
+          </li>
+
+          <li>
+            <a class="undecorated-link" href="https://instagram.com/taravancil">
+              Instagram
+            </a>
+          </li>
+
+          <li>
+            <a class="undecorated-link" href="https://instagram.com/amataranails">
+              Instagram (nails)
+            </a>
+          </li>
+
+          <li>
+            <a class="undecorated-link" href="https://opencollective.com/beaker">
+              OpenCollective
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="flex-child--right">
+        <form method="get" id="search" class="search" action="https://duckduckgo.com" onsubmit="this.elements[0].value = 'site:taravancil.com ' + this.elements[0].value;">
+          <div role="search" class="flex">
+            <label for="q">Search</label>
+            <input type="search" placeholder="Search" name="q" value="" />
+            <button class="btn btn--primary btn--small" aria-label="Do search">
+              Search
+            </button>
+          </div>
+        </form>
+
+        <p class="colophon">
+          This site is set in <a href="https://rsms.me/inter/">Inter UI</a> and built with <a href="https://gohugo.io">Hugo</a>.
+          It's published with <a href="https://datproject.org">dat://</a>, mirrored to https:// and seeded with <a href="https://github.com/beakerbrowser/homebase">homebase</a>.
+          Colors inspired by <a href="https://www.instagram.com/p/BZZCf_aHI33/">Beyoncé</a>. You can <a href="https://github.com/taravancil/taravancil.com">view
+            the source</a>.
+        </p>
+      </div>
     </div>
 
-    <div class="links external">
-      <ul class="links-list">
-        <li><a href="https://github.com/taravancil">GitHub</a></li>
-        <li><a href="dat://fritter.hashbase.io/user/dat://6348fac3c70e916885ead7dce6927f01e02c0efd1a9273849891c23b7e7bac4d">Fritter</a></li>
-        <li><a href="https://twitter.com/taravancil">Twitter</a></li>
-        <li><a href="https://instagram.com/taravancil">Instagram</a></li>
-        <li><a href="https://pinboard.in/u:taravancil">My bookmarks</a></li>
-      </ul>
+    <div class="license small-text">
+      <p>
+        © 2018 Tara Vancil
+      </p>
     </div>
   </div>
 </footer>

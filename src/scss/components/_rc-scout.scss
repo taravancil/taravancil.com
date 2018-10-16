@@ -1,7 +1,12 @@
 .rc-scout {
-  border: 1px dotted !important;
-  width: 85%;
+  width: 100%;
+  max-width: 475px;
+  border: 1px solid !important;
   margin: auto !important;
-  margin-bottom: 1.3rem !important;
+  margin-bottom: 25px !important;
   padding: 5px 10px !important;
+}
+
+.rc-scout__link {
+  color: #000 !important;
 }

@@ -79,7 +79,7 @@ dats:
       - taravancil.com
 httpMirror: true
 letsencrypt:
-  email: 'contact@taravancil.com'
+  email: "contact@taravancil.com"
   agreeTos: true
 ```
 

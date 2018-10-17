@@ -1,21 +1,31 @@
 .nav {
-  font-size: 1rem;
-  padding: 20px 0;
+  position: sticky;
+  bottom: 0;
+  padding: 10px 0;
+  background: #fff;
 
-  @media (min-width: 700px) {
-    padding: 50px 0 10px 0;
+  .nav-items {
+    @extend %flex-container;
+    width: 100%;
   }
 
   .nav-item {
-    cursor: pointer;
-    text-decoration: underline;
+    margin: 0 7px;
 
-    &:hover {
-      color: $red;
+    &:first-of-type {
+      margin-left: 0;
     }
+  }
 
-    &:not(:last-child) {
-      margin-right: 10px;
+  .nav-item-email-link {
+    margin-left: auto;
+  }
+
+  .nav-item-home-link {
+    @extend %flex-container;
+
+    .avatar {
+      margin-right: 7px;
     }
   }
 }

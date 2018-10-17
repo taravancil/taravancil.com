@@ -1,5 +1,10 @@
 $breakpoints: (
   'contain-90': (min-width: 650px),
   'vertical-tablet': (min-width: 550px),
+  'tablet': (min-width: 650px),
   'desktop': (min-width: 1000px),
+  'show-cols-2': (min-width: 700px),
+  'show-cols-3': (min-width: 1000px),
+  'show-cols-5': (min-width: 800px),
+  'expand-nav': (min-width: 650px)
 );

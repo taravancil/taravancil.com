@@ -1,0 +1,49 @@
+.btn {
+  @extend .small-text;
+  line-height: 12.5px;
+  display: inline-flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid #000;
+
+  &:hover {
+    // background-color: $teal--transparent;
+    background-color: $teal--transparent;
+    border: 1px dashed;
+  }
+
+  &.btn--primary {
+    background: #000;
+    color: #fff;
+
+    &:hover {
+      background: $teal--transparent;
+      color: #000;
+    }
+  }
+
+  &.btn--small {
+    padding: 7px 10px;
+  }
+
+  .btn-icon--right {
+    margin-left: 5px;
+  }
+
+  &[disabled] {
+    // border-color: $color-text--muted;
+    // border-color: $purple--border;
+    // background: $purple--border;
+    cursor: default;
+    color: $color-text--muted;
+    border-color: $color-text--muted;
+
+    &:hover {
+      background: #fff;
+      border: 1px solid;
+      // border: 1px solid $purple--border;
+    }
+  }
+}

@@ -1,19 +1,8 @@
-%clearfix {
-  &:after {
-    content: '';
-    display: table;
-    clear: both;
-  }
-}
-
+.flex,
 %flex-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
-}
-
-%link {
-  text-decoration: underline; // TODO
 }
 
 %transition {
@@ -26,12 +15,8 @@
   margin-left: 2em;
 }
 
-%heading {
-  margin-bottom: .5em;
-}
-
-%module {
-  padding: 1.75em;
-  border-radius: 2px;
-  border: 1px solid gray;
+%overflow-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }

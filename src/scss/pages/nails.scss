@@ -1,95 +1,80 @@
-@import '../base/colors';
-@import '../utils/all';
+@import "../base/colors";
+@import "../utils/all";
 
-body.nails {
+.nails-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
+  grid-gap: 5px;
 
-  .nails-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
-    grid-gap: 5px;
-
-    li {
-      line-height: initial;
-      height: auto;
-      margin-bottom: 0;
-
-      .title {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: pre;
-        padding: 5px;
-        display: inline-block;
-        line-height: 1;
-        margin-top: -5px;
-        font-weight: 500;
-      }
-
-      .title,
-      img {
-        max-width: 100%;
-      }
-
-      a img {
-        border: 5px solid transparent;
-      }
-
-      a:hover {
-
-        img {
-          border-color: $teal--transparent;
-        }
-      }
-    }
+  li {
+    line-height: initial;
+    height: auto;
+    margin-bottom: 0;
   }
 }
 
-body.nails.single {
+.nail-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: pre;
+  padding: 5px;
+  display: inline-block;
+  line-height: 1;
+  margin-top: -5px;
+  font-weight: 500;
+}
 
-  .description {
-    padding-left: 10px;
+.nail-title,
+.nail-thumbnail {
+  max-width: 100%;
+}
+
+.nail-thumbnail {
+  border: 5px solid transparent;
+}
+
+.nail:hover .nail-thumbnail {
+  border-color: $teal--transparent;
+}
+
+.nail-image {
+  max-width: 100%;
+}
+
+.nail-date {
+  color: $color-text--muted;
+  margin-bottom: 20px;
+}
+
+.nail-links {
+  @extend %flex-container;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  a {
+    padding: 5px;
+    margin: 10px 0 0 0;
+    flex: 100%;
+
+    @include respond-to(vertical-tablet) {
+      flex: initial;
+    }
   }
 
-  .image {
-    max-width: 100%;
+  .thumbnail {
+    width: 35px;
   }
 
-  h1 {
-    margin: 0 0 5px 0;
-    line-height: 1;
-  }
-
-  .date {
-    color: $color-text--muted;
-    margin-bottom: 40px;
-  }
-
-  .links {
-    @extend %flex-container;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-    a {
-      padding: 5px;
-   }
-
-   .btn {
-
-     .thumbnail {
-        width: 35px;
-     }
-
-      &.prev {
-
-        .thumbnail {
-          margin-left: 7px;
-        }
+  .btn {
+    &.prev {
+      .thumbnail {
+        margin-left: 7px;
       }
+    }
 
-      &.next {
-
-        .thumbnail {
-          margin-right: 7px;
-        }
+    &.next {
+      .thumbnail {
+        margin-right: 7px;
       }
     }
   }

@@ -42,9 +42,9 @@
       <ul class="nails-grid undecorated-list">
         {{ range (where .Data.Pages "Section" "nails") }}
         <li>
-          <a class="undecorated-link" href="{{ .Permalink }}">
-            <img src="{{ .Params.img }}" alt="{{ .Params.caption }}" />
-            <span class="title small-text">{{ .Title }}</span>
+          <a class="nail undecorated-link" href="{{ .Permalink }}">
+            <img class="nail-thumbnail" src="{{ .Params.img }}" alt="{{ .Params.caption }}" />
+            <span class="nail-title small-text">{{ .Title }}</span>
           </a>
         </li>
         {{ end }}

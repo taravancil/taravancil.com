@@ -30,17 +30,16 @@
     <main role="main">
       <article class="content">
         <h1>{{ .Title }}</h1>
-        <div class="date small-text">
+        <div class="nail-date small-text">
           {{ .Date.Format "Jan 2, 2006" }}
         </div>
 
         <div class="columns">
           <div class="col col-2-5">
-            <img class="image" alt="{{ $.Params.caption }}" src="{{ $.Params.img }}" />
-
+            <img class="nail-image" alt="{{ $.Params.caption }}" src="{{ $.Params.img }}" />
           </div>
 
-          <div class="description col col-3-5">
+          <div class="nail-description small-text col col-3-5">
             {{ .Content }}
 
             {{ if $.Params.polishes }}
@@ -48,9 +47,13 @@
             <ul class="decorated">
               {{ range $.Params.polishes }}
               <li>
+                {{ if .link }}
                 <a href="{{ .link }}">
                   {{ .name }} by {{ .brand }}
                 </a>
+                {{ else }}
+                {{ .name }} by {{ .brand }}
+                {{ end }}
               </li>
               {{ end }}
             </ul>

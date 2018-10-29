@@ -40,6 +40,10 @@ body {
   color: $color-text--muted;
 }
 
+.italic {
+  font-style: italic;
+}
+
 ::-moz-selection {
   background: $teal--transparent;
 }

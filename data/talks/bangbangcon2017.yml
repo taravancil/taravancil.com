@@ -1,9 +1,9 @@
-event: '!!Con'
-title: 'How Merkle Trees Enable the Decentralized Web'
+event: "!!Con"
+title: "How Merkle Trees Enable the Decentralized Web"
 date: 2017-05-06
-location: 'New York, NY'
-link: 'http://bangbangcon.com/speakers.html#tara-vancil'
-slides: '/bangbangcon2017-merkle-trees/bangbangcon2017-merkle-trees.pdf'
+location: "New York, NY"
+link: "http://bangbangcon.com/speakers.html#tara-vancil"
+slides: "/slides/bang-bang-con-2017.pdf"
 recording: https://www.youtube.com/watch?v=3giNelTfeAk
 type: talk
 thumbnail: /images/thumbnails/bang-bang-con.png

@@ -1,9 +1,9 @@
-event: 'Bleeding Edge Web'
-title: 'The peer-to-peer Web'
-date: 2017-07-26 
-location: 'Austin, TX'
+event: "Bleeding Edge Web"
+title: "The peer-to-peer Web"
+date: 2017-07-26
+location: "Austin, TX"
 link: https://www.meetup.com/bleeding-edge-web/events/241715054/
 slides: https://docs.google.com/presentation/d/1V1RrTE7AAuuZ9ztO66px74r4Jod32rVAvHJ4cvRYKEk
 recording: https://youtu.be/9tk9m_QIi2Q?t=46m40s
 type: talk
-thumbnail: /images/thumbnails/bleeding-edge.jpg
+thumbnail: /images/speaking/bleeding-edge.jpg

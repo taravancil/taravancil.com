@@ -1,9 +1,9 @@
-event: 'JSConf EU'
-title: 'Imagine This: A Web without Servers'
+event: "JSConf EU"
+title: "Imagine This: A Web without Servers"
 date: 2018-06-03
-location: 'Berlin'
-link: 'https://2018.jsconf.eu/speakers/tara-vancil-imagine-this-a-web-without-servers.html'
+location: "Berlin"
+link: "https://2018.jsconf.eu/speakers/tara-vancil-imagine-this-a-web-without-servers.html"
 slides: /slides/jsconfeu.pdf
 recording: https://www.youtube.com/watch?v=rJ_WvfF3FN8
-thumbnail: /images/thumbnails/imagine-this-a-web-without-servers.png
+thumbnail: /images/speaking/jsconfeu.jpg
 type: talk

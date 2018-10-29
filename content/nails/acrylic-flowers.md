@@ -1,12 +1,14 @@
 ---
 title: My first set of acrylics
 date: 2018-04-21
-caption: A set of bulky-looking orange-red acrylic nails, with an encapsulated purple flower on the accent nail 
+caption: A set of bulky-looking orange-red acrylic nails, with an encapsulated purple flower on the accent nail
 img: /images/nails/acrylic-flowers.jpg
 polishes:
-  - name: What's your type? 
+  - name: What's your type?
     brand: Madam Glam
-    link: https://www.madamglam.com/what-s-your-type-301.html 
+    link: https://www.madamglam.com/what-s-your-type-301.html
+accessories:
+  - name: Flowers from the front yard
 ---
 
 I did my first set of acrylics! Instead of going to the salon and paying a

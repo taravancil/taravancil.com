@@ -10,4 +10,7 @@ polishes:
   - name: Perfect white
     brand: Madam Glam
     link: https://www.madamglam.com/perfect-white.html
+  - name: Lost in the Woods
+    brand: Madam Glam
+    link: https://www.madamglam.com/lost-in-the-woods-209.html
 ---

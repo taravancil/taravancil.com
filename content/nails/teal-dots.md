@@ -2,6 +2,16 @@
 title: Teal dots
 date: 2018-04-23
 img: /images/nails/teal-dots.jpg
+polishes:
+  - name: Caribbean Sea
+    brand: Madam Glam
+    link: https://www.madamglam.com/carribean-sea.html
+  - name: Perfect white
+    brand: Madam Glam
+    link: https://www.madamglam.com/perfect-white.html
+  - name: Perfect Black
+    brand: Madam Glam
+    link: https://www.madamglam.com/perfect-black-2-15ml.html
 ---
 
 I love this design (inspired by [topknotnails](https://instagram.com/topknotnails))!

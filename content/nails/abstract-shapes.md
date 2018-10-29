@@ -7,16 +7,15 @@ polishes:
   - name: Vivid Purple
     brand: Madam Glam
     link: https://www.madamglam.com/vivid-purple-118-purple-gel-polish.html
-  - name: Caribbean Sea 
+  - name: Caribbean Sea
     brand: Madam Glam
-    link: https://www.madamglam.com/carribean-sea.html 
-  - name: Go for Gold 
+    link: https://www.madamglam.com/carribean-sea.html
+  - name: Go for Gold
     brand: Sally Hansen
-    link: https://www.amazon.com/Sally-Hansen-Insta-Dri-Fast-Dry-Color/dp/B00H0E8CKE 
-  - name: Perfect White 
+    link: https://www.amazon.com/Sally-Hansen-Insta-Dri-Fast-Dry-Color/dp/B00H0E8CKE
+  - name: Perfect White
     brand: Madam Glam
-    link: https://www.madamglam.com/perfect-white.html 
-accessories:
+    link: https://www.madamglam.com/perfect-white.html
 ---
 
 These were inspired by one of the nail techs at [fingerbangportland](https://instagram.com/fingerbangportland). I can't rememeber exactly who, maybe [asabree](https://instagram.com/asabree)?

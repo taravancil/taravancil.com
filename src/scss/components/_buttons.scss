@@ -15,9 +15,6 @@
   }
 
   &[disabled] {
-    // border-color: $color-text--muted;
-    // border-color: $purple--border;
-    // background: $purple--border;
     cursor: default;
     color: $color-text--muted;
     border-color: $color-text--muted;

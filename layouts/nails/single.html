@@ -67,11 +67,11 @@
           </div>
         </div>
 
-        <div class="links">
+        <div class="nail-links">
 
           {{ if .PrevInSection }}
           <a class="btn prev" href="{{ .PrevInSection.URL }}">
-            <- Previous: {{ .PrevInSection.Title }} <img class="thumbnail" alt="{{ .PrevInSection.Params.caption }}"
+            &larr; Previous: {{ .PrevInSection.Title }} <img class="thumbnail" alt="{{ .PrevInSection.Params.caption }}"
               src="{{ .PrevInSection.Params.img }}" />
           </a>
           {{ end }}
@@ -79,7 +79,7 @@
           {{ if .NextInSection }}
           <a class="btn next" href="{{ .NextInSection.URL }}">
             <img class="thumbnail" alt="{{ .NextInSection.Params.caption }}" src="{{ .NextInSection.Params.img }}" />
-            Next: {{ .NextInSection.Title }} ->
+            Next: {{ .NextInSection.Title }} &rarr;
           </a>
           {{ end }}
 

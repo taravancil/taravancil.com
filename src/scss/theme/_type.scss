@@ -1,3 +1,6 @@
+@import url("https://rsms.me/inter/inter-ui.css");
+
+/* temporarily disable importing from fonts.taravancil.com until I have time to implement CORS in homebase
 @font-face {
   font-family: "Inter UI";
   src: url("https://fonts.taravancil.com/inter-ui/Inter-UI-Regular.woff")
@@ -19,6 +22,7 @@
   font-weight: bold;
   font-display: optional;
 }
+*/
 
 body {
   font-family: "Inter UI", -apple-system, BlinkMacSystemFont, sans-serif;

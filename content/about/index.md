@@ -30,4 +30,4 @@ I'm @taravancil on [Twitter](https://twitter.com/taravancil),
 
 I hang out in #beakerbrowser and #dat on freenode. Drop by and say hello!
 
-<script async defer src="https://www.recurse-scout.com/loader.js?t=0dcb1e3c1156a3fd0bda3cd94cfb434f"></script>
+<script src="https://www.recurse-scout.com/loader.js?t=0dcb1e3c1156a3fd0bda3cd94cfb434f"></script>

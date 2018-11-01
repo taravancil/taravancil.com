@@ -1,5 +1,21 @@
-@import 'utils/all';
-@import 'base/all';
-@import 'layout/all';
-@import 'theme/all';
-@import 'components/all';
+@import "utils/all";
+@import "base/all";
+@import "layout/all";
+@import "theme/all";
+@import "components/all";
+
+.tablet-el {
+  display: none;
+
+  @include respond-to(tablet) {
+    display: initial;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+p:empty {
+  display: none;
+}

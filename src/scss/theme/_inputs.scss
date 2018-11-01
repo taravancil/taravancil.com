@@ -9,4 +9,17 @@ input[type="search"] {
   &:focus {
     background: $teal--transparent;
   }
+
+  &:invalid {
+    box-shadow: none;
+  }
+}
+
+label {
+  margin-right: 5px;
+  font-weight: 500;
+}
+
+.form-feedback--error {
+  color: $red;
 }

@@ -40,26 +40,34 @@
         welcome to buy something directly from the list, or use the list as inspiration.
       </p>
 
+      <p>
+        If you buy something, please help me keep this list up-to-date by clicking the "I bought this" button. You will
+        be asked to enter a 6-character code, which if I know you personally, you should have received via email. Lost
+        the
+        code, or never received it in the first place? <a href="mailto:contact@taravancil.com">Email
+          me</a>!
+      </p>
+
       <ul class="wishlist undecorated-list">
-        {{ range sort $.Site.Data.wishlist "price" "asc" }}
-        <li class="item">
-          <span class="thumbnail-container">
-            <img class="thumbnail" src="{{ .image }}" alt="" />
+        {{ range $index, $el := sort $.Site.Data.wishlist "price" "asc" }}
+        <li>
+          <span class="wishlist-thumbnail-container">
+            <img class="wishlist-thumbnail" src="{{ .image }}" alt="" />
           </span>
 
-          <div class="info">
-            <div class="header">
+          <div class="wishlist-info">
+            <div class="wishlist-header">
               <a href="{{ .buyLink }}" class="wishlist-title">
                 {{ .title }}
               </a>
 
               {{ if .price }}
-              <span class="price">${{ .price }}</span>
+              <span>${{ .price }}</span>
               {{ end }}
             </div>
 
             {{ if .size }}
-            <span class="size">My size: {{ .size }}</span>
+            <span>My size: {{ .size }}</span>
             {{ end }}
 
             {{ if .note }}
@@ -68,11 +76,45 @@
             </p>
             {{ end }}
 
-            {{ if .buyTitle }}
-            <a class="btn btn--small small-text buy-link" href="{{ .buyLink }}">
-              Buy on {{ .buyTitle }}
+            <div class="wishlist-buttons flex">
+              {{ if .buyTitle }}
+              <button class="wishlist-toggle-purchased-form-btn wishlist-i-bought-this-btn btn btn--clear" data-key="{{ $index }}">
+                I bought this
+              </button>
+
+              <span id="wishlist-success-feedback" data-key="{{ $index }}" class="hidden small-text">
+                You bought this :-)&nbsp;&nbsp;
+              </span>
+
+              <a class="
+                  wishlist-buy-link btn btn--small small-text" href="{{ .buyLink }}" data-key="{{ $index }}">
+                Buy <span class="tablet-el">&nbsp;on {{ .buyTitle }}</span>
+              </a>
+
+              <form class="hidden small-text" data-key="{{ $index }}">
+                <input name="wishlist-url" type="hidden" value="{{ .buyLink }}">
+
+                <p class="small-text">
+                  Enter the 6-character code I sent you via email. Need the code? <a href="mailto:contact@taravancil.com">Email
+                    me</a>.
+                </p>
+
+                <label for="wishlist-code">Code</label>
+                <input name="wishlist-code" type="text" required aria-required="true" pattern=".{6}" aria-describedby="wishlist-code-error">
+
+                <button type="submit" class="wishlist-submit-purchased-form-btn btn btn--small btn--primary" data-key="{{ $index }}">
+                  Submit
+                </button>
+
+                <button class="wishlist-toggle-purchased-form-btn btn btn--clear" type="button" data-key="{{ $index }}">
+                  Cancel
+                </button>
+
+                <p id="wishlist-generic-error" class="form-feedback--error italic"></p>
+                <p id="wishlist-code-error" class="form-feedback--error italic"></p>
+              </form>
               {{ end }}
-            </a>
+            </div>
           </div>
         </li>
         {{ end }}

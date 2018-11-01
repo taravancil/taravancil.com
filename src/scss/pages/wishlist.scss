@@ -1,76 +1,83 @@
 @import "../base/colors";
 @import "../utils/all";
 
-body.wishlist {
-  ul.wishlist {
-    margin-top: 40px;
+ul.wishlist {
+  margin-top: 60px;
+}
+
+ul.wishlist li {
+  @extend %flex-container;
+  align-items: flex-start;
+  position: relative;
+  padding: 0 0 55px 0;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+    border-bottom: 1px solid transparentize($purple, 0.85);
+    border-bottom: 1px solid $purple--border;
   }
 
-  .item {
-    @extend %flex-container;
-    align-items: flex-start;
-    position: relative;
-    padding-bottom: 55px;
+  @include respond-to(tablet) {
+    padding: 0 0 15px 0;
+  }
+}
 
-    &:not(:last-child) {
-      margin-bottom: 20px;
-      border-bottom: 1px solid transparentize($purple, 0.85);
-      border-bottom: 1px solid $purple--border;
-    }
+.wishlist-title {
+  font-weight: 500;
+  text-decoration: none;
+}
 
-    @include respond-to(tablet) {
-      padding-bottom: 15px;
-    }
+.wishlist-info {
+  @extend %flex-container;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+}
 
-    .wishlist-title {
-      font-weight: 500;
-      text-decoration: none;
-    }
+.wishlist-header {
+  @extend %flex-container;
+  justify-content: space-between;
+  width: 100%;
+  flex-basis: 100%;
+}
 
-    .info {
-      @extend %flex-container;
-      flex-wrap: wrap;
-      flex-basis: 100%;
-    }
+.wishlist-thumbnail-container {
+  flex: 0 0 80px;
+  text-align: center;
+  margin-right: 25px;
 
-    .header {
-      @extend %flex-container;
-      justify-content: space-between;
-      width: 100%;
-      flex-basis: 100%;
-    }
+  @include respond-to(tablet) {
+    flex: 0 0 100px;
+  }
+}
 
-    .thumbnail-container {
-      flex: 0 0 80px;
-      text-align: center;
-      margin-right: 25px;
+.wishlist-thumbnail {
+  max-width: 80px;
+  max-height: 60px;
 
-      @include respond-to(tablet) {
-        flex: 0 0 100px;
-      }
-    }
+  @include respond-to(tablet) {
+    max-width: 100px;
+    max-height: 80px;
+  }
+}
 
-    .thumbnail {
-      max-width: 80px;
-      max-height: 60px;
+.wishlist-buttons {
+  position: absolute;
+  left: 0;
+  bottom: 15px;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 
-      @include respond-to(tablet) {
-        max-width: 100px;
-        max-height: 80px;
-      }
-    }
+  @include respond-to(vertical-tablet) {
+    position: initial;
+    width: initial;
+    margin: 10px 0 0 auto;
   }
 
-  .buy-link {
-    position: absolute;
-    left: 0;
-    bottom: 15px;
-    width: 100%;
-
-    @include respond-to(vertical-tablet) {
-      position: initial;
-      width: initial;
-      margin: 10px 0 0 auto;
-    }
+  form {
+    flex-basis: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid;
   }
 }

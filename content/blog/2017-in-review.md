@@ -3,6 +3,7 @@ title: "2017: Year in review"
 date: 2018-01-01
 tags: [year-in-review]
 ---
+
 <p class="large-text">
   2017 was my most productive year yet. Not because I achieved superhuman levels of productivity, but because I made the transition between figuring out what to do with my life and doing something with my life. It feels damn good.
 </p>
@@ -62,7 +63,7 @@ In July, my mom and stepdad finally got married! They'd been together for fiftee
 
 <img style="margin-top: 5px" src="/images/2017-in-review/wedding3.jpg"/>
 
-Paul and I attended the [Microsoft Edge Web Summit](https://summit.microsoftedge.com/), which was a real treat. We spend *a lot* of time thinking and talking about Web browsers, so it was a blast to spend a whole day in a room with folks who care about browsers as much as we do.
+Paul and I attended the [Microsoft Edge Web Summit](https://summit.microsoftedge.com/), which was a real treat. We spend _a lot_ of time thinking and talking about Web browsers, so it was a blast to spend a whole day in a room with folks who care about browsers as much as we do.
 
 <figure>
   <img src="/images/2017-in-review/seattle.jpg"/>
@@ -93,7 +94,7 @@ massive undertaking and I'm proud of the improvements I made. I'll be rebuilding
 
 Beaker's start page is one of its most important UIs; it's the first thing you see when you open Beaker, and you see it each time you open a new tab. It needs to be useful, it needs to render quickly, and it needs to look nice. It went through several iterations this year, none of which met those criteria. I'm happy to say I finally built something I'm satisfied with.
 
-<div class="img-grid center wide">
+<div class="img-grid center">
   <img src="/images/2017-in-review/start-page1.jpg" />
   <img src="/images/2017-in-review/start-page2.jpg" />
 </div>

@@ -50,7 +50,7 @@
 
       <ul class="wishlist undecorated-list">
         {{ range $index, $el := sort $.Site.Data.wishlist "price" "asc" }}
-        <li>
+        <li data-key="{{ $index }}">
           <span class="wishlist-thumbnail-container">
             <img class="wishlist-thumbnail" src="{{ .image }}" alt="" />
           </span>

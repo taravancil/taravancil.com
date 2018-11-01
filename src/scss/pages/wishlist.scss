@@ -9,7 +9,7 @@ ul.wishlist li {
   @extend %flex-container;
   align-items: flex-start;
   position: relative;
-  padding: 0 0 55px 0;
+  padding: 0 0 15px 0;
 
   &:not(:last-child) {
     margin-bottom: 20px;
@@ -17,8 +17,31 @@ ul.wishlist li {
     border-bottom: 1px solid $purple--border;
   }
 
-  @include respond-to(tablet) {
-    padding: 0 0 15px 0;
+  &.form-open {
+    padding-bottom: 185px;
+
+    @media (min-width: 380px) {
+      padding-bottom: 155px;
+    }
+
+    @media (min-width: 490px) {
+      padding-bottom: 135px;
+    }
+
+    form {
+      position: absolute;
+      left: 0;
+      bottom: 15px;
+      width: 100%;
+    }
+
+    @media (min-width: 600px) {
+      padding-bottom: 0;
+
+      form {
+        position: initial;
+      }
+    }
   }
 }
 
@@ -31,10 +54,15 @@ ul.wishlist li {
   @extend %flex-container;
   flex-wrap: wrap;
   flex-basis: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 80px;
 }
 
 .wishlist-header {
   @extend %flex-container;
+  align-items: flex-start;
   justify-content: space-between;
   width: 100%;
   flex-basis: 100%;
@@ -61,9 +89,6 @@ ul.wishlist li {
 }
 
 .wishlist-buttons {
-  position: absolute;
-  left: 0;
-  bottom: 15px;
   width: 100%;
   flex-wrap: wrap;
   justify-content: flex-end;

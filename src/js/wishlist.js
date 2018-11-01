@@ -51,14 +51,17 @@
 
   // events
   function onTogglePurchasedForm(e) {
-    const form = document.querySelector(
-      `form[data-key="${e.target.dataset.key}"]`
-    );
+    const key = e.target.dataset.key;
+    const item = document.querySelector(`ul.wishlist li[data-key="${key}"]`);
+    const form = item.querySelector("form");
 
     form.classList.toggle("hidden");
 
-    if (!form.classList.contains("hidden")) {
+    if (form.classList.contains("hidden")) {
+      item.classList.remove("form-open");
+    } else {
       form.querySelector('input[name="wishlist-code"]').focus();
+      item.classList.add("form-open");
     }
   }
 

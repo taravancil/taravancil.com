@@ -1,11 +1,10 @@
-@import '../base/colors';
-@import '../utils/all';
+@import "../base/colors";
+@import "../utils/all";
 
 .upcoming-talks {
   margin-left: 5px;
 
   .talk {
-
     .info {
       display: inline-block;
       width: 165px;
@@ -18,7 +17,6 @@
 }
 
 .talks-list {
-
   li {
     @extend %flex-container;
     max-width: 100%;
@@ -41,13 +39,12 @@
     }
   }
 
-
   .column {
     padding: 0 40px;
 
     &.date {
       padding-left: 0;
-      flex: 0 0 50px;
+      flex: 0 0 125px;
     }
 
     &.date,

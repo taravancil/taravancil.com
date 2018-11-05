@@ -203,6 +203,31 @@
   buyLink: https://smile.amazon.com/dp/B009P483I8
   buyTitle: Amazon
   image: /images/wishlist/saucepan.jpg
+- title: Clothes drying rack
+  price: 20
+  buyLink: https://smile.amazon.com/AmazonBasics-Foldable-Drying-Rack-White/dp/B00H7P1GPO
+  buyTitle: Amazon
+  image: /images/wishlist/drying-rack.jpg
+- title: Bathroom storage rack
+  price: 50
+  buyLink: https://www.ikea.com/us/en/catalog/products/10318178/
+  buyTitle: ikea.com
+  image: /images/wishlist/toilet-storage.jpg
+- title: Baking beans
+  buyLink: https://smile.amazon.com/Mrs-Andersons-Baking-Ceramic-Stoneware/dp/B00004S1BT
+  buyTitle: Amazon
+  image: /images/wishlist/baking-beans.jpg
+  price: 6
+- title: Nail art brushes
+  price: 13
+  buyTitle: Amazon
+  buyLink: https://smile.amazon.com/dp/B01EA3BB82
+  image: /images/wishlist/nail-brushes.jpg
+- title: Makeup brushes
+  price: 7
+  buyLink: https://smile.amazon.com/dp/B00I3VHKVK
+  buyTitle: Amazon
+  image: /images/wishlist/makeup-brushes.jpg
 
 #  these have handles, not sure i want handles
 #  title: Biscuit cutters

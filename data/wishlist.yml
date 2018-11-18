@@ -72,11 +72,11 @@
   buyTitle: fentybeauty.com
   image: /images/wishlist/moroccan-spice.jpg
   price: 59
-- title: 4 oz. ladle
-  buyLink: https://smile.amazon.com/Vollrath-4970410-One-Piece-Stainless-Steel/dp/B003A2QPU
+- title: Vollrath 4 oz. ladle
+  buyLink: https://smile.amazon.com/gp/offer-listing/B003A3W5E8/ref=sr_1_7_olp?ie=UTF8&qid=1542568605&sr=8-7&keywords=vollrath+ladle&condition=new
   buyTitle: Amazon
   image: /images/wishlist/ladle.jpg
-  price: 6
+  price: 10
 - title: Offset spatula (4 1/2 in.)
   buyLink: https://smile.amazon.com/Ateco-1385-Spatula-4-5-Inch-Stainless/dp/B000WG14FC/
   buyTitle: Amazon
@@ -228,7 +228,16 @@
   buyLink: https://smile.amazon.com/dp/B00I3VHKVK
   buyTitle: Amazon
   image: /images/wishlist/makeup-brushes.jpg
-
+- title: Designing Data-Intensive Applications
+  buyLink: https://dataintensive.net/buy.html
+  buyTitle: dataintensive.net
+  price: 30
+  image: /images/wishlist/data-intensive-apps.png
+- title: Empty brush pens
+  buyLink: https://smile.amazon.com/Maxdot-Transparent-Cosmetic-Container-Applicators/dp/B075R6MDSK/
+  buyTitle: Amazon
+  price: 7
+  image: /images/wishlist/brush-pens.jpg
 #  these have handles, not sure i want handles
 #  title: Biscuit cutters
 #  buyLink: https://www.amazon.com/Biscuit-Cutter-HULISEN-Cookies-Professional/dp/B074W66D85/ref=as_li_ss_tl?tag=skrfbestreviews-20&ascsubtag=666311500-151-&SubscriptionId=AKIAJO7E5OLQ67NVPFZA

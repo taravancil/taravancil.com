@@ -17,5 +17,5 @@
     "start": "gulp",
     "build": "hugo"
   },
-  "author": "Tara Vancil <tbvanc@gmail.com>"
+  "author": "Tara Vancil <contact@taravancil.com>"
 }

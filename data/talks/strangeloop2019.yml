@@ -1,0 +1,9 @@
+event: 'Strange Loop'
+title: 'Learning to Love JavaScript'
+date: 2019-09-13
+location: 'St. Louis, MO'
+recording: https://www.youtube.com/watch?v=OyTJCMytx9k
+thumbnail: /images/speaking/strange-loop-2019.png
+type: talk
+slides: /slides/strange-loop-2019.pdf
+link: https://www.thestrangeloop.com/2019/learning-to-love-javascript.html

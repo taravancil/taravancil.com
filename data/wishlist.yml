@@ -238,24 +238,43 @@
   buyTitle: Amazon
   price: 7
   image: /images/wishlist/brush-pens.jpg
-#  these have handles, not sure i want handles
-#  title: Biscuit cutters
-#  buyLink: https://www.amazon.com/Biscuit-Cutter-HULISEN-Cookies-Professional/dp/B074W66D85/ref=as_li_ss_tl?tag=skrfbestreviews-20&ascsubtag=666311500-151-&SubscriptionId=AKIAJO7E5OLQ67NVPFZA
-#  buyTitle: Amazon
-#  image: /images/wishlist/biscuit-cutters.jpg
-#  price: 12
-
-# dust collector
-# polygel?
-# new acrylic brushes
-# top coat, base coat
-# glitters?
-# holographic/chrome
-# digital scale
-# specific polish colors?
-# charms + charm glue
-# a new desk
-# e-file bits
-# goodwill gift cards
-# kokoist brush (see iphone noets for NT10 code and link)
-# biscuit cutters
+- title: Regarding Cocktails
+  buyLink: https://www.phaidon.com/store/food-cook/regarding-cocktails-9780714872810/
+  buyTitle: Phaidon
+  price: 30
+  image: /images/wishlist/regarding-cocktails.jpg
+- title: Bread knife
+  buyLink: https://smile.amazon.com/dp/B000PS1HS6/
+  buyTitle: Amazon
+  price: 18
+  image: /images/wishlist/bread-knife.jpg
+- title: Portion scoops
+  buyLink: https://smile.amazon.com/Norpro-Stainless-Steel-Cookie-Scoops/dp/B0002MPTUM/
+  buyTitle: Amazon
+  price: 40
+  image: /images/wishlist/portion-scoops.jpg
+- title: Silicone spatulas
+  buyLink: https://smile.amazon.com/dp/B001CCZL7W/
+  buyTitle: Amazon
+  price: 10
+  image: /images/wishlist/silicone-spatulas.jpg
+- title: Boston shaker
+  buyLink: https://smile.amazon.com/dp/B072F6SXX4
+  buyTitle: Amazon
+  price: 20
+  image: /images/wishlist/boston-shaker.jpg
+- title: Hawthorne strainer
+  buyLink: https://smile.amazon.com/OXO-1058016-SteeL-Cocktail-Strainer/dp/B0000DAQ93/
+  buyTitle: Amazon
+  price: 8 
+  image: /images/wishlist/hawthorne-strainer.jpg
+- title: Barspoon (stainless steel)
+  buyLink: https://www.cocktailkingdom.com/teardrop-barspoon-14275
+  buyTitle: Cocktail Kingdom
+  price: 18
+  image: /images/wishlist/barspoon.jpg
+- title: Julep strainer (stainless steel)
+  buyLink: https://www.cocktailkingdom.com/premium-julep-strainer-6823
+  buyTitle: Cocktail Kingdom
+  price: 11
+  image: /images/wishlist/julep-strainer.jpg

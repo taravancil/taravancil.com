@@ -13,21 +13,25 @@ css: /css/about.min.css
 </div>
 
 <p class="large-text">
-  Hi! I'm Tara. I do a lot of things—code, write, design, but most of all, I love building on the Web.
+  I'm a software engineer at <a href="https://glitch.com">Glitch</a> where I work on our in-browser <a href="https://glitch.com/edit">code editor</a>.
+
+  <figure>
+    <img src="/images/blog/im-joining-glitch/glitch-editor.png" alt="" />
+    <figcaption>The Glitch editor</figcaption>
+  </figure>
 </p>
 
-I currently work on [Beaker](https://beakerbrowser.com), an experimental browser that explores what happens when you integrate a p2p protocol into the Web.
-
-Before working on Beaker, I spent time at the [Recurse Center](https://www.recurse.com), an amazing community for programmers.
+ Before Glitch, I worked on [Beaker](https://beakerbrowser.com), an experimental browser that explores what happens when you integrate a peer-to-peer protocol into the Web. And before working on Beaker, I spent time at the [Recurse Center](https://www.recurse.com), an amazing community for programmers. I live in New York City.
 
 <p class="rc-scout"></p>
 
 ## Stay in touch
 
-I'm @taravancil on [Twitter](https://twitter.com/taravancil),
-[GitHub](https://github.com/taravancil),
-[Instagram](https://instagram.com/taravancil) and pretty much everywhere else.
+I go by @taravancil pretty much everywhere.
 
-I hang out in #beakerbrowser and #dat on freenode. Drop by and say hello!
+- [Twitter](https://twitter.com/taravancil)
+- [GitHub](https://github.com/taravancil)
+- [Glitch](https://glitch.com/@taravancil)
+- [Instagram](https://instagram.com/taravancil)
 
 <script src="https://www.recurse-scout.com/loader.js?t=0dcb1e3c1156a3fd0bda3cd94cfb434f"></script>

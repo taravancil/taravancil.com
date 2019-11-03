@@ -2,6 +2,7 @@
 title: "2017: Year in review"
 date: 2018-01-01
 tags: [year-in-review]
+thumbnail: /images/2017-in-review/kit.jpg 
 ---
 
 <p class="large-text">

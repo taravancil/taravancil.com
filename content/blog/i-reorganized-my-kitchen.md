@@ -2,6 +2,7 @@
 title: "Tour: I re-organized my kitchen"
 date: 2018-12-30
 tags: [cooking, kitchen, organization, personal]
+thumbnail: /images/blog/i-reorganized-my-kitchen/spices.jpg
 ---
 
 We just finished a three-day re-organization of our whole apartment. I got some new appliances and pans for Christmas, so I had to figure out how to fit them into our tiny galley kitchen. I’m really pleased with what I came up with.

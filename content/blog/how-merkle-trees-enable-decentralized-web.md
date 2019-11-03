@@ -2,6 +2,7 @@
 title: How Merkle trees enable the decentralized Web
 date: 2017-05-31
 tags: [decentralization, data structures, computer science]
+thumbnail: /images/verification.jpg
 ---
 
 Earlier this month, I spoke at [bangbangcon](http://bangbangcon.com/speakers.html#tara-vancil) about how Merkle trees are the backbone of nearly all decentralized technologies. Here is a summary of my presentation:

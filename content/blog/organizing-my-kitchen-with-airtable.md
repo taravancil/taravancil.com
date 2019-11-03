@@ -2,6 +2,7 @@
 title: Organizing my kitchen with Airtable
 date: 2018-06-12
 tags: [airtable, food, kitchen]
+thumbnail: /images/blog/organizing-my-kitchen-with-airtable/shopping-list.png 
 ---
 
 My kitchen is by no means a shipwreck, but there’s definitely room for improvement. I’ve been hearing a lot of buzz about [Airtable](https://airtable.com) which proclaims to help you “organize anything”, so I thought “hey some organization can’t hurt” and spent Sunday inventorying my entire kitchen.

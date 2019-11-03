@@ -2,6 +2,7 @@
 title: Time Complexity and Logarithms
 date: 2016-09-30
 tags: [algorithms, computer science]
+thumbnail: /images/binary-tree.png 
 ---
 
 I've been practicing evaluating time complexity with Big O notation,

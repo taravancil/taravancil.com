@@ -2,6 +2,7 @@
 title: I'm joining Glitch!
 date: 2019-01-29
 tags: [career, glitch]
+thumbnail: /images/blog/im-joining-glitch/glitch-editor.png
 ---
 
 Here’s the news: I’m joining [Glitch](https://glitch.com)!

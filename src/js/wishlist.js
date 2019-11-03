@@ -24,7 +24,7 @@
           if (purchases.indexOf(itemLinks[i]) !== -1) {
             let newEl = document.createElement("div");
             newEl.innerHTML =
-              'Someone bought this <span aria-hidden="true">:-)</span>';
+              'Someone bought this <span aria-hidden="true">✓</span>';
             newEl.classList.add("buy-link");
             newEl.classList.add("small-text");
             buyLinks[i].replaceWith(newEl);

@@ -1,30 +1,9 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ .Title }} - Tara Vancil</title>
-
-  <meta name="author" content="Tara Vancil">
-  <meta property="og:url" content="https://taravancil.com/blog">
-
-  <meta property="og:type" content="website">
-
-  <meta property="twitter:site" content="@taravancil">
-
-  <meta property="og:title" content="{{ .Title }} - Tara Vancil">
-  <meta name="twitter:title" content="{{ .Title }} - Tara Vancil">
-
-  <meta name="twitter:card" content="summary">
-
-  <link rel="canonical" href="https://taravancil.com{{ .URL }}" />
-  <link rel="stylesheet" href="/css/style.min.css" />
-  <link rel="stylesheet" href="/css/blog.min.css" />
-  <link rel="stylesheet" href="/css/post.min.css" />
-
-  <link rel="icon" href="/images/favicon.png">
-</head>
+{{ partial "head.html" . }}
+<link rel="stylesheet" href="/css/blog.min.css" />
+<link rel="stylesheet" href="/css/post.min.css" />
 
 <body class="post">
   {{ partial "breadcrumbs.html" . }}

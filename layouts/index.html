@@ -1,40 +1,8 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>
-    {{ if ne .Title "Tara Vancil" }}{{ .Title }} - {{ end }}
-    {{ .Site.Title }}
-  </title>
-
-  <meta name="author" content="Tara Vancil">
-  <meta property="og:url" content="https://taravancil.com{{ .Permalink }}">
-
-  <meta property="og:type" content="website">
-
-  <meta property="twitter:site" content="@taravancil">
-
-  <meta property="og:title" content="Tara Vancil">
-  <meta name="twitter:title" content="Tara Vancil">
-
-  <meta property="og:description" content="Web developer in Austin, TX.">
-  <meta name="twitter:description" content="Web developer in Austin, TX.">
-
-  <meta name="twitter:card" content="summary">
-
-  <link rel="canonical" href="https://taravancil.com" />
-
-  <link rel="dns-prefetch" href="https://fonts.taravancil.com">
-  <link rel="preload" href="/css/style.min.css" as="style" />
-  <link rel="preload" href="/css/home.min.css" as="style" />
-
-  <link rel="stylesheet" href="/css/style.min.css" />
-  <link rel="stylesheet" href="/css/home.min.css" />
-
-  <link rel="icon" href="/images/favicon.png">
-</head>
+{{ partial "head.html" . }}
+<link rel="stylesheet" href="/css/home.min.css" />
 
 <body class="home">
   <style>

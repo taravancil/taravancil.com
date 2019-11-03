@@ -41,11 +41,9 @@
       </p>
 
       <p>
-        If you buy something, please help me keep this list up-to-date by clicking the "I bought this" button. You will
-        be asked to enter a 6-character code, which if I know you personally, you should have received via email. Lost
-        the
-        code, or never received it in the first place? <a href="mailto:contact@taravancil.com">Email
-          me</a>!
+        If you buy something, please help keep this list up-to-date by clicking the "Mark as bought" button. You will
+        be asked to enter a 6-character code, which you should have received via email. Lost the code, or never received
+        it in the first place? <a href="mailto:contact@taravancil.com">Email me</a>!
       </p>
 
       <ul class="wishlist undecorated-list">
@@ -79,7 +77,7 @@
             <div class="wishlist-buttons flex">
               {{ if .buyTitle }}
               <button class="wishlist-toggle-purchased-form-btn wishlist-i-bought-this-btn btn btn--clear" data-key="{{ $index }}">
-                I bought this
+                Mark as bought
               </button>
 
               <span id="wishlist-success-feedback" data-key="{{ $index }}" class="hidden small-text">

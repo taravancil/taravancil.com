@@ -132,29 +132,6 @@
         </section>
 
         <section class="highlighted-links">
-          <div class="nails link">
-            <img src="/images/emoji/nails.png" aria-hidden="true" class="icon" />
-
-            <div>
-              <a class="heading undecorated-link" href="/nails">
-                Nails &rarr;
-              </a>
-
-              <p class="small-text">
-                I love all things nails! I'm not licensed and I mostly work on myself, but I'm pretty decent at doing
-                acrylics and working with gel polish.
-              </p>
-
-              <div class="thumbnails" aria-hidden="true">
-                {{ range first 6 (where .Data.Pages "Section" "nails") }}
-                <a href="{{ .URL }}" class="thumbnail">
-                  <img alt="" src="{{ .Params.thumbnail }}" />
-                </a>
-                {{ end }}
-              </div>
-            </div>
-          </div>
-
           <div class="projects link">
             <img src="/images/emoji/wrench.png" aria-hidden="true" class="icon" />
 
@@ -183,6 +160,29 @@
                 <a aria-hidden="true" href="/projects/beaker-docs" class="thumbnail">
                   <img alt="" src="/images/thumbnails/projects/beaker-docs.png" />
                 </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="nails link">
+            <img src="/images/emoji/nails.png" aria-hidden="true" class="icon" />
+
+            <div>
+              <a class="heading undecorated-link" href="https://instagram.com/amataranails">
+                Nails &rarr;
+              </a>
+
+              <p class="small-text">
+                I love nails! I'm not licensed and I mostly work on myself, but I'm pretty decent at doing
+                acrylics and working with gel polish.
+              </p>
+
+              <div class="thumbnails" aria-hidden="true">
+                {{ range first 6 (where .Data.Pages "Section" "nails") }}
+                <a href="{{ .URL }}" class="thumbnail">
+                  <img alt="" src="{{ .Params.thumbnail }}" />
+                </a>
+                {{ end }}
               </div>
             </div>
           </div>

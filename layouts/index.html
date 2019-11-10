@@ -11,6 +11,12 @@
       position: relative;
     }
 
+    .hero {
+      padding: 2.5em 0;
+      overflow: hidden;
+      border-bottom: 10px solid rgba(0, 255, 218, .3);
+    }
+
     .pattern {
       position: absolute;
       left: 0;
@@ -21,19 +27,7 @@
       background: #00ffda;
       -webkit-mask: url(/images/patterns/squares.svg);
       mask: url(/images/patterns/squares.svg);
-    }
-
-    .avatar {
-      background: #eb0000;
-      color: #fff;
-      text-align: center;
-    }
-
-    .big-avatar {
-      width: 95px;
-      height: 95px;
-      line-height: 87px;
-      font-size: 48px;
+      transform: scale(1.55);
     }
   </style>
   <main role="main">
@@ -60,11 +54,12 @@
       </svg>
 
       <div class="container narrow">
-        <div class="hero-intro">
-          <div aria-hidden="true" class="avatar big-avatar">
-            :-)
-          </div>
-        </div>
+        <p><strong>Tara Vancil</strong> is a software engineer in New York City</p>
+        <nav>
+          <a href="/about">About</a>
+          <a href="/blog">Blog</a>
+          <a href="/projects">Projects</a>
+        </nav>
       </div>
     </header>
 

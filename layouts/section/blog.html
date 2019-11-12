@@ -10,11 +10,18 @@
   <div class="container wide">
     <main role="main">
       <div class="posts-list">
+        <p>
         <a href="https://hacks.mozilla.org/2018/08/dweb-serving-the-web-from-the-browser-with-beaker/" class="mozhacks wavy flex">
           <img src="https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/wp-content/themes/Hax/favicon.ico"
             aria-hidden="true">
           Read my post on Mozilla Hacks
         </a>
+
+        <a href="https://thecreativeindependent.com/people/web-developer-tara-vancil-on-exploring-how-to-be-online-in-radical-ways/" class="flex wavy">
+          <img class="creative-ind-spiral" src="https://thecreativeindependent.com/images/logo-spiral.svg">
+          Read my interview with The Creative Independent
+        </a>
+      </p>
 
         {{ range (where .Data.Pages "Section" "blog") }}
         <article>

@@ -1,7 +1,6 @@
-@import '../base/colors';
+@import "../base/colors";
 
 body.blog {
-
   main {
     margin-top: 20px;
   }
@@ -17,7 +16,6 @@ body.blog {
     }
 
     .info {
-
       .date {
         font-style: italic;
       }
@@ -43,5 +41,11 @@ body.blog {
     img {
       margin-right: 5px;
     }
+  }
+
+  .creative-ind-spiral {
+    width: 17px;
+    margin-right: 5px;
+    margin-bottom: 10px;
   }
 }

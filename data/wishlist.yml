@@ -94,10 +94,6 @@
   buyTitle: Amazon
   image: /images/wishlist/rolling-pin.jpg
   price: 15
-- title: Goodwill of Central Texas gift card
-  buyLink: https://www.goodwillcentraltexas.org/locations
-  note: Available in-store only
-  image: /images/wishlist/goodwill.png
 - title: 5 qt. stainless steel mixing bowl (x2)
   buyLink: https://www.webstaurantstore.com/5-qt-standard-weight-stainless-steel-mixing-bowl/407MXB5.html
   buyTitle: webstaurantstore.com
@@ -233,7 +229,7 @@
 - title: Hawthorne strainer
   buyLink: https://smile.amazon.com/OXO-1058016-SteeL-Cocktail-Strainer/dp/B0000DAQ93/
   buyTitle: Amazon
-  price: 8 
+  price: 8
   image: /images/wishlist/hawthorne-strainer.jpg
 - title: Barspoon (stainless steel)
   buyLink: https://www.cocktailkingdom.com/teardrop-barspoon-14275

@@ -1,227 +1,331 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  {{ partial "head.html" . }}
+  <link rel="stylesheet" href="/css/home.min.css" />
 
-{{ partial "head.html" . }}
-<link rel="stylesheet" href="/css/home.min.css" />
+  <body class="home">
+    <style>
+      .hero,
+      .container {
+        position: relative;
+      }
 
-<body class="home">
-  <style>
-    .hero,
-    .container {
-      position: relative;
-    }
+      .hero {
+        height: 175px;
+        overflow: hidden;
+        border-bottom: 10px solid rgba(0, 255, 218, 0.3);
+      }
 
-    .hero {
-      padding: 2.5em 0;
-      overflow: hidden;
-      border-bottom: 10px solid rgba(0, 255, 218, .3);
-    }
+      .pattern {
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: #00ffda;
+        -webkit-mask: url(/images/patterns/squares.svg);
+        mask: url(/images/patterns/squares.svg);
+        transform: scale(1.55);
+      }
+    </style>
+    <main role="main">
+      <header class="hero" aria-hidden="true">
+        <svg
+          class="pattern"
+          width="100%"
+          height="100%"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <linearGradient id="PurpleToTeal">
+              <stop offset="5%" stop-color="#9b0267" />
+              <stop offset="95%" stop-color="#00ffda" />
+            </linearGradient>
 
-    .pattern {
-      position: absolute;
-      left: 0;
-      top: 0;
-      content: '';
-      width: 100%;
-      height: 100%;
-      background: #00ffda;
-      -webkit-mask: url(/images/patterns/squares.svg);
-      mask: url(/images/patterns/squares.svg);
-      transform: scale(1.55);
-    }
-  </style>
-  <main role="main">
-    <header class="hero" aria-hidden="true">
-      <svg class="pattern" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <linearGradient id="PurpleToTeal">
-            <stop offset="5%" stop-color="#9b0267" />
-            <stop offset="95%" stop-color="#00ffda" />
-          </linearGradient>
+            <linearGradient id="RedToPink" x1="0" x2="0" y1="0" y2="1">
+              <stop offset="20%" stop-color="#eb0000" />
+              <stop offset="80%" stop-color="#fb0059" />
+            </linearGradient>
 
-          <linearGradient id="RedToPink" x1="0" x2="0" y1="0" y2="1">
-            <stop offset="20%" stop-color="#eb0000" />
-            <stop offset="80%" stop-color="#fb0059" />
-          </linearGradient>
+            <pattern
+              id="Pattern"
+              x="0"
+              y="0"
+              width="50px"
+              height="50px"
+              patternUnits="userSpaceOnUse"
+            >
+              <rect x="0" y="0" width="50" height="50" fill="#00ffda" />
+              <rect x="0" y="0" width="25" height="25" fill="url(#RedToPink)" />
+              <circle
+                cx="25"
+                cy="25"
+                r="15"
+                fill="url(#PurpleToTeal)"
+                fill-opacity="0.5"
+              />
+            </pattern>
+          </defs>
+          <rect fill="url(#Pattern)" width="100%" height="100%" />
+        </svg>
+      </header>
 
-          <pattern id="Pattern" x="0" y="0" width="50px" height="50px" patternUnits="userSpaceOnUse">
-            <rect x="0" y="0" width="50" height="50" fill="#00ffda" />
-            <rect x="0" y="0" width="25" height="25" fill="url(#RedToPink)" />
-            <circle cx="25" cy="25" r="15" fill="url(#PurpleToTeal)" fill-opacity="0.5" />
-          </pattern>
-        </defs>
-        <rect fill="url(#Pattern)" width="100%" height="100%" />
-      </svg>
+      <div class="container wide">
+        <div class="columns">
+          <section class="hero-blurb col col-2-3">
+            <div class="module">
+              <h1>Tara Vancil</h1>
 
-      <div class="container narrow">
-        <p><strong>Tara Vancil</strong> is a software engineer in New York City</p>
-        <nav>
-          <a href="/about">About</a>
-          <a href="/blog">Blog</a>
-          <a href="/projects">Projects</a>
-        </nav>
-      </div>
-    </header>
-
-    <div class="highlights">
-      <div class="container narrow">
-        <section class="hero-blurb">
-          <p class="large-text">
-            Hi, I'm Tara. I'm a software engineer at <a href="https://glitch.com">Glitch</a>, where I work on our in-browser <a href="https://glitch.com/edit">code editor</a>. I live in New York City.
-          </p>
-
-          <p>
-            Before Glitch, I worked on <a href="https://beakerbrowser.com">Beaker</a>, an experimental browser that explores
-            what happens when you integrate a peer-to-peer protocol into the Web.
-            <a class="tour-link wavy" href="https://beakerbrowser.com/docs/tour">
-              Take a tour of Beaker
-              <img class="magnify" aria-hidden="true" src="/images/emoji/magnify-right.png" />
-            </a>
-          </p>
-        </section>
-
-        <section class="latest-activity grid grid--300">
-          <div class="latest-posts flex">
-            <h2 class="inline-heading">
-              Latest posts
-            </h2>
-
-            <ul class="small-text">
-              {{ range first 3 (where .Data.Pages "Section" "blog") }}
-              <li>
-                <a class="title" href="{{ .URL }}" class="post">
-                  {{ .Title }}
-                </a>
-              </li>
-              {{ end }}
-            </ul>
-
-            <a href="/blog" class="btn btn--small small-text">
-              View all posts &rarr;
-            </a>
-          </div>
-
-          <div class="speaking flex">
-            <h2 class="inline-heading">Upcoming presentations</h2>
-
-            <ul class="upcoming-talks small-text">
-              <p>
-                <em>No upcoming presentations</em>
-              </p>
-            </ul>
-
-            <a href="https://www.youtube.com/watch?v=rJ_WvfF3FN8" class="highlighted-talk wavy small-text">
-              <div class="thumbnail-container">
-                <img alt="Tara Vancil on stage at JSConf EU 2018" src="/images/speaking/jsconfeu.jpg" />
-              </div>
-
-              <p>
-                Watch my JSConf EU talk, <br /><em>Imagine this: a Web without servers</em>
-              </p>
-            </a>
-
-            <a href="/speaking" class="btn btn--small small-text">
-              View all presentations &rarr;
-            </a>
-          </div>
-        </section>
-
-        <section class="highlighted-links">
-          <div class="projects link">
-            <img src="/images/emoji/wrench.png" aria-hidden="true" class="icon" />
-
-            <div>
-              <a class="heading undecorated-link" href="/projects">
-                My projects &rarr;
-              </a>
-
-              <p class="small-text">
-                Selected projects
-              </p>
-
-              <div class="thumbnails">
-                <a aria-hidden="true" href="/projects/pixel-eyez" class="thumbnail">
-                  <img alt="" src="/images/thumbnails/projects/pixel-eyez2.png" />
-                </a>
-
-                <a aria-hidden="true" href="/projects/beaker-browser-com" class="thumbnail">
-                  <img alt="" src="/images/thumbnails/projects/beaker-website.png" />
-                </a>
-
-                <a aria-hidden="true" href="/projects/paste-dat" class="thumbnail">
-                  <img alt="" src="/images/thumbnails/projects/paste-dat.png" />
-                </a>
-
-                <a aria-hidden="true" href="/projects/beaker-docs" class="thumbnail">
-                  <img alt="" src="/images/thumbnails/projects/beaker-docs.png" />
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="nails link">
-            <img src="/images/emoji/nails.png" aria-hidden="true" class="icon" />
-
-            <div>
-              <a class="heading undecorated-link" href="https://instagram.com/amataranails">
-                Nails &rarr;
-              </a>
-
-              <p class="small-text">
-                I love nails! I'm not licensed and I mostly work on myself, but I'm pretty decent at doing
-                acrylics and working with gel polish.
-              </p>
-
-              <div class="thumbnails" aria-hidden="true">
-                {{ range first 6 (where .Data.Pages "Section" "nails") }}
-                <a href="{{ .URL }}" class="thumbnail">
-                  <img alt="" src="{{ .Params.thumbnail }}" />
-                </a>
-                {{ end }}
-              </div>
-            </div>
-          </div>
-
-          <div class="support link">
-            <img src="/images/emoji/hearts.png" aria-hidden="true" class="icon" />
-
-            <div>
-              <a class="heading undecorated-link" href="https://opencollective.com/beaker">
-                Support my work &rarr;
-              </a>
-
-              <p class="small-text">
-                Become a backer on Open Collective and help sustain my work on Beaker.
+              <p class="large-text">
+                I'm a software engineer at
+                <a href="https://glitch.com">Glitch</a>. I live in New York
+                City.
               </p>
             </div>
-          </div>
 
-          <div class="feed link">
-            <img src="/images/emoji/yelling.png" aria-hidden="true" class="icon" />
-
-            <div>
-              <a class="heading undecorated-link" href="/feed">
-                My feed &rarr;
+            <p>
+              Before Glitch, I worked on
+              <a href="https://beakerbrowser.com/about">Beaker</a>, an
+              experimental browser that explores what happens when you integrate
+              a peer-to-peer protocol into the Web.
+              <a
+                class="tour-link wavy"
+                href="https://beakerbrowser.com/docs/tour"
+              >
+                Take a tour of Beaker
+                <img
+                  class="magnify"
+                  aria-hidden="true"
+                  src="/images/emoji/magnify-right.png"
+                />
               </a>
+            </p>
 
-              <p class="small-text">
-                <em>Coming soon...</em>
-              </p>
+            <p aria-hidden="true">This is me:</p>
+            <div class="me-gallery">
+              <a target="_blank" href="/images/me6.jpg">
+                <img src="/images/me6-thumbnail.jpg" alt="" />
+              </a>
+              <a target="_blank" href="/images/me5.jpg">
+                <img src="/images/me5-thumbnail.jpg" alt="" />
+              </a>
+              <a target="_blank" href="/images/me2.jpg">
+                <img src="/images/me2-thumbnail.jpg" alt="" />
+              </a>
+              <a target="_blank" href="/images/me4.jpg">
+                <img src="/images/me4-thumbnail.jpg" alt="" />
+              </a>
+              <a target="_blank" href="/images/me3.jpg">
+                <img src="/images/me3-thumbnail.jpg" alt="" />
+              </a>
+            </div>
 
-              <!-- <div class="feed-item small-text">
-                  <span class="icon">&gt;</span>
-                  <p class="text">
-                    Cats are good <a class="timestamp" href="/">3m ago</a>
+            <div class="highlighted-links">
+              <div class="blog link">
+                <img
+                  src="/images/emoji/yelling.png"
+                  aria-hidden="true"
+                  class="icon"
+                />
+                <div>
+                  <a class="heading undecorated-link" href="/blog">
+                    Blog &rarr;
+                  </a>
+
+                  <p class="small-text">
+                    I mostly write about myself. Sometimes I write about
+                    software.
                   </p>
-                </div> -->
+                </div>
+              </div>
+
+              <div class="projects link">
+                <img
+                  src="/images/emoji/hammer-and-wrench.png"
+                  aria-hidden="true"
+                  class="icon"
+                />
+
+                <div>
+                  <a class="heading undecorated-link" href="/projects">
+                    Projects &rarr;
+                  </a>
+
+                  <p class="small-text">
+                    Things I've built. Probably out-of-date.
+                  </p>
+
+                  <div class="thumbnails">
+                    <a
+                      aria-hidden="true"
+                      href="/projects/pixel-eyez"
+                      class="thumbnail"
+                    >
+                      <img
+                        alt=""
+                        src="/images/thumbnails/projects/pixel-eyez2.png"
+                      />
+                    </a>
+
+                    <a
+                      aria-hidden="true"
+                      href="/projects/beaker-browser-com"
+                      class="thumbnail"
+                    >
+                      <img
+                        alt=""
+                        src="/images/thumbnails/projects/beaker-website.png"
+                      />
+                    </a>
+
+                    <a
+                      aria-hidden="true"
+                      href="/projects/paste-dat"
+                      class="thumbnail"
+                    >
+                      <img
+                        alt=""
+                        src="/images/thumbnails/projects/paste-dat.png"
+                      />
+                    </a>
+
+                    <a
+                      aria-hidden="true"
+                      href="/projects/beaker-docs"
+                      class="thumbnail"
+                    >
+                      <img
+                        alt=""
+                        src="/images/thumbnails/projects/beaker-docs.png"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="nails link">
+                <img
+                  src="/images/emoji/nails.png"
+                  aria-hidden="true"
+                  class="icon"
+                />
+
+                <div>
+                  <a
+                    class="heading undecorated-link"
+                    href="https://instagram.com/amataranails"
+                  >
+                    Nails &rarr;
+                  </a>
+
+                  <p class="small-text">
+                    I love nails! I'm not licensed and I mostly work on myself,
+                    but I'm alright.
+                  </p>
+                </div>
+              </div>
+
+              <div class="support link">
+                <img
+                  src="/images/emoji/hearts.png"
+                  aria-hidden="true"
+                  class="icon"
+                />
+
+                <div>
+                  <a
+                    class="heading undecorated-link"
+                    href="https://opencollective.com/beaker"
+                  >
+                    Support my work &rarr;
+                  </a>
+
+                  <p class="small-text">
+                    Become a backer on Open Collective and help sustain my work
+                    on Beaker.
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+
+          <section class="latest-activity col col-1-3">
+            <div class="latest-posts flex">
+              <h2 class="inline-heading">
+                Latest Posts
+              </h2>
+
+              <ul class="small-text">
+                {{ range first 3 (where .Pages "Section" "blog") }}
+                <li>
+                  <a class="title" href="{{ .URL }}" class="post">
+                    {{ .Title }}
+                  </a>
+                </li>
+                {{ end }}
+              </ul>
+
+              <a href="/blog" class="btn btn--small small-text">
+                View all posts &rarr;
+              </a>
+            </div>
+
+            <div class="speaking flex">
+              <h2 class="inline-heading">Upcoming Presentations</h2>
+
+              <ul class="upcoming-talks small-text">
+                <p>
+                  <em>No upcoming presentations</em>
+                </p>
+              </ul>
+
+              <a
+                href="https://www.youtube.com/watch?v=rJ_WvfF3FN8"
+                class="highlighted-talk wavy small-text"
+              >
+                <div class="thumbnail-container">
+                  <img
+                    alt="Tara Vancil on stage at JSConf EU 2018"
+                    src="/images/speaking/jsconfeu.jpg"
+                  />
+                </div>
+
+                <p>
+                  Watch my JSConf EU talk, <br /><em
+                    >Imagine this: a Web without servers</em
+                  >
+                </p>
+              </a>
+
+              <a href="/speaking" class="btn btn--small small-text">
+                View all presentations &rarr;
+              </a>
+            </div>
+            <div class="links-i-love flex">
+              <h2 class="inline-heading">Links I Love</h2>
+
+              <ul class="small-text">
+                <li>
+                  <a
+                    href="https://www.communityjusticeexchange.org/nbfn-directory"
+                    >Donate to a bail fund near you</a
+                  >
+                </li>
+                <li>
+                  <a href="https://berniesanders.com">BernieSanders.com</a>
+                </li>
+                <li>
+                  <a href="http://www.blackgirlscode.com/">Black Girls Code</a>
+                </li>
+                <li><a href="https://socialists.nyc">NYC DSA</a></li>
+              </ul>
+            </div>
+          </section>
+        </div>
       </div>
-    </div>
-  </main>
+    </main>
 
-  {{ partial "footer.html" }}
-</body>
-
+    {{ partial "footer.html" }}
+  </body>
 </html>

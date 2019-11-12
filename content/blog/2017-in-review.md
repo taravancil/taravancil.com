@@ -2,12 +2,10 @@
 title: "2017: Year in review"
 date: 2018-01-01
 tags: [year-in-review]
-thumbnail: /images/2017-in-review/kit.jpg 
+thumbnail: /images/2017-in-review/kit.jpg
 ---
 
-<p class="large-text">
-  2017 was my most productive year yet. Not because I achieved superhuman levels of productivity, but because I made the transition between figuring out what to do with my life and doing something with my life. It feels damn good.
-</p>
+2017 was my most productive year yet. Not because I achieved superhuman levels of productivity, but because I made the transition between figuring out what to do with my life and doing something with my life. It feels damn good.
 
 <!--more-->
 

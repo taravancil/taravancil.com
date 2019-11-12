@@ -15,7 +15,7 @@
   },
   "scripts": {
     "start": "gulp",
-    "build": "hugo"
+    "build": "gulp build"
   },
   "author": "Tara Vancil <contact@taravancil.com>"
 }

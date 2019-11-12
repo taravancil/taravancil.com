@@ -1,23 +1,20 @@
-## Development
-
+# taravancil.com
 This is the source for [taravancil.com](https://taravancil.com).
 
-The https version of this website is synced from `dat://taravancil.com` using
-[dathttpd](https://github.com/beakerbrowser/dathttpd). You can open the peer-to-peer
-version with [Beaker](https://github.com/beakerbrowser/beaker).
+## Dependencies
+
+- [`go`](https://golang.org/doc/install)
+- [`hugo`](https://gohugo.io/getting-started/installing/)
+- [`npm`](https://www.npmjs.com/get-npm)
+
+## Development
+Install the development dependencies.
 
 ```
 npm install
 ```
 
-then
-
+Start the local server.
 ```
 npm start
 ```
-
-then open `localhost:1313`.
-
-### Building the site
-
-`hugo` builds the site into `public/`. See `hugo -h` for more options.

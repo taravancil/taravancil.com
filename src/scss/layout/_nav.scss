@@ -24,8 +24,10 @@
   .nav-item-home-link {
     @extend %flex-container;
 
-    .avatar {
-      margin-right: 7px;
+    .icon {
+      width: 17px;
+      height: 17px;
+      margin-right: 5px;
     }
   }
 }

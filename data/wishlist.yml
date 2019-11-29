@@ -104,18 +104,13 @@
   buyTitle: webstaurantstore.com
   price: 1.50
   image: /images/wishlist/stainless-steel-mixing-bowl-3qt.jpg
-- title: FÖRHÖJA kitchen cart
-  buyLink: https://www.ikea.com/us/en/catalog/products/80035920/
-  buyTitle: ikea.com
-  price: 109
-  image: /images/wishlist/kitchen-cart.jpg
 - title: NISSEDAL mirror (black)
   price: 50
   buyLink: https://www.ikea.com/us/en/catalog/products/70320319/
   buyTitle: ikea.com
   image: /images/wishlist/mirror.jpg
 - title: Nike Air Force 1 '07
-  size: 9
+  size: 8.5
   buyLink: https://www.nike.com/t/air-force-1-07-womens-shoe-KyTwDPGG/315115-112
   buyTitle: nike.com
   image: /images/wishlist/air-force-one.png
@@ -181,11 +176,6 @@
   buyTitle: Amazon
   image: /images/wishlist/baking-beans.jpg
   price: 6
-- title: Nail art brushes
-  price: 13
-  buyTitle: Amazon
-  buyLink: https://smile.amazon.com/dp/B01EA3BB82
-  image: /images/wishlist/nail-brushes.jpg
 - title: Makeup brushes
   price: 7
   buyLink: https://smile.amazon.com/dp/B00I3VHKVK
@@ -241,7 +231,7 @@
   buyTitle: Cocktail Kingdom
   price: 11
   image: /images/wishlist/julep-strainer.jpg
-- title: 3 In 1 Timer
+- title: 3 in 1 Timer
   buyLink: https://smile.amazon.com/gp/product/B0187ZH5QQ
   buyTitle: Amazon
   price: 14
@@ -250,4 +240,14 @@
   buyLink: https://smile.amazon.com/gp/product/B079Q1J3WG
   buyTitle: Amazon
   price: 52
-  image: /images/wishlist/spatulas.jpg
+  image: /images/wishlist/wide-spatulas.jpg
+- title: Rubbermaid food storage container (x2)
+  buyTitle: Amazon
+  buyLink: https://smile.amazon.com/Rubbermaid-Commercial-Container-12-Quart-FG631200CLR/dp/B000R8JOUC
+  price: 13
+  image: /images/wishlist/food-storage-container.jpg
+- title: The New Jim Crow
+  buyTitle: newjimcrow.com
+  buyLink: http://newjimcrow.com/about/buy
+  price: 12
+  image: /images/wishlist/new-jim-crow.jpg

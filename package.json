@@ -15,7 +15,8 @@
   },
   "scripts": {
     "start": "gulp",
-    "build": "gulp build"
+    "build": "gulp build",
+    "publish": "hugo && cd public && dat ."
   },
   "author": "Tara Vancil <contact@taravancil.com>"
 }

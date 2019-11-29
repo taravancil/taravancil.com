@@ -7,7 +7,7 @@ css: /css/about.min.css
 <p class="large-text">
   I'm a software engineer at
   <a href="https://glitch.com">Glitch</a> on the Developer Tools team, where we work on an in-browser <a href="https://glitch.com/edit">code editor</a>. I
-  live in New York City. I'm from Northern Michigan.
+  live in New York City.
 </p>
 
 <figure>
@@ -15,7 +15,7 @@ css: /css/about.min.css
   <figcaption>The Glitch editor</figcaption>
 </figure>
 
- Before Glitch, I worked on [Beaker](https://beakerbrowser.com/about), an experimental browser that explores what happens when you integrate a peer-to-peer protocol into the Web. And before working on Beaker, I spent time at the [Recurse Center](https://www.recurse.com), an amazing community for programmers.
+Before Glitch, I worked on [Beaker](https://beakerbrowser.com/about), an experimental browser that explores what happens when you integrate a peer-to-peer protocol into the Web. And before working on Beaker, I spent time at the [Recurse Center](https://www.recurse.com), an amazing community for programmers.
 
 <p class="rc-scout"></p>
 

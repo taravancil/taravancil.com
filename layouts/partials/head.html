@@ -1,50 +1,72 @@
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   {{ if or (eq .Title "Tara Vancil") (eq (len .Title) 0) }}
-    <title>{{ .Site.Title }}</title>
-    <meta name="title" content="{{ .Site.Title }}">
-    <meta property="og:title" content="{{ .Site.Title }}">
-    <meta name="twitter:title" content="{{ .Site.Title }}">
+  <title>{{ .Site.Title }}</title>
+  <meta name="title" content="{{ .Site.Title }}" />
+  <meta property="og:title" content="{{ .Site.Title }}" />
+  <meta name="twitter:title" content="{{ .Site.Title }}" />
   {{ else }}
-    <title>{{ .Title }} - {{ .Site.Title }}</title>
-    <meta name="title" content="{{ .Title }} - {{ .Site.Title }}">
-    <meta property="og:title" content="{{ .Title }} - {{ .Site.Title }}">
-    <meta name="twitter:title" content="{{ .Title }} - {{ .Site.Title }}">
+  <title>{{ .Title }} - {{ .Site.Title }}</title>
+  <meta name="title" content="{{ .Section }} - {{ .Site.Title }}" />
+  <meta property="og:title" content="{{ .Title }} - {{ .Site.Title }}" />
+  <meta name="twitter:title" content="{{ .Title }} - {{ .Site.Title }}" />
   {{ end }}
 
-
-  <meta name="twitter:card" content="summary">
+  <meta name="twitter:card" content="summary" />
   {{ if .Params.thumbnail }}
-    <meta property="og:image" content="https://taravancil.com{{ .Params.thumbnail }}">
-    <meta name="twitter:image" content="https://taravancil.com{{ .Params.thumbnail }}">
+  <meta
+    property="og:image"
+    content="https://taravancil.com{{ .Params.thumbnail }}"
+  />
+  <meta
+    name="twitter:image"
+    content="https://taravancil.com{{ .Params.thumbnail }}"
+  />
   {{ else }}
-    <meta property="og:image" content="https://taravancil.com/images/thumbnail.png">
-    <meta name="twitter:image" content="https://taravancil.com/images/thumbnail.png">
+  <meta
+    property="og:image"
+    content="https://taravancil.com/images/thumbnail.png"
+  />
+  <meta
+    name="twitter:image"
+    content="https://taravancil.com/images/thumbnail.png"
+  />
+  {{ end }} {{ if eq .Section "blog" }}
+  <meta name="description" content="{{ .Summary }}" />
+  <meta property="og:description" content="{{ .Summary }}" />
+  <meta name="twitter:description" content="{{ .Summary }}" />
+  {{ else }}
+  <meta
+    name="description"
+    content="Tara Vancil is a software engineer in New York City"
+  />
+  <meta
+    property="og:description"
+    content="Tara Vancil is a software engineer in New York City"
+  />
+  <meta
+    name="twitter:description"
+    content="Tara Vancil is a software engineer in New York City"
+  />
   {{ end }}
 
-  {{ if eq .Section "blog" }}
-    <meta name="description" content="{{ .Summary }}">
-    <meta property="og:description" content="{{ .Summary }}">
-    <meta name="twitter:description" content="{{ .Summary }}">
-  {{ else }}
-    <meta name="description" content="Tara Vancil is a software engineer in New York City">
-    <meta property="og:description" content="Tara Vancil is a software engineer in New York City">
-    <meta name="twitter:description" content="Tara Vancil is a software engineer in New York City">
-  {{ end }}
-
-  <meta name="author" content="Tara Vancil">
+  <meta name="author" content="Tara Vancil" />
 
   <link rel="canonical" href="https://taravancil.com{{ .URL }}" />
-  <meta property="og:url" content="https://taravancil.com{{ .URL }}">
-  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://taravancil.com{{ .URL }}" />
+  <meta property="og:type" content="website" />
 
-  <meta property="twitter:site" content="@taravancil">
+  <meta property="twitter:site" content="@taravancil" />
 
-  <link rel="dns-prefetch" href="https://recurse-scout.com">
-  <link rel="preconnect" href="https://recurse-scout.com">
-  <link rel="preload" href="https://www.recurse-scout.com/loader.js?t=0dcb1e3c1156a3fd0bda3cd94cfb434f" as="script">
+  <link rel="dns-prefetch" href="https://recurse-scout.com" />
+  <link rel="preconnect" href="https://recurse-scout.com" />
+  <link
+    rel="preload"
+    href="https://www.recurse-scout.com/loader.js?t=0dcb1e3c1156a3fd0bda3cd94cfb434f"
+    as="script"
+  />
   <link rel="preload" href="/css/style.min.css" as="style" />
 
   <link rel="stylesheet" href="/css/style.min.css" />
@@ -52,5 +74,5 @@
   {{ if .Params.css }}
   <link rel="stylesheet" href="{{ .Params.css }}" />
   {{ end }}
-  <link rel="icon" href="/images/favicon.png">
+  <link rel="icon" href="/images/favicon.png" />
 </head>

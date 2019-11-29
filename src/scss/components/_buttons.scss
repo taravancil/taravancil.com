@@ -26,7 +26,8 @@
   }
 }
 
-.btn--primary {
+.btn--primary,
+.btn--pressed {
   background: #000;
   color: #fff;
 
@@ -56,4 +57,8 @@
 
 .btn:focus {
   border: 1px dashed;
+}
+
+.btn-group .btn {
+  margin: 0;
 }

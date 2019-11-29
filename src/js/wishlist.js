@@ -5,6 +5,11 @@
     unknownError: "Sorry, something went wrong."
   };
 
+  const DOM = {
+    items: document.querySelectorAll(".wishlist-item"),
+    filterButtons: document.querySelectorAll("[data-filter]")
+  };
+
   setup();
 
   function setup() {
@@ -21,7 +26,10 @@
       })
       .then(function(purchases) {
         for (let i = 0; i < buyLinks.length; i++) {
-          if (purchases.indexOf(itemLinks[i]) !== -1) {
+          const alreadyBought = purchases.indexOf(itemLinks[i]) !== -1;
+          const parent = buyLinks[i].closest(".wishlist-item");
+          if (alreadyBought) {
+            parent.classList.add("purchased");
             let newEl = document.createElement("div");
             newEl.innerHTML =
               'Someone bought this <span aria-hidden="true">✓</span>';
@@ -29,7 +37,10 @@
             newEl.classList.add("small-text");
             buyLinks[i].replaceWith(newEl);
             boughtButtons[i].remove();
+          } else {
+            parent.classList.add("not-purchased");
           }
+          setActiveFilter("not-purchased");
         }
       });
 
@@ -47,9 +58,29 @@
     for (let btn of submitPurchasedFormButtons) {
       btn.addEventListener("click", onSubmitPurchasedForm);
     }
+
+    for (let btn of DOM.filterButtons) {
+      btn.addEventListener("click", onClickFilterButton);
+    }
   }
 
   // events
+  function setActiveFilter(filter) {
+    if (filter === "all") {
+      removeClass(DOM.items, "hidden");
+    } else {
+      addClass(DOM.items, "hidden");
+      removeClass(
+        document.querySelectorAll(`.wishlist-item.${filter}`),
+        "hidden"
+      );
+    }
+  }
+  function onClickFilterButton(e) {
+    removeClass(DOM.filterButtons, "btn--pressed");
+    e.target.classList.add("btn--pressed");
+    setActiveFilter(e.target.dataset.filter);
+  }
   function onTogglePurchasedForm(e) {
     const key = e.target.dataset.key;
     const item = document.querySelector(`ul.wishlist li[data-key="${key}"]`);
@@ -145,5 +176,17 @@
       el.removeAttribute("role");
       el.innerText = "";
     }
+  }
+
+  function addClass(els, classStr) {
+    els.forEach(function(el) {
+      el.classList.add(classStr);
+    });
+  }
+
+  function removeClass(els, classStr) {
+    els.forEach(function(el) {
+      el.classList.remove(classStr);
+    });
   }
 })();

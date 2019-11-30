@@ -6,7 +6,7 @@ css: /css/about.min.css
 
 <p class="large-text">
   I'm a software engineer at
-  <a href="https://glitch.com">Glitch</a> on the Developer Tools team, where we work on an in-browser <a href="https://glitch.com/edit">code editor</a>. I
+  <a href="https://glitch.com">Glitch</a> on the Developer Tools team, where we work on a <a href="https://en.wikipedia.org/wiki/Operational_transformation">collaborative</a> in-browser <a href="https://glitch.com/edit">code editor</a>. I
   live in New York City.
 </p>
 

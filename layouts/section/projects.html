@@ -32,7 +32,7 @@
         <h1>Selected projects</h1>
 
         <ul class="grid project-screenshots undecorated-list">
-          {{ range (where .Data.Pages "Section" "projects") }}
+          {{ range sort (where .Data.Pages "Section" "projects") .Params.date "desc" }}
           <li>
             <a class="undecorated-link" href="{{ .Permalink }}">
               <img

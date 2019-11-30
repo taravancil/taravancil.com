@@ -251,3 +251,14 @@
   buyLink: http://newjimcrow.com/about/buy
   price: 12
   image: /images/wishlist/new-jim-crow.jpg
+- title: Slippers
+  buyTitle: L.L. Bean
+  buyLink: https://www.llbean.com/llb/shop/121227?page=women-s-wicked-good-slipper-slide
+  price: 79
+  size: 9
+  image: /images/wishlist/slippers.jpg
+- title: Pastry brush
+  price: 10
+  buyTitle: Amazon
+  buyLink: https://smile.amazon.com/Ateco-60020-Natural-Bristles-Stainless/dp/B000KEWPTA
+  image: /images/wishlist/pastry-brush.jpg

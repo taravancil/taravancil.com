@@ -2,7 +2,7 @@
 title: PIXEL-EYEZ
 id: pixeleyez
 description: |
-  A tool for converting images to [PXON](https://jennmoney.biz/pxon/)
+  A tool for converting images to [PXON](https://jennmoney.biz/pxon/).
 screenshots:
   - /images/projects/pixel-eyez.png
 thumbnail: /images/projects/pixel-eyez.png

@@ -1,7 +1,7 @@
 ---
 title: beakerbrowser.com
 description: |
-  The website for the Beaker browser.
+  The website for the Beaker Browser.
 screenshots:
  - /images/projects/beaker-website.png
  - /images/projects/beaker-website2.png

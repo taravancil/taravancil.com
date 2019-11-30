@@ -1,7 +1,7 @@
 ---
 title: Count
 description: |
-  A simple word and character count tool
+  A simple word and character count tool.
 screenshots:
   - /images/projects/count.png
 thumbnail: /images/projects/count.png

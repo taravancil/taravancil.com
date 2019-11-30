@@ -1,7 +1,7 @@
 ---
-title: Beaker documentation
+title: Beaker Documentation
 description: |
-  Documentation for Beaker
+  Documentation for the Beaker Browser.
 screenshots:
   - /images/projects/beaker-docs.png
   - /images/projects/beaker-docs2.png

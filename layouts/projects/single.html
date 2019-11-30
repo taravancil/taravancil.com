@@ -1,34 +1,36 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-{{ partial "head.html" . }}
+  {{ partial "head.html" . }}
 
-<body class="project">
-  {{ partial "breadcrumbs.html" . }}
+  <body class="project">
+    {{ partial "breadcrumbs.html" . }}
 
-  <div class="container medium">
-    <main class="main">
-      <h1 class="title">{{ .Title }}</h1>
-      <p>{{ .Description | markdownify }}</p>
+    <div class="container medium">
+      <main class="main">
+        <h1 class="title">{{ .Title }}</h1>
+        <p>{{ .Description | markdownify }}</p>
 
-      <h2 class="inline-heading">Links</h2>
-      <ul>
-        <li>
-          <a href="{{ .Params.link }}">{{ .Params.link }}</a>
-        </li>
-        <li>
-          <a href="{{ .Params.srcLink }}">{{ .Params.srcLink }}</a>
-        </li>
-      </ul>
+        <h2 class="inline-heading">Links</h2>
+        <ul>
+          <li>
+            <a href="{{ .Params.link }}">{{ .Params.link }}</a>
+          </li>
 
-      <div class="project-screenshots grid">
-        {{ range .Params.screenshots }}
-        <img class="project-screenshot" src="{{ . }}">
-        {{ end }}
-      </div>
-    </main>
-  </div>
+          {{ if .Params.srcLink }}
+          <li>
+            <a href="{{ .Params.srcLink }}">Source Code</a>
+          </li>
+          {{ end }}
+        </ul>
 
-  {{ partial "footer.html" }}
-</body>
+        <div class="project-screenshots grid">
+          {{ range .Params.screenshots }}
+          <img class="project-screenshot" src="{{ . }}" />
+          {{ end }}
+        </div>
+      </main>
+    </div>
 
+    {{ partial "footer.html" }}
+  </body>
 </html>

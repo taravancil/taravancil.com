@@ -64,12 +64,12 @@
   buyTitle: Amazon
   image: /images/wishlist/food-processor.jpg
   price: 160
-- title: OXO Pastry cutter
+- title: OXO pastry cutter
   buyLink: https://smile.amazon.com/OXO-Stainless-Bladed-Blender-Cutter/dp/B000QJE48O/
   buyTitle: Amazon
   image: /images/wishlist/pastry-cutter.jpg
   price: 12
-- title: OXO Pizza cutter
+- title: OXO pizza cutter
   buyLink: https://smile.amazon.com/OXO-SteeL-Pizza-Wheel-Cutter/dp/B0000E2GYL/
   buyTitle: Amazon
   price: 12
@@ -120,7 +120,7 @@
   buyTitle: Amazon
   image: /images/wishlist/efile-bits.jpg
   price: 18
-- title: OXO Dish rack
+- title: OXO dish rack
   buyLink: https://smile.amazon.com/dp/B007SU1WUW/
   buyTitle: Amazon
   image: /images/wishlist/dish-rack.jpg

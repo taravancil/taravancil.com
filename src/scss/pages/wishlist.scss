@@ -1,6 +1,13 @@
 @import "../base/colors";
 @import "../utils/all";
 
+@media (max-width: 600px) {
+  .wishlist-filter {
+    visibility: hidden;
+    height: 0;
+  }
+}
+
 ul.wishlist {
   margin-top: 60px;
 }

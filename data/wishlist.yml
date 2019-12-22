@@ -231,12 +231,12 @@
   buyTitle: Cocktail Kingdom
   price: 11
   image: /images/wishlist/julep-strainer.jpg
-- title: 3 in 1 Timer
+- title: 3 in 1 timer
   buyLink: https://smile.amazon.com/gp/product/B0187ZH5QQ
   buyTitle: Amazon
   price: 14
   image: /images/wishlist/timer.jpg
-- title: Wide Spatulas
+- title: Wide spatulas
   buyLink: https://smile.amazon.com/gp/product/B079Q1J3WG
   buyTitle: Amazon
   price: 52
@@ -262,3 +262,13 @@
   buyTitle: Amazon
   buyLink: https://smile.amazon.com/Ateco-60020-Natural-Bristles-Stainless/dp/B000KEWPTA
   image: /images/wishlist/pastry-brush.jpg
+- title: Mini tart tins (x2)
+  price: 6.5
+  buyTitle: Amazon
+  buyLink: https://smile.amazon.com/dp/B001IZZGOQ
+  image: /images/wishlist/mini-tart-tin.jpg
+- title: "A Faithful Account of the Race: African American Historical Writing in Nineteenth-Century America"
+  buyTitle: Amazon
+  buyLink: https://smile.amazon.com/Faithful-Account-Race-Historical-Nineteenth-Century/dp/0807859672
+  price: 35
+  image: /images/wishlist/faithful-account-of-the-race.jpg

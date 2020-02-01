@@ -1,28 +1,30 @@
-@import url("https://rsms.me/inter/inter-ui.css");
-
-/* temporarily disable importing from fonts.taravancil.com until I have time to implement CORS in homebase
 @font-face {
   font-family: "Inter UI";
-  src: url("https://fonts.taravancil.com/inter-ui/Inter-UI-Regular.woff")
-    format("woff");
+  src: url(https://storage.cloud.google.com/taravancil-dot-com-assets/Inter-Regular.woff2)
+      format("woff2"),
+    url(https://storage.cloud.google.com/taravancil-dot-com-assets/Inter-Regular.woff)
+      format("woff");
   font-weight: 400;
-  font-display: optional;
+  // font-display: optional;
 }
 @font-face {
   font-family: "Inter UI";
-  src: url("https://fonts.taravancil.com/inter-ui/Inter-UI-Medium.woff")
-    format("woff");
+  src: url(https://storage.cloud.google.com/taravancil-dot-com-assets/Inter-Medium.woff2)
+      format("woff2"),
+    url(https://storage.cloud.google.com/taravancil-dot-com-assets/Inter-Medium.woff)
+      format("woff");
   font-weight: 500;
-  font-display: optional;
+  // font-display: optional;
 }
 @font-face {
   font-family: "Inter UI";
-  src: url("https://fonts.taravancil.com/inter-ui/Inter-UI-Bold.woff")
-    format("woff");
+  src: url(https://storage.cloud.google.com/taravancil-dot-com-assets/Inter-Bold.woff2)
+      format("woff2"),
+    url(https://storage.cloud.google.com/taravancil-dot-com-assets/Inter-Bold.woff)
+      format("woff");
   font-weight: bold;
-  font-display: optional;
+  // font-display: optional;
 }
-*/
 
 body {
   font-family: "Inter UI", -apple-system, BlinkMacSystemFont, sans-serif;

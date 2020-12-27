@@ -64,11 +64,6 @@
   buyTitle: Amazon
   image: /images/wishlist/food-processor.jpg
   price: 160
-- title: OXO pastry cutter
-  buyLink: https://smile.amazon.com/OXO-Stainless-Bladed-Blender-Cutter/dp/B000QJE48O/
-  buyTitle: Amazon
-  image: /images/wishlist/pastry-cutter.jpg
-  price: 12
 - title: OXO pizza cutter
   buyLink: https://smile.amazon.com/OXO-SteeL-Pizza-Wheel-Cutter/dp/B0000E2GYL/
   buyTitle: Amazon
@@ -94,16 +89,6 @@
   buyTitle: Amazon
   image: /images/wishlist/rolling-pin.jpg
   price: 15
-- title: 5 qt. stainless steel mixing bowl (x2)
-  buyLink: https://www.webstaurantstore.com/5-qt-standard-weight-stainless-steel-mixing-bowl/407MXB5.html
-  buyTitle: webstaurantstore.com
-  price: 2
-  image: /images/wishlist/stainless-steel-mixing-bowl-5qt.jpg
-- title: 3 qt. stainless steel mixing bowl (x2)
-  buyLink: https://www.webstaurantstore.com/3-qt-standard-weight-stainless-steel-mixing-bowl/407MXB3.html
-  buyTitle: webstaurantstore.com
-  price: 1.50
-  image: /images/wishlist/stainless-steel-mixing-bowl-3qt.jpg
 - title: NISSEDAL mirror (black)
   price: 50
   buyLink: https://www.ikea.com/us/en/catalog/products/70320319/
@@ -241,16 +226,6 @@
   buyTitle: Amazon
   price: 52
   image: /images/wishlist/wide-spatulas.jpg
-- title: Rubbermaid food storage container (x2)
-  buyTitle: Amazon
-  buyLink: https://smile.amazon.com/Rubbermaid-Commercial-Container-12-Quart-FG631200CLR/dp/B000R8JOUC
-  price: 13
-  image: /images/wishlist/food-storage-container.jpg
-- title: The New Jim Crow
-  buyTitle: newjimcrow.com
-  buyLink: http://newjimcrow.com/about/buy
-  price: 12
-  image: /images/wishlist/new-jim-crow.jpg
 - title: Slippers
   buyTitle: L.L. Bean
   buyLink: https://www.llbean.com/llb/shop/121227?page=women-s-wicked-good-slipper-slide
@@ -267,8 +242,156 @@
   buyTitle: Amazon
   buyLink: https://smile.amazon.com/dp/B001IZZGOQ
   image: /images/wishlist/mini-tart-tin.jpg
-- title: "A Faithful Account of the Race: African American Historical Writing in Nineteenth-Century America"
+- title: Whynter ICM-15LS Ice Cream Maker
+  price: 265
   buyTitle: Amazon
-  buyLink: https://smile.amazon.com/Faithful-Account-Race-Historical-Nineteenth-Century/dp/0807859672
+  buyLink: https://smile.amazon.com/dp/B004N8KD5M
+  image: /images/wishlist/ice-cream-maker.jpg
+- title: Linen couche
+  price: 19
+  buyTitle: Amazon
+  buyLink: https://smile.amazon.com/Premium-Professional-Bakers-Couche-France/dp/B06XXXQVNZ/
+  image: /images/wishlist/linen-couche.png
+- title: The Family Meal
   price: 35
-  image: /images/wishlist/faithful-account-of-the-race.jpg
+  buyTitle: Amazon
+  buyLink: https://smile.amazon.com/dp/0714862533/?coliid=I18OQRPTAS694J
+  image: /images/wishlist/the-family-meal.jpg
+- title: Pajama set
+  price: 132
+  buyTitle: Print Fresh
+  buyLink: https://printfresh.com/collections/best-sellers/products/celestial-skies-pajama-set
+  image: /images/wishlist/celestial-pajamas.jpg
+  size: S
+- title: Pajama set
+  price: 132
+  buyTitle: Print Fresh
+  buyLink: https://printfresh.com/collections/long-sleep-sets/products/unicorns-garden-long-sleep-set-grey
+  image: /images/wishlist/garden-pajamas.jpg
+  size: S
+- title: Digital angle finder
+  price: 25
+  buyTitle: Amazon
+  buyLink: https://smile.amazon.com/dp/B07GH7Y5ZM/
+  image: /images/wishlist/digital-angle-finder.jpg
+- title: Sister Rosetta at the Train Station (print)
+  price: 300
+  buyTitle: Richard Phillips Art Gallery
+  buyLink: https://richardphillipsartgallery.com/product/sister-rosetta-at-the-train-station/
+  image: /images/wishlist/sister-rosetta.jpg
+- title: Tartine, A Classic Revisited
+  price: 25
+  buyTitle: Amazon
+  buyLink: https://smile.amazon.com/Tartine-Revised-Classic-Revisited-Favorites/dp/1452178739/
+  image: /images/wishlist/tartine-revisited.jpg
+- title: Tartine Bread
+  price: 28
+  buyTitle: Amazon
+  buyLink: https://smile.amazon.com/Tartine-Bread-Chad-Robertson/dp/0811870413/
+  image: /images/wishlist/tartine-bread.jpg
+- title: 12 Staff Music Writing Pad
+  price: 6
+  buyTitle: Amazon
+  buyLink: https://smile.amazon.com/Staff-Writing-3-hole-punched-binders/dp/0739014617/
+  image: /images/wishlist/music-writing-pad.jpg
+- title: Soil moisture and pH meter
+  price: 16
+  buyTitle: Home Depot
+  buyLink: https://www.homedepot.com/p/Hydro-Crunch-Soil-Moisture-Light-pH-Meter-3-in-1-Soil-Tester-Kit-for-Garden-D940010500/302974472?
+  image: /images/wishlist/soil-meter.jpg
+- title: Sweatpants (gray)
+  price: 25
+  buyTitle: Russell
+  buyLink: https://www.russellathletic.com/collections/cotton-classics/men%E2%80%99s-cotton-rich-2.0-premium-fleece-sweatpants/82ANSM0.html
+  image: /images/wishlist/sweatpants.jpg
+  size: S
+- title: Joggers (black)
+  price: 20
+  buyTitle: Russell
+  buyLink: https://www.russellathletic.com/men/bottoms/sweatpants/mens-dri-power-fleece-joggers/20JHBM0.html
+  image: /images/wishlist/joggers.jpg
+  size: S
+- title: Smartwool socks
+  price: 18
+  buyTitle: REI
+  buyLink: https://www.rei.com/product/178151/smartwool-popcorn-polka-dot-crew-socks-womens
+  image: /images/wishlist/smartwool-socks1.jpg
+  size: M
+- title: Smartwool socks
+  price: 18
+  buyTitle: REI
+  buyLink: https://www.rei.com/product/103596/smartwool-popcorn-cable-socks-womens
+  image: /images/wishlist/smartwool-socks2.jpg
+  size: M
+- title: Smartwool socks
+  price: 12
+  buyTitle: REI
+  buyLink: https://www.rei.com/rei-garage/product/183707/smartwool-ethno-graphic-crew-socks-womens
+  image: /images/wishlist/smartwool-socks3.jpg
+  size: M
+- title: Smartwool socks
+  price: 18
+  buyTitle: REI
+  buyLink: https://www.rei.com/product/158262/smartwool-traditional-snowflake-socks-womens
+  image: /images/wishlist/smartwool-socks4.jpg
+  size: M
+- title: Vanilla beans
+  price: 22
+  buyTitle: SLO Food Group
+  buyLink: https://www.slofoodgroup.com/products/extract-vanilla-madagascar?variant=11709119496236
+  image: /images/wishlist/vanilla-beans.png
+- title: Virgo necklace
+  price: 40
+  buyTitle: Etsy
+  buyLink: https://www.etsy.com/listing/832181849/amazing-vintage-virgo-charm-from-the
+  image: /images/wishlist/virgo-necklace.jpg
+- title: Christmas tree cookie mold
+  price: 22
+  buyTitle: cookiemold.com
+  buyLink: http://www.cookiemold.com/CookieMoldsXmasCookieStamps.html
+  image: /images/wishlist/christmas-tree-cookie-mold.jpg
+- title: Gingerbread man cookie mold
+  price: 22
+  buyTitle: cookiemold.com
+  buyLink: http://www.cookiemold.com/CookieMoldsXmasCookieStamps.html
+  image: /images/wishlist/gingerbread-cookie-mold.jpg
+- title: Snowman cookie mold
+  price: 22
+  buyTitle: cookiemold.com
+  buyLink: http://www.cookiemold.com/CookieMoldsXmasCookieStamps.html
+  image: /images/wishlist/snowman-cookie-mold.jpg
+- title: Butterfly cookie mold
+  price: 22
+  buyTitle: cookiemold.com
+  buyLink: http://www.cookiemold.com/CookieMoldsXmasCookieStamps.html
+  image: /images/wishlist/butterfly-cookie-mold.jpg
+- title: Flower cookie mold
+  price: 22
+  buyTitle: cookiemold.com
+  buyLink: http://www.cookiemold.com/CookieMoldsXmasCookieStamps.html
+  image: /images/wishlist/flower-cookie-mold.jpg
+- title: Rabbit cookie mold
+  price: 22
+  buyTitle: cookiemold.com
+  buyLink: http://www.cookiemold.com/CookieMoldsXmasCookieStamps.html
+  image: /images/wishlist/rabbit-cookie-mold.jpg
+- title: Small white butterfly pot
+  price: 30
+  buyTitle: Wing on Wo & Co.
+  buyLink: https://www.wingonwoand.co/shop/hand-painted-flower-pot
+  image: /images/wishlist/butterfly-pot.jpg
+- title: Fly By Jing chili crisp
+  price: 15
+  buyTitle: Fly By Jing
+  buyLink: https://flybyjing.com/shop/sichuan-chili-crisp/
+  image: /images/wishlist/chili-crisp.tiff
+- title: Thai Fresh Cookbook
+  price: 40
+  buyTitle: thai-fresh.com
+  buyLink: https://www.thai-fresh.com/product-page/thai-fresh-the-cookbook
+  image: /images/wishlist/thai-fresh.webp
+- title: Bosu ball
+  price: 99
+  buyTitle: Amazon
+  buyLink: https://smile.amazon.com/Bosu-Balance-Trainer-65cm-Blue/dp/B00AQ4F19K/
+  image: /images/wishlist/bosu-ball.jpg

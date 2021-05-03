@@ -1,5 +1,6 @@
 {
-  "name": "",
+  "name": "taravancil.com",
+  "version": "1.0.0",
   "description": "",
   "devDependencies": {
     "gulp": "^4.0.2",
@@ -16,7 +17,7 @@
   "scripts": {
     "start": "gulp",
     "build": "gulp build",
-    "publish": "hugo && cd public && dat ."
+    "publish": "rsync -av public/ admin@taravancil-com.us-east1-b.taravancil-com:/data/www/taravancil.com"
   },
   "author": "Tara Vancil <contact@taravancil.com>"
 }
